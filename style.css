@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/*
+    https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
+*/
+/*
+    Theme Name: Theme Xavier
+    Author: Xavier Arbour
+    Description: Theme de base développé dans le cours 4w4.
+    Requires PHP: 7.0
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Text Domain: theme-xavier
+    This theme, like WordPress, is licensed under the GPL.
+    Use it to make something cool, have fun, and share what you've learned with others.
+*/
+:root {
+  --couleur-arriere-entete: #aaa;
+  --couleur-arriere-acceuil: #0f0;
+  --couleur-arriere-evenements: #f00;
+  --couleur-arriere-gallerie: #00f;
+  --couleur-arriere-footer: #f0f0f0;
+}
+
+/* Remise a 0 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Debut CSS Global */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.global {
+  min-height: 100vh;
+}
+
+.global > section,
+.global > header,
+.global > footer {
+  flex: 0 1 1100px;
+  border: 1px solid red;
+}
+
+/* Les Sections */
+#entete {
+  background-color: var(--couleur-arriere-entete);
+}
+
+#acceuil {
+  background-color: var(--couleur-arriere-acceuil);
+}
+
+#evenements {
+  background-color: var(--couleur-arriere-evenements);
+}
+
+#gallerie {
+  background-color: var(--couleur-arriere-gallerie);
+}
+
+#footer {
+  background-color: var(--couleur-arriere-footer);
+}
+
+/*
+    https://chrisburnell.com/clamp-calculator/
+*/
+h1 {
+  font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+}/*# sourceMappingURL=style.css.map */

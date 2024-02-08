@@ -2,12 +2,20 @@
 /*
     https://chrisburnell.com/clamp-calculator/
 */
+/*
+    Underscore pour pour empecher compilation du fichier
+    en plusieurs fichiers css (avec fait en sorte que 1 css)
+*/
 h1 {
-    font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+    font-weight: 600;
+    font-style: normal;
+    font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
 }
 
 h2 {
-
+    font-weight: 500;
+    font-size: normal;
+    font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
 }
 
 h3 {

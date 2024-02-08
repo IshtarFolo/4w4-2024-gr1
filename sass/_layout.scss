@@ -6,18 +6,22 @@
 
 /* Debut CSS Global */
 body {
+    font-family: 'Prompt', sans-serif;
     display: flex;
     flex-direction: column;
 }
 
 .global {
-    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    min-height: 40vh;
 }
 
 .global > section, 
 .global > header, 
 .global > footer {
-    flex: 0 1 1100px;
+    // flex basis pour determiner dimension de base de chaque section
+    flex: 0 1 900px;
     border: 1px solid red;
 }
 

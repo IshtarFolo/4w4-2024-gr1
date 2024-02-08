@@ -1,10 +1,12 @@
-/* Remise a 0 */
+/* Remise a 0 
+-----------------------------------------------------------------------*/
 * {
     margin: 0;
     padding: 0;
 }
 
-/* Debut CSS Global */
+/* Debut CSS Global 
+-----------------------------------------------------------------------*/
 body {
     font-family: 'Prompt', sans-serif;
     display: flex;
@@ -22,10 +24,18 @@ body {
 .global > footer {
     // flex basis pour determiner dimension de base de chaque section
     flex: 0 1 900px;
-    border: 1px solid red;
+    padding: 3rem 1rem;
+    min-width: var(--largeur-global-min);
+    max-width: var(--largeur-global-max);
+    background-color: rgba(255, 255, 255, var(--transparence-section));
 }
 
-/* Les Sections */
+/* Les Sections 
+-------------------------------------------------------------------------*/
+#entete, #footer {
+    min-height: 20vh;
+}
+
 #entete {
     background-color: var(--couleur-arriere-entete);
 }

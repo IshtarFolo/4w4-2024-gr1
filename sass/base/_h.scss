@@ -11,27 +11,36 @@
 h1 {
     font-weight: 600;
     font-style: normal;
-    font-size: clamp(1.25rem, -2.656rem + 12.5vw, 4.375rem);
+    color: rgba(#060752, var(--transparence-h1));
+    font-size: clamp(1.5rem, -2.656rem + 12.5vw, 4.375rem);
 }
 
 h2 {
     font-weight: 500;
-    font-size: normal;
+    color: rgba(#000, var(--transparence-h2));
     font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
 }
 
 h3 {
-
+    font-weight: 400;
+    color: rgba(#013, var(--transparence-h3));
+    font-size: clamp(0.85rem, -2.969rem + 12.5vw, 4.063rem);
 }
 
 h4 {
-
+    font-weight: 300;
+    color: rgba(#128, var(--transparence-h4));
+    font-size: clamp(0.8rem, -3.156rem + 12.5vw, 3.875rem);
 }
 
 h5 {
-
+    font-weight: 200;
+    color: rgba(#666, var(--transparence-h5));
+    font-size: clamp(0.7rem, -3.281rem + 12.5vw, 3.75rem);
 }
 
 h6 {
-
+    font-weight: 100;
+    color: rgba(#000, var(--transparence-h6));
+    font-size: clamp(0.6rem, -3.594rem + 12.5vw, 3.438rem);
 }

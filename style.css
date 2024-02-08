@@ -68,9 +68,11 @@ body {
   background-color: var(--couleur-arriere-footer);
 }
 
-/*
-    https://chrisburnell.com/clamp-calculator/
-*/
+/*=============================================================================
+ *   Liens intéressants:                                                      *
+ *   https://chrisburnell.com/clamp-calculator/                               *
+ *   https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/ *
+==============================================================================*/
 /*
     Underscore pour pour empecher compilation du fichier
     en plusieurs fichiers css (avec fait en sorte que 1 css)

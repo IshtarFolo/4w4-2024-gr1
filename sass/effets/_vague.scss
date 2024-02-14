@@ -1,0 +1,32 @@
+.vague {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.vague svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+#entete .vague .shape-fill {
+    fill: var(--couleur-arriere-acceuil);
+}
+
+#gallerie .vague .shape-fill {
+    fill: var(--couleur-arriere-footer);
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .vague svg {
+        width: calc(100% + 1.3px);
+        height: 53px;
+    }
+}

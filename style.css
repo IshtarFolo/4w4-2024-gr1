@@ -14,7 +14,7 @@
   /* Couleurs des arriere-plans */
   /* Calcul des teintes 
   -----------------------------------------------------------------*/
-  --u1: 180;
+  --u1: 200;
   --u2: calc(var(--u1) + 180);
   --u3: calc(var(--u2) - 30);
   --u4: calc(var(--u2) + 30);
@@ -76,7 +76,6 @@ body {
   padding: 3rem 1rem;
   min-width: var(--largeur-global-min);
   max-width: var(--largeur-global-max);
-  background-color: rgba(255, 255, 255, var(--transparence-section));
 }
 
 /* Les Sections 
@@ -88,6 +87,7 @@ body {
 #entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
+  position: relative;
 }
 
 #acceuil {
@@ -103,6 +103,7 @@ body {
 #gallerie {
   background-color: var(--couleur-arriere-gallerie);
   color: var(--couleur-galerie);
+  position: relative;
 }
 
 #footer {
@@ -122,36 +123,65 @@ body {
 h1 {
   font-weight: 600;
   font-style: normal;
-  color: rgba(6, 7, 82, var(--transparence-h1));
+  color: rgba(0, 0, 0, 0.5);
   font-size: clamp(1.5rem, -2.656rem + 12.5vw, 4.375rem);
 }
 
 h2 {
   font-weight: 500;
-  color: rgba(0, 0, 0, var(--transparence-h2));
+  color: rgba(0, 0, 0, 0.5);
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
 }
 
 h3 {
   font-weight: 400;
-  color: rgba(0, 17, 51, var(--transparence-h3));
   font-size: clamp(0.85rem, -2.969rem + 12.5vw, 4.063rem);
 }
 
 h4 {
   font-weight: 300;
-  color: rgba(17, 34, 136, var(--transparence-h4));
   font-size: clamp(0.8rem, -3.156rem + 12.5vw, 3.875rem);
 }
 
 h5 {
   font-weight: 200;
-  color: rgba(102, 102, 102, var(--transparence-h5));
   font-size: clamp(0.7rem, -3.281rem + 12.5vw, 3.75rem);
 }
 
 h6 {
   font-weight: 100;
-  color: rgba(0, 0, 0, var(--transparence-h6));
   font-size: clamp(0.6rem, -3.594rem + 12.5vw, 3.438rem);
+}
+
+.vague {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+#entete .vague .shape-fill {
+  fill: var(--couleur-arriere-acceuil);
+}
+
+#gallerie .vague .shape-fill {
+  fill: var(--couleur-arriere-footer);
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .vague svg {
+    width: calc(100% + 1.3px);
+    height: 53px;
+  }
 }/*# sourceMappingURL=style.css.map */

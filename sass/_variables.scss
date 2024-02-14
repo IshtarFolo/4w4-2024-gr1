@@ -16,7 +16,7 @@
 
     /* Calcul des teintes 
     -----------------------------------------------------------------*/
-    --u1: 180; // Couleur initiale
+    --u1: 200; // Couleur initiale
     --u2: calc(var(--u1) + 180); // Couleur complémentaire
     --u3: calc(var(--u2) - 30); // Couleur analogue gauche
     --u4: calc(var(--u2) + 30); // Couleur analogue droite

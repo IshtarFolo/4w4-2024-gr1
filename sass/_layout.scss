@@ -27,7 +27,6 @@ body {
     padding: 3rem 1rem;
     min-width: var(--largeur-global-min);
     max-width: var(--largeur-global-max);
-    background-color: rgba(255, 255, 255, var(--transparence-section));
 }
 
 /* Les Sections 
@@ -39,6 +38,7 @@ body {
 #entete {
     background-color: var(--couleur-arriere-entete);
     color: var(--couleur-entete);
+    position: relative;
 }
 
 #acceuil {
@@ -54,6 +54,7 @@ body {
 #gallerie {
     background-color: var(--couleur-arriere-gallerie);
     color: var(--couleur-galerie);
+    position: relative;
 }
 
 #footer {

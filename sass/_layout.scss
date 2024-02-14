@@ -38,20 +38,25 @@ body {
 
 #entete {
     background-color: var(--couleur-arriere-entete);
+    color: var(--couleur-entete);
 }
 
 #acceuil {
     background-color: var(--couleur-arriere-acceuil);
+    color: var(--couleur-acceuil);
 }
 
 #evenements {
     background-color: var(--couleur-arriere-evenements);
+    color: var(--couleur-evenements);
 }
 
 #gallerie {
     background-color: var(--couleur-arriere-gallerie);
+    color: var(--couleur-galerie);
 }
 
 #footer {
     background-color: var(--couleur-arriere-footer);
+    color: var(--couleur-footer);
 }

@@ -12,21 +12,38 @@
 */
 :root {
   /* Couleurs des arriere-plans */
-  --couleur-arriere-entete: rgba(0, 0, 0, 0.9);
-  --couleur-arriere-acceuil: rgba(4, 194, 4, 0.5);
-  --couleur-arriere-evenements: rgba(27, 151, 3, 0.7);
-  --couleur-arriere-gallerie: rgba(255, 196, 0, 0.7);
-  --couleur-arriere-footer: rgba(0, 0, 0, 0.9);
-  /* Niveaux de transparence des H */
-  --transparence-h1: 0.4;
-  --transparence-h2: 0.5;
-  --transparence-h3: 0.6;
-  --transparence-h4: 0.7;
-  --transparence-h5: 0.8;
-  --transparence-h6: 1;
+  /* Calcul des teintes 
+  -----------------------------------------------------------------*/
+  --u1: 180;
+  --u2: calc(var(--u1) + 180);
+  --u3: calc(var(--u2) - 30);
+  --u4: calc(var(--u2) + 30);
+  /* Saturation 
+  -----------------------------------------------------------------*/
+  --s-arriere-plan: 100%;
+  --s-avant-plan: 90%;
+  /* Luminositée 
+  -----------------------------------------------------------------*/
+  --l-arriere-plan: 30%;
+  --l-avant-plan: 42%;
+  /* Couleurs d'arriere-plan
+  -----------------------------------------------------------------*/
+  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere-plan), var(--l-arriere-plan));
+  --couleur-arriere-acceuil: hsl(var(--u2), var(--s-arriere-plan), var(--l-arriere-plan));
+  --couleur-arriere-evenements: hsl(var(--u3), var(--s-arriere-plan), var(--l-arriere-plan));
+  --couleur-arriere-gallerie: hsl(var(--u4), var(--s-arriere-plan), var(--l-arriere-plan));
+  --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere-plan), var(--l-arriere-plan));
+  /* Couleurs d'avant-plan 
+  -----------------------------------------------------------------*/
+  --couleur-entete: hsl(var(--u1), var(--s-avant-plan), var(--l-avant-plan));
+  --couleur-acceuil: hsl(var(--u2), var(--s-avant-plan), var(--l-avant-plan));
+  --couleur-evenements: hsl(var(--u3), var(--s-avant-plan), var(--l-avant-plan));
+  --couleur-gallerie: hsl(var(--u4), var(--s-avant-plan), var(--l-avant-plan));
+  --couleur-footer: hsl(var(--u1), var(--s-avant-plan), var(--l-avant-plan));
   /* Niveaux transparence sections */
   --transparence-section: 0.3;
-  /* Largeur de la zone centrale */
+  /* Largeur de la zone centrale 
+  -----------------------------------------------------------------*/
   --largeur-global-min: 10vw;
   --largeur-global-max: 70vw;
 }
@@ -70,22 +87,27 @@ body {
 
 #entete {
   background-color: var(--couleur-arriere-entete);
+  color: var(--couleur-entete);
 }
 
 #acceuil {
   background-color: var(--couleur-arriere-acceuil);
+  color: var(--couleur-acceuil);
 }
 
 #evenements {
   background-color: var(--couleur-arriere-evenements);
+  color: var(--couleur-evenements);
 }
 
 #gallerie {
   background-color: var(--couleur-arriere-gallerie);
+  color: var(--couleur-galerie);
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
+  color: var(--couleur-footer);
 }
 
 /*=============================================================================

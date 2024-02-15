@@ -19,6 +19,8 @@ h2 {
     font-weight: 500;
     color: rgba(0,0,0, 50%);
     font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+    z-index: 2;
+    position: relative;
 }
 
 h3 {
@@ -29,6 +31,8 @@ h3 {
 h4 {
     font-weight: 300;
     font-size: clamp(0.8rem, -3.156rem + 12.5vw, 3.875rem);
+    z-index: 2;
+    position: relative;
 }
 
 h5 {

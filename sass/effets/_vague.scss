@@ -23,8 +23,15 @@
     fill: var(--couleur-arriere-footer);
 }
 
-/** For mobile devices **/
-@media (max-width: 767px) {
+/** Pour mobile **/
+@media (min-width: 767px) {
+    .vague svg {
+        width: calc(100% + 1.3px);
+        height: 73px;
+    }
+}
+
+@media (max-width: 1080px) {
     .vague svg {
         width: calc(100% + 1.3px);
         height: 53px;

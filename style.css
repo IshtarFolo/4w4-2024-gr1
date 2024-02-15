@@ -14,32 +14,30 @@
   /* Couleurs des arriere-plans */
   /* Calcul des teintes 
   -----------------------------------------------------------------*/
-  --u1: 200;
+  --u1: 181;
   --u2: calc(var(--u1) + 180);
   --u3: calc(var(--u2) - 30);
   --u4: calc(var(--u2) + 30);
-  /* Saturation 
+  /* Saturation + Luminositée 
   -----------------------------------------------------------------*/
   --s-arriere-plan: 100%;
-  --s-avant-plan: 90%;
-  /* Luminositée 
-  -----------------------------------------------------------------*/
+  --s-avant-plan: 50%;
   --l-arriere-plan: 30%;
   --l-avant-plan: 42%;
   /* Couleurs d'arriere-plan
   -----------------------------------------------------------------*/
-  --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere-plan), var(--l-arriere-plan));
-  --couleur-arriere-acceuil: hsl(var(--u2), var(--s-arriere-plan), var(--l-arriere-plan));
-  --couleur-arriere-evenements: hsl(var(--u3), var(--s-arriere-plan), var(--l-arriere-plan));
-  --couleur-arriere-gallerie: hsl(var(--u4), var(--s-arriere-plan), var(--l-arriere-plan));
-  --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere-plan), var(--l-arriere-plan));
+  --couleur-arriere-entete: hsl(var(--u1), 100%, 25%);
+  --couleur-arriere-acceuil: hsl(var(--u1), 100%, 20%);
+  --couleur-arriere-evenements: hsl(var(--u1), 100%, 15%);
+  --couleur-arriere-gallerie: hsl(var(--u1), 100%, 10%);
+  --couleur-arriere-footer: hsl(var(--u1), 100%, 25%);
   /* Couleurs d'avant-plan 
   -----------------------------------------------------------------*/
-  --couleur-entete: hsl(var(--u1), var(--s-avant-plan), var(--l-avant-plan));
-  --couleur-acceuil: hsl(var(--u2), var(--s-avant-plan), var(--l-avant-plan));
-  --couleur-evenements: hsl(var(--u3), var(--s-avant-plan), var(--l-avant-plan));
-  --couleur-gallerie: hsl(var(--u4), var(--s-avant-plan), var(--l-avant-plan));
-  --couleur-footer: hsl(var(--u1), var(--s-avant-plan), var(--l-avant-plan));
+  --couleur-entete: hsl(var(--u1), 100%, 30%);
+  --couleur-acceuil: hsl(var(--u2), 100%, 25%);
+  --couleur-evenements: hsl(var(--u3), 100%, 15%);
+  --couleur-gallerie: hsl(var(--u4), 100%, 10%);
+  --couleur-footer: hsl(var(--u1), 100%, 5%);
   /* Niveaux transparence sections */
   --transparence-section: 0.3;
   /* Largeur de la zone centrale 
@@ -96,7 +94,8 @@ body {
 }
 
 #evenements {
-  background-color: var(--couleur-arriere-evenements);
+  background: var(--couleur-arriere-acceuil);
+  background: linear-gradient(180deg, var(--couleur-arriere-acceuil) 0%, var(--couleur-arriere-gallerie) 100%);
   color: var(--couleur-evenements);
 }
 
@@ -131,6 +130,8 @@ h2 {
   font-weight: 500;
   color: rgba(0, 0, 0, 0.5);
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+  z-index: 2;
+  position: relative;
 }
 
 h3 {
@@ -141,6 +142,8 @@ h3 {
 h4 {
   font-weight: 300;
   font-size: clamp(0.8rem, -3.156rem + 12.5vw, 3.875rem);
+  z-index: 2;
+  position: relative;
 }
 
 h5 {
@@ -178,10 +181,31 @@ h6 {
   fill: var(--couleur-arriere-footer);
 }
 
-/** For mobile devices **/
-@media (max-width: 767px) {
+/** Pour mobile **/
+@media (min-width: 767px) {
+  .vague svg {
+    width: calc(100% + 1.3px);
+    height: 73px;
+  }
+}
+@media (max-width: 1080px) {
   .vague svg {
     width: calc(100% + 1.3px);
     height: 53px;
   }
+}
+.diagonale {
+  position: relative;
+}
+
+.diagonale::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--couleur-arriere-evenements);
+  z-index: 1;
+  transform: skewY(-5deg);
 }/*# sourceMappingURL=style.css.map */

@@ -47,7 +47,8 @@ body {
 }
 
 #evenements {
-    background-color: var(--couleur-arriere-evenements);
+    background: var(--couleur-arriere-acceuil);
+    background: linear-gradient(180deg, var(--couleur-arriere-acceuil) 0%, var(--couleur-arriere-gallerie) 100%);
     color: var(--couleur-evenements);
 }
 

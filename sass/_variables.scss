@@ -16,36 +16,33 @@
 
     /* Calcul des teintes 
     -----------------------------------------------------------------*/
-    --u1: 200; // Couleur initiale
+    --u1: 181; // Couleur initiale
     --u2: calc(var(--u1) + 180); // Couleur complémentaire
     --u3: calc(var(--u2) - 30); // Couleur analogue gauche
     --u4: calc(var(--u2) + 30); // Couleur analogue droite
 
-    /* Saturation 
+    /* Saturation + Luminositée 
     -----------------------------------------------------------------*/
     --s-arriere-plan: 100%;
-    --s-avant-plan: 90%;
-
-    /* Luminositée 
-    -----------------------------------------------------------------*/
+    --s-avant-plan: 50%;
     --l-arriere-plan: 30%;
     --l-avant-plan: 42%;
 
     /* Couleurs d'arriere-plan
     -----------------------------------------------------------------*/
-    --couleur-arriere-entete: hsl(var(--u1), var(--s-arriere-plan), var(--l-arriere-plan));
-    --couleur-arriere-acceuil: hsl(var(--u2), var(--s-arriere-plan), var(--l-arriere-plan));
-    --couleur-arriere-evenements: hsl(var(--u3), var(--s-arriere-plan), var(--l-arriere-plan));
-    --couleur-arriere-gallerie: hsl(var(--u4), var(--s-arriere-plan), var(--l-arriere-plan));
-    --couleur-arriere-footer: hsl(var(--u1), var(--s-arriere-plan), var(--l-arriere-plan));
+    --couleur-arriere-entete: hsl(var(--u1), 100%, 25%);
+    --couleur-arriere-acceuil: hsl(var(--u1), 100%, 20%);
+    --couleur-arriere-evenements: hsl(var(--u1), 100%, 15%);
+    --couleur-arriere-gallerie: hsl(var(--u1), 100%, 10%);
+    --couleur-arriere-footer: hsl(var(--u1), 100%, 25%);
 
     /* Couleurs d'avant-plan 
     -----------------------------------------------------------------*/
-    --couleur-entete: hsl(var(--u1), var(--s-avant-plan), var(--l-avant-plan));
-    --couleur-acceuil: hsl(var(--u2), var(--s-avant-plan), var(--l-avant-plan));
-    --couleur-evenements: hsl(var(--u3), var(--s-avant-plan), var(--l-avant-plan));
-    --couleur-gallerie: hsl(var(--u4), var(--s-avant-plan), var(--l-avant-plan));
-    --couleur-footer: hsl(var(--u1), var(--s-avant-plan), var(--l-avant-plan));
+    --couleur-entete: hsl(var(--u1), 100%, 30%);
+    --couleur-acceuil: hsl(var(--u2), 100%, 25%);
+    --couleur-evenements: hsl(var(--u3), 100%, 15%);
+    --couleur-gallerie: hsl(var(--u4), 100%, 10%);
+    --couleur-footer: hsl(var(--u1), 100%, 5%);
 
     /* Niveaux transparence sections */
     --transparence-section: 0.3;

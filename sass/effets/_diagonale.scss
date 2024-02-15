@@ -13,3 +13,11 @@
     z-index: 1;
     transform: skewY(-5deg);
 }
+
+/** Pour adapter aux écrans plus larges **/
+@media (min-width: 1080px){
+    .diagonale::after{
+        transform: skewY(-2deg);
+        height: 31vw;
+    }
+}

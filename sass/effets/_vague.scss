@@ -30,7 +30,7 @@
         height: 73px;
     }
 }
-
+/** Pour écrans plus larges **/
 @media (max-width: 1080px) {
     .vague svg {
         width: calc(100% + 1.3px);

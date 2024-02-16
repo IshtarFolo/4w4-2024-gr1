@@ -48,12 +48,12 @@ body {
 
 #evenements {
     background: var(--couleur-arriere-acceuil);
-    background: linear-gradient(180deg, var(--couleur-arriere-acceuil) 0%, var(--couleur-arriere-gallerie) 100%);
+    background: linear-gradient(180deg, var(--couleur-arriere-acceuil) 0%, var(--couleur-arriere-galerie) 100%);
     color: var(--couleur-evenements);
 }
 
-#gallerie {
-    background-color: var(--couleur-arriere-gallerie);
+#galerie {
+    background-color: var(--couleur-arriere-galerie);
     color: var(--couleur-galerie);
     position: relative;
 }
@@ -73,8 +73,8 @@ body {
 #acceuil blockquote{
     padding: 1rem;
     border-radius: 15px;
-    background-color: var(--couleur-arriere-gallerie);
-    color: var(--couleur-texte-clair);
+    background-color: var(--couleur-arriere-galerie);
+    color: var(--couleur-entete);
     font-size: clamp(0.813rem, 0.435rem + 1.207vw, 1.25rem);
 }
 
@@ -85,8 +85,8 @@ body {
     margin-bottom: 1rem;
     border-radius: 15px;
     background-color: var(--couleur-arriere-footer);
-    border: 5px solid var(--couleur-arriere-gallerie);
-    color: var(--couleur-texte-clair);
+    border: 5px solid var(--couleur-arriere-galerie);
+    color: var(--couleur-evenements);
     font-size: clamp(0.813rem, 0.435rem + 1.207vw, 1.25rem);
     z-index: 2;
     position: relative;
@@ -107,16 +107,57 @@ body {
     padding: 0.5rem;
     transition: 0.3s;
     font-size: clamp(0.813rem, 0.435rem + 1.207vw, 1.25rem);
+    display: flex;
+    justify-content: center;
 }
 
-/* Gallerie divs
------------------------------------------------------------------*/
-/* Gallerie divs
------------------------------------------------------------------*/
-#gallerie div {
-
+#entete a:hover{
+    color: var(--couleur-arriere-entete);
+    background-color: var(--couleur-arriere-galerie);
 }
 
+/* Galerie divs
+-----------------------------------------------------------------*/
+#conteneur-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#galerie .image {
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--couleur-arriere-acceuil);
+}
+
+/* Texte dans la section galerie
+---------------------------------------------------------------*/
+#galerie p{
+    color: var(--couleur-entete);
+}
+
+/* Bouton au bas de la galerie 
+----------------------------------------------------------------*/
+#galerie button{
+    width: 7rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    background-color: var(--couleur-arriere-acceuil);
+    color: var(--couleur-arriere-galerie);
+    border: none;
+    border-radius: 15px;
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+#galerie button:hover{
+    background-color: var(--couleur-arriere-evenements);
+    color: var(--couleur-arriere-footer);
+    transform: scale(1.1);
+}
 
 /* Balise a qui permet de remonter en haut de la page
 ----------------------------------------------------------------*/
@@ -127,8 +168,8 @@ body {
     justify-content: center;
     bottom: 1rem;
     right: 1rem;
-    background-color: var(--couleur-arriere-gallerie);
-    color: var(--couleur-texte-clair);
+    background-color: var(--couleur-arriere-galerie);
+    color: var(--couleur-arriere-acceuil);
     text-decoration: none;
     padding: 0.5rem;
     border-radius: 50%;
@@ -138,5 +179,4 @@ body {
 
 a:hover{
     background-color: var(--couleur-arriere-acceuil);
-    color: var(--couleur-texte-fonce);
 }

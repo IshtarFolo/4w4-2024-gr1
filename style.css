@@ -29,18 +29,15 @@
   --couleur-arriere-entete: hsl(var(--u1), 100%, 25%);
   --couleur-arriere-acceuil: hsl(var(--u1), 100%, 20%);
   --couleur-arriere-evenements: hsl(var(--u1), 100%, 15%);
-  --couleur-arriere-gallerie: hsl(var(--u1), 100%, 10%);
+  --couleur-arriere-galerie: hsl(var(--u1), 100%, 10%);
   --couleur-arriere-footer: hsl(var(--u1), 100%, 25%);
   /* Couleurs d'avant-plan 
   -----------------------------------------------------------------*/
   --couleur-entete: hsl(var(--u1), 100%, 30%);
   --couleur-acceuil: hsl(var(--u2), 100%, 25%);
   --couleur-evenements: hsl(var(--u3), 100%, 15%);
-  --couleur-gallerie: hsl(var(--u4), 100%, 10%);
+  --couleur-galerie: hsl(var(--u4), 100%, 10%);
   --couleur-footer: hsl(var(--u1), 100%, 5%);
-  /**/
-  --couleur-texte-clair: hsl(0, 0%, 100%);
-  --couleur-texte-fonce: hsl(0, 0%, 0%);
   /* Niveaux transparence sections */
   --transparence-section: 0.3;
   /* Largeur de la zone centrale 
@@ -98,12 +95,12 @@ body {
 
 #evenements {
   background: var(--couleur-arriere-acceuil);
-  background: linear-gradient(180deg, var(--couleur-arriere-acceuil) 0%, var(--couleur-arriere-gallerie) 100%);
+  background: linear-gradient(180deg, var(--couleur-arriere-acceuil) 0%, var(--couleur-arriere-galerie) 100%);
   color: var(--couleur-evenements);
 }
 
-#gallerie {
-  background-color: var(--couleur-arriere-gallerie);
+#galerie {
+  background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-galerie);
   position: relative;
 }
@@ -123,8 +120,8 @@ body {
 #acceuil blockquote {
   padding: 1rem;
   border-radius: 15px;
-  background-color: var(--couleur-arriere-gallerie);
-  color: var(--couleur-texte-clair);
+  background-color: var(--couleur-arriere-galerie);
+  color: var(--couleur-entete);
   font-size: clamp(0.813rem, 0.435rem + 1.207vw, 1.25rem);
 }
 
@@ -135,8 +132,8 @@ body {
   margin-bottom: 1rem;
   border-radius: 15px;
   background-color: var(--couleur-arriere-footer);
-  border: 5px solid var(--couleur-arriere-gallerie);
-  color: var(--couleur-texte-clair);
+  border: 5px solid var(--couleur-arriere-galerie);
+  color: var(--couleur-evenements);
   font-size: clamp(0.813rem, 0.435rem + 1.207vw, 1.25rem);
   z-index: 2;
   position: relative;
@@ -157,12 +154,58 @@ body {
   padding: 0.5rem;
   transition: 0.3s;
   font-size: clamp(0.813rem, 0.435rem + 1.207vw, 1.25rem);
+  display: flex;
+  justify-content: center;
 }
 
-/* Gallerie divs
+#entete a:hover {
+  color: var(--couleur-arriere-entete);
+  background-color: var(--couleur-arriere-galerie);
+}
+
+/* Galerie divs
 -----------------------------------------------------------------*/
-/* Gallerie divs
------------------------------------------------------------------*/
+#conteneur-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#galerie .image {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: var(--couleur-arriere-acceuil);
+}
+
+/* Texte dans la section galerie
+---------------------------------------------------------------*/
+#galerie p {
+  color: var(--couleur-entete);
+}
+
+/* Bouton au bas de la galerie 
+----------------------------------------------------------------*/
+#galerie button {
+  width: 7rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  background-color: var(--couleur-arriere-acceuil);
+  color: var(--couleur-arriere-galerie);
+  border: none;
+  border-radius: 15px;
+  transform: scale(1);
+  transition: 0.3s;
+}
+
+#galerie button:hover {
+  background-color: var(--couleur-arriere-evenements);
+  color: var(--couleur-arriere-footer);
+  transform: scale(1.1);
+}
+
 /* Balise a qui permet de remonter en haut de la page
 ----------------------------------------------------------------*/
 #footer a {
@@ -172,8 +215,8 @@ body {
   justify-content: center;
   bottom: 1rem;
   right: 1rem;
-  background-color: var(--couleur-arriere-gallerie);
-  color: var(--couleur-texte-clair);
+  background-color: var(--couleur-arriere-galerie);
+  color: var(--couleur-arriere-acceuil);
   text-decoration: none;
   padding: 0.5rem;
   border-radius: 50%;
@@ -183,7 +226,6 @@ body {
 
 a:hover {
   background-color: var(--couleur-arriere-acceuil);
-  color: var(--couleur-texte-fonce);
 }
 
 /*=============================================================================
@@ -198,17 +240,19 @@ a:hover {
 h1 {
   font-weight: 600;
   font-style: normal;
-  color: rgba(0, 0, 0, 0.5);
   font-size: clamp(1.5rem, -2.656rem + 12.5vw, 4.375rem);
   padding-bottom: 1rem;
 }
 
 h2 {
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.5);
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   z-index: 2;
   position: relative;
+}
+
+#galerie h2 {
+  color: var(--couleur-arriere-acceuil);
 }
 
 h3 {
@@ -229,6 +273,10 @@ h5 {
   font-weight: 200;
   font-size: clamp(0.4rem, -3.281rem + 12.5vw, 2.5rem);
   padding-bottom: 1rem;
+}
+
+#galerie h5 {
+  color: var(--couleur-arriere-acceuil);
 }
 
 h6 {
@@ -258,7 +306,7 @@ h6 {
   fill: var(--couleur-arriere-acceuil);
 }
 
-#gallerie .vague .shape-fill {
+#galerie .vague .shape-fill {
   fill: var(--couleur-arriere-footer);
 }
 
@@ -296,6 +344,6 @@ h6 {
 @media (min-width: 1080px) {
   .diagonale::after {
     transform: skewY(-2deg);
-    height: 31vw;
+    height: 20vw;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -11,17 +11,19 @@
 h1 {
     font-weight: 600;
     font-style: normal;
-    color: rgba(0,0,0, 50%);
     font-size: clamp(1.5rem, -2.656rem + 12.5vw, 4.375rem);
     padding-bottom: 1rem;
 }
 
 h2 {
     font-weight: 500;
-    color: rgba(0,0,0, 50%);
     font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
     z-index: 2;
     position: relative;
+}
+
+#galerie h2{
+    color: var(--couleur-arriere-acceuil);
 }
 
 h3 {
@@ -42,6 +44,10 @@ h5 {
     font-weight: 200;
     font-size: clamp(0.4rem, -3.281rem + 12.5vw, 2.5rem);
     padding-bottom: 1rem;
+}
+
+#galerie h5{
+    color: var(--couleur-arriere-acceuil);
 }
 
 h6 {

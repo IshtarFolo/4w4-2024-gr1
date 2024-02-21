@@ -36,6 +36,11 @@ body {
 }
 
 #entete {
+    background-image: url("image/github.png");
+    background-size: cover;
+    background-position: center;
+    background-size: 25%;
+    background-repeat: no-repeat;
     background-color: var(--couleur-arriere-entete);
     color: var(--couleur-entete);
     position: relative;
@@ -85,11 +90,16 @@ body {
     margin-bottom: 1rem;
     border-radius: 15px;
     background-color: var(--couleur-arriere-footer);
-    border: 5px solid var(--couleur-arriere-galerie);
-    color: var(--couleur-evenements);
+    color: var(--couleur-arriere-galerie);
     font-size: clamp(0.813rem, 0.435rem + 1.207vw, 1.25rem);
     z-index: 2;
     position: relative;
+}
+
+blockquote::first-letter{
+    color: var(--couleur-premiere-lettre);
+    font-size: 2rem;
+    margin-right: 0.2rem;
 }
 
 /* Menu dans le header
@@ -101,7 +111,7 @@ body {
 }
 
 #entete a {
-    width: 7rem;
+    width: 5rem;
     color: var(--couleur-evenements);
     text-decoration: none;
     padding: 0.5rem;
@@ -114,6 +124,37 @@ body {
 #entete a:hover{
     color: var(--couleur-arriere-entete);
     background-color: var(--couleur-arriere-galerie);
+}
+
+/* Bouton dans le header
+----------------------------------------------------------------*/
+header button{
+    width: 6rem;
+    height: 2.2rem;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background-color: var(--couleur-arriere-acceuil);
+    border: none;
+    box-shadow: 0.2rem 0.2rem;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: 0.3s;
+    background-image: url("image/node_js.png");
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header button:hover{
+    background-color: var(--couleur-arriere-evenements);
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 1s;
+}
+
+header button:active{
+    transform: scale(0.9);
 }
 
 /* Galerie divs
@@ -137,6 +178,12 @@ body {
 ---------------------------------------------------------------*/
 #galerie p{
     color: var(--couleur-entete);
+}
+
+#galerie p::first-letter{
+    color: var(--couleur-premiere-lettre);
+    font-size: 2rem;
+    margin-right: 0.2rem;
 }
 
 /* Bouton au bas de la galerie 
@@ -179,4 +226,13 @@ body {
 
 a:hover{
     background-color: var(--couleur-arriere-acceuil);
+}
+
+/* L'image du header change de position avec le viewport
+-----------------------------------------------------------------*/
+@media screen and (min-width: 1080px){
+    #entete{
+        background-size: 10%;
+        background-position-x: 90%;
+    }
 }

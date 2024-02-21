@@ -44,6 +44,10 @@
   -----------------------------------------------------------------*/
   --largeur-global-min: 10vw;
   --largeur-global-max: 70vw;
+  /* Couleurs complémentaires (180deg)
+  -----------------------------------------------------------------*/
+  --couleur-premiere-lettre: #80FDFF;
+  --couleur-lien: #007D80;
 }
 
 /* Remise a 0 
@@ -83,6 +87,11 @@ body {
 }
 
 #entete {
+  background-image: url("image/github.png");
+  background-size: cover;
+  background-position: center;
+  background-size: 25%;
+  background-repeat: no-repeat;
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
   position: relative;
@@ -132,11 +141,16 @@ body {
   margin-bottom: 1rem;
   border-radius: 15px;
   background-color: var(--couleur-arriere-footer);
-  border: 5px solid var(--couleur-arriere-galerie);
-  color: var(--couleur-evenements);
+  color: var(--couleur-arriere-galerie);
   font-size: clamp(0.813rem, 0.435rem + 1.207vw, 1.25rem);
   z-index: 2;
   position: relative;
+}
+
+blockquote::first-letter {
+  color: var(--couleur-premiere-lettre);
+  font-size: 2rem;
+  margin-right: 0.2rem;
 }
 
 /* Menu dans le header
@@ -148,7 +162,7 @@ body {
 }
 
 #entete a {
-  width: 7rem;
+  width: 5rem;
   color: var(--couleur-evenements);
   text-decoration: none;
   padding: 0.5rem;
@@ -161,6 +175,37 @@ body {
 #entete a:hover {
   color: var(--couleur-arriere-entete);
   background-color: var(--couleur-arriere-galerie);
+}
+
+/* Bouton dans le header
+----------------------------------------------------------------*/
+header button {
+  width: 6rem;
+  height: 2.2rem;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  background-color: var(--couleur-arriere-acceuil);
+  border: none;
+  box-shadow: 0.2rem 0.2rem;
+  border-radius: 10px;
+  transform: scale(1);
+  transition: 0.3s;
+  background-image: url("image/node_js.png");
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header button:hover {
+  background-color: var(--couleur-arriere-evenements);
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 1s;
+}
+
+header button:active {
+  transform: scale(0.9);
 }
 
 /* Galerie divs
@@ -184,6 +229,12 @@ body {
 ---------------------------------------------------------------*/
 #galerie p {
   color: var(--couleur-entete);
+}
+
+#galerie p::first-letter {
+  color: var(--couleur-premiere-lettre);
+  font-size: 2rem;
+  margin-right: 0.2rem;
 }
 
 /* Bouton au bas de la galerie 
@@ -228,6 +279,14 @@ a:hover {
   background-color: var(--couleur-arriere-acceuil);
 }
 
+/* L'image du header change de position avec le viewport
+-----------------------------------------------------------------*/
+@media screen and (min-width: 1080px) {
+  #entete {
+    background-size: 10%;
+    background-position-x: 90%;
+  }
+}
 /*=============================================================================
  *   Liens intéressants:                                                      *
  *   https://chrisburnell.com/clamp-calculator/                               *
@@ -242,6 +301,7 @@ h1 {
   font-style: normal;
   font-size: clamp(1.5rem, -2.656rem + 12.5vw, 4.375rem);
   padding-bottom: 1rem;
+  color: var(--couleur-arriere-galerie);
 }
 
 h2 {
@@ -249,9 +309,14 @@ h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   z-index: 2;
   position: relative;
+  color: var(--couleur-arriere-galerie);
 }
 
 #galerie h2 {
+  color: var(--couleur-arriere-acceuil);
+}
+
+#evenements h2 {
   color: var(--couleur-arriere-acceuil);
 }
 
@@ -259,6 +324,7 @@ h3 {
   font-weight: 400;
   font-size: clamp(0.85rem, -2.969rem + 12.5vw, 4.063rem);
   padding-bottom: 1rem;
+  color: var(--couleur-arriere-galerie);
 }
 
 h4 {
@@ -267,6 +333,7 @@ h4 {
   z-index: 2;
   position: relative;
   padding-bottom: 1rem;
+  color: var(--couleur-arriere-acceuil);
 }
 
 h5 {

@@ -13,6 +13,7 @@ h1 {
     font-style: normal;
     font-size: clamp(1.5rem, -2.656rem + 12.5vw, 4.375rem);
     padding-bottom: 1rem;
+    color: var(--couleur-arriere-galerie);
 }
 
 h2 {
@@ -20,9 +21,14 @@ h2 {
     font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
     z-index: 2;
     position: relative;
+    color: var(--couleur-arriere-galerie);
 }
 
 #galerie h2{
+    color: var(--couleur-arriere-acceuil);
+}
+
+#evenements h2{
     color: var(--couleur-arriere-acceuil);
 }
 
@@ -30,6 +36,8 @@ h3 {
     font-weight: 400;
     font-size: clamp(0.85rem, -2.969rem + 12.5vw, 4.063rem);
     padding-bottom: 1rem;
+    color: var(--couleur-arriere-galerie);
+
 }
 
 h4 {
@@ -38,6 +46,8 @@ h4 {
     z-index: 2;
     position: relative;
     padding-bottom: 1rem;
+    color: var(--couleur-arriere-acceuil);
+
 }
 
 h5 {

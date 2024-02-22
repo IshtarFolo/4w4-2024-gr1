@@ -3,7 +3,7 @@
 .conteneur-bouton{
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 header button{
@@ -41,5 +41,9 @@ header button:active{
         margin-top: 2rem;
         width: 15rem;
         height: 3rem;
+    }
+
+    .conteneur-bouton{
+        justify-content: flex-start;
     }
 }

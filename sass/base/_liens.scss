@@ -10,6 +10,8 @@
 // https://chrisburnell.com/clamp-calculator/
 // https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
 
+/* Lien dans l'acceuil
+--------------------------------------------------*/
 blockquote a{
     color: var(--couleur-lien);
 
@@ -22,6 +24,8 @@ blockquote a{
     }
 }
 
+/* Lien dans la galerie
+------------------------------------------------*/
 p a{
     color: var(--couleur-lien);
 

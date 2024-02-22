@@ -52,4 +52,9 @@
     /* Couleur diagonale
     -----------------------------------------------------------------*/
     --couleur-diagonale: hsl(var(--u2), 40%, 20%);
+
+    /* Couleur des liens du menu une fois visités ou survolés
+    -----------------------------------------------------------------*/
+    --couleur-lien-visite: hsl(var(--u4), 40%, 50%);
+    --couleur-lien-hover: hsl(var(--u4), 50%, 20%);
 }

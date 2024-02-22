@@ -56,6 +56,10 @@
   /* Couleur diagonale
   -----------------------------------------------------------------*/
   --couleur-diagonale: hsl(var(--u2), 40%, 20%);
+  /* Couleur des liens du menu une fois visités ou survolés
+  -----------------------------------------------------------------*/
+  --couleur-lien-visite: hsl(var(--u4), 40%, 50%);
+  --couleur-lien-hover: hsl(var(--u4), 50%, 20%);
 }
 
 /* Remise a 0 
@@ -266,18 +270,18 @@ header button:active {
   transform: scale(0.9);
 }
 
-.lien:hover {
-  background-color: none;
-}
-
+/* Bouton du header pour plus grands écrans
+----------------------------------------------------------------------------*/
 @media screen and (min-width: 1080px) {
   header button {
     margin-top: 2rem;
+    width: 15rem;
+    height: 3rem;
   }
 }
 #entete {
   min-height: 80vh;
-  background-position: 50% 25%;
+  background-position: 50% 27%;
   background-image: url("images/github.png");
   background-size: cover;
   background-size: 40%;
@@ -293,10 +297,6 @@ header button:active {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-}
-
-.lien:hover {
-  background-color: none;
 }
 
 #entete a {
@@ -321,7 +321,7 @@ header button:active {
   #entete {
     min-height: 90vh;
     background-size: 20%;
-    background-position: 90% 40%;
+    background-position: 90% 50%;
   }
 }
 /*=============================================================================
@@ -458,4 +458,23 @@ span {
     transform: skewY(-2deg);
     height: 20vw;
   }
+}
+blockquote a {
+  color: var(--couleur-lien);
+}
+blockquote a:hover {
+  color: var(--couleur-lien-hover);
+}
+blockquote a:visited {
+  color: var(--couleur-lien-visite);
+}
+
+p a {
+  color: var(--couleur-lien);
+}
+p a:hover {
+  color: var(--couleur-lien-hover);
+}
+p a:visited {
+  color: var(--couleur-lien-visite);
 }/*# sourceMappingURL=style.css.map */

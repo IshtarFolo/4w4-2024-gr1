@@ -9,3 +9,27 @@
 // Clamp()
 // https://chrisburnell.com/clamp-calculator/
 // https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
+
+blockquote a{
+    color: var(--couleur-lien);
+
+    &:hover{
+        color: var(--couleur-lien-hover);
+    }
+
+    &:visited{
+        color: var(--couleur-lien-visite);
+    }
+}
+
+p a{
+    color: var(--couleur-lien);
+
+    &:hover{
+        color: var(--couleur-lien-hover);
+    }
+
+    &:visited{
+        color: var(--couleur-lien-visite);
+    }
+}

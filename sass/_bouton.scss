@@ -34,12 +34,12 @@ header button:active{
     transform: scale(0.9);
 }
 
-.lien:hover{
-    background-color: none;
-}
-
+/* Bouton du header pour plus grands écrans
+----------------------------------------------------------------------------*/
 @media screen and (min-width: 1080px){
     header button{
         margin-top: 2rem;
+        width: 15rem;
+        height: 3rem;
     }
 }

@@ -179,6 +179,12 @@ blockquote::first-letter {
 
 /* Bouton dans le header
 ----------------------------------------------------------------*/
+.conteneur-bouton {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
 header button {
   width: 6rem;
   height: 2.2rem;

@@ -1,5 +1,5 @@
 #entete {
-    min-height: 90vh;
+    min-height: 80vh;
     background-position: 50% 25%;
     background-image: url("images/github.png");
     background-size: cover;
@@ -16,6 +16,10 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+}
+
+.lien:hover{
+    background-color: none;
 }
 
 #entete a {
@@ -38,7 +42,8 @@
 -----------------------------------------------------------------*/
 @media screen and (min-width: 1080px){
     #entete{
-        background-size: 10%;
-        background-position: 90% 50%;
+        min-height: 90vh;
+        background-size: 20%;
+        background-position: 90% 40%;
     }
 }

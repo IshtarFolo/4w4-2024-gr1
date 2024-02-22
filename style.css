@@ -11,7 +11,6 @@
     Use it to make something cool, have fun, and share what you've learned with others.
 */
 :root {
-  /* Couleurs des arriere-plans */
   /* Calcul des teintes 
   -----------------------------------------------------------------*/
   --u1: 181;
@@ -46,14 +45,17 @@
   --largeur-global-max: 70vw;
   /* Couleurs complémentaires (180deg)
   -----------------------------------------------------------------*/
-  --couleur-premiere-lettre: #80FDFF;
-  --couleur-lien: #007D80;
+  --couleur-premiere-lettre: hsl(var(--u2), 100%, 50%);
+  --couleur-lien: hsl(var(--u2), 60%, 50%);
   /* Couleurs du bouton du header
   ------------------------------------------------------------------*/
-  --bouton-couleur1: #FFD700;
-  --bouton-couleur2: #FF8C00;
-  --bouton-couleur1-hover: #FF8C00;
-  --bouton-couleur2-hover: #FFD700;
+  --bouton-couleur1: hsl(var(--u3), 50%, 20%);
+  --bouton-couleur2: hsl(var(--u3), 25%, 45%);
+  --bouton-couleur1-hover: hsl(var(--u3), 50%, 40%);
+  --bouton-couleur2-hover: hsl(var(--u3), 40%, 60%);
+  /* Couleur diagonale
+  -----------------------------------------------------------------*/
+  --couleur-diagonale: hsl(var(--u2), 40%, 20%);
 }
 
 /* Remise a 0 
@@ -237,11 +239,10 @@ a:hover {
 }
 
 header button {
-  width: 6rem;
+  width: 10rem;
   height: 2.2rem;
-  padding: 0.5rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-top: 5rem;
+  padding: 10px 24px;
   border: none;
   box-shadow: 0.2rem 0.2rem;
   border-radius: 10px;
@@ -252,22 +253,30 @@ header button {
   background-position: center;
   background-repeat: no-repeat;
   font-size: clamp(1.125rem, 0.5rem + 2vw, 1.875rem);
-  padding: 12px 24px;
 }
 
 header button:hover {
   background-image: linear-gradient(120deg, var(--bouton-couleur1-hover), var(--bouton-couleur2-hover));
   transform: scale(1.1);
   cursor: pointer;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 header button:active {
   transform: scale(0.9);
 }
 
+.lien:hover {
+  background-color: none;
+}
+
+@media screen and (min-width: 1080px) {
+  header button {
+    margin-top: 2rem;
+  }
+}
 #entete {
-  min-height: 90vh;
+  min-height: 80vh;
   background-position: 50% 25%;
   background-image: url("images/github.png");
   background-size: cover;
@@ -284,6 +293,10 @@ header button:active {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+}
+
+.lien:hover {
+  background-color: none;
 }
 
 #entete a {
@@ -306,8 +319,9 @@ header button:active {
 -----------------------------------------------------------------*/
 @media screen and (min-width: 1080px) {
   #entete {
-    background-size: 10%;
-    background-position: 90% 50%;
+    min-height: 90vh;
+    background-size: 20%;
+    background-position: 90% 40%;
   }
 }
 /*=============================================================================
@@ -379,6 +393,10 @@ h6 {
   padding-bottom: 2rem;
 }
 
+span {
+  display: block;
+}
+
 .vague {
   position: absolute;
   bottom: 0;
@@ -429,7 +447,7 @@ h6 {
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: var(--couleur-arriere-evenements);
+  background-color: var(--couleur-diagonale);
   z-index: 1;
   transform: skewY(-5deg);
 }

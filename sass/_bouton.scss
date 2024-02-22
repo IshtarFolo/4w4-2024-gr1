@@ -7,11 +7,10 @@
 }
 
 header button{
-    width: 6rem;
+    width: 10rem;
     height: 2.2rem;
-    padding: 0.5rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-top: 5rem;
+    padding: 10px 24px;
     border: none;
     box-shadow: 0.2rem 0.2rem;
     border-radius: 10px;
@@ -22,17 +21,25 @@ header button{
     background-position: center;
     background-repeat: no-repeat;
     font-size: clamp(1.125rem, 0.5rem + 2vw, 1.875rem);
-    padding: 12px 24px;
 }
 
 header button:hover{
     background-image: linear-gradient(120deg, var(--bouton-couleur1-hover), var(--bouton-couleur2-hover));
     transform: scale(1.1);
     cursor: pointer;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 header button:active{
     transform: scale(0.9);
 }
 
+.lien:hover{
+    background-color: none;
+}
+
+@media screen and (min-width: 1080px){
+    header button{
+        margin-top: 2rem;
+    }
+}

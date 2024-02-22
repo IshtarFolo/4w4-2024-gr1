@@ -1,19 +1,4 @@
 :root {
-    /* Couleurs des arriere-plans */
-    // --couleur-arriere-entete: rgba(0, 0, 0, 0.9);
-    // --couleur-arriere-acceuil: rgba(4, 194, 4, 0.5);
-    // --couleur-arriere-evenements: rgba(27, 151, 3, 0.7);
-    // --couleur-arriere-gallerie: rgba(255, 196, 0, 0.7);
-    // --couleur-arriere-footer: rgba(0, 0, 0, 0.9);
-
-    // /* Niveaux de transparence des H */
-    // --transparence-h1: 0.4;
-    // --transparence-h2: 0.5;
-    // --transparence-h3: 0.6;
-    // --transparence-h4: 0.7;
-    // --transparence-h5: 0.8;
-    // --transparence-h6: 1;
-
     /* Calcul des teintes 
     -----------------------------------------------------------------*/
     --u1: 181; // Couleur initiale
@@ -54,13 +39,17 @@
 
     /* Couleurs complémentaires (180deg)
     -----------------------------------------------------------------*/
-    --couleur-premiere-lettre: #80FDFF;
-    --couleur-lien: #007D80;
+    --couleur-premiere-lettre: hsl(var(--u2), 100%, 50%);
+    --couleur-lien: hsl(var(--u2), 60%, 50%);
 
     /* Couleurs du bouton du header
     ------------------------------------------------------------------*/
-    --bouton-couleur1: #FFD700;
-    --bouton-couleur2: #FF8C00;
-    --bouton-couleur1-hover: #FF8C00;
-    --bouton-couleur2-hover: #FFD700;
+    --bouton-couleur1: hsl(var(--u3), 50%, 20%);
+    --bouton-couleur2: hsl(var(--u3), 25%, 45%);
+    --bouton-couleur1-hover: hsl(var(--u3), 50%, 40%);
+    --bouton-couleur2-hover: hsl(var(--u3), 40%, 60%);
+
+    /* Couleur diagonale
+    -----------------------------------------------------------------*/
+    --couleur-diagonale: hsl(var(--u2), 40%, 20%);
 }

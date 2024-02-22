@@ -272,7 +272,7 @@ a:hover {
   margin: 10px;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1080px) {
   .entete__header {
     display: block;
   }
@@ -326,7 +326,7 @@ header button:active {
   }
 }
 #entete {
-  min-height: 80vh;
+  min-height: 70vh;
   background-position: 50% 27%;
   background-image: url("images/github.png");
   background-size: cover;
@@ -389,7 +389,7 @@ h1 {
 
 h2 {
   font-weight: 500;
-  font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+  font-size: clamp(1rem, -1.292rem + 7.333vw, 3.6rem);
   z-index: 2;
   position: relative;
   color: var(--couleur-arriere-galerie);
@@ -409,7 +409,7 @@ h2 {
 
 h3 {
   font-weight: 400;
-  font-size: clamp(0.85rem, -2.969rem + 12.5vw, 4.063rem);
+  font-size: clamp(0.85rem, -2.969rem + 12.5vw, 3.45rem);
   padding-bottom: 1rem;
   color: var(--couleur-arriere-galerie);
 }
@@ -451,7 +451,6 @@ span {
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
-  margin-top: 1rem;
 }
 
 .vague svg {
@@ -503,7 +502,7 @@ span {
 @media (min-width: 1080px) {
   .diagonale::after {
     transform: skewY(-2deg);
-    height: 20vw;
+    height: 22vw;
   }
 }
 /* Lien dans l'acceuil

@@ -1,0 +1,38 @@
+/* Bouton dans le header
+----------------------------------------------------------------*/
+.conteneur-bouton{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header button{
+    width: 6rem;
+    height: 2.2rem;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    border: none;
+    box-shadow: 0.2rem 0.2rem;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: 0.3s;
+    background-image: linear-gradient(120deg, var(--bouton-couleur1), var(--bouton-couleur2));
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: clamp(1.125rem, 0.5rem + 2vw, 1.875rem);
+    padding: 12px 24px;
+}
+
+header button:hover{
+    background-image: linear-gradient(120deg, var(--bouton-couleur1-hover), var(--bouton-couleur2-hover));
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 1s;
+}
+
+header button:active{
+    transform: scale(0.9);
+}
+

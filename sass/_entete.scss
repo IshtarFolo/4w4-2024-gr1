@@ -1,8 +1,9 @@
 #entete {
+    min-height: 90vh;
+    background-position: 50% 25%;
     background-image: url("images/github.png");
     background-size: cover;
-    background-position: center;
-    background-size: 25%;
+    background-size: 40%;
     background-repeat: no-repeat;
     background-color: var(--couleur-arriere-entete);
     color: var(--couleur-entete);
@@ -33,48 +34,11 @@
     background-color: var(--couleur-arriere-galerie);
 }
 
-/* Bouton dans le header
-----------------------------------------------------------------*/
-.conteneur-bouton{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-header button{
-    width: 6rem;
-    height: 2.2rem;
-    padding: 0.5rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    background-color: var(--couleur-arriere-acceuil);
-    border: none;
-    box-shadow: 0.2rem 0.2rem;
-    border-radius: 10px;
-    transform: scale(1);
-    transition: 0.3s;
-    background-image: url("images/node_js.png");
-    background-size: 75%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-header button:hover{
-    background-color: var(--couleur-arriere-evenements);
-    transform: scale(1.1);
-    cursor: pointer;
-    transition: 1s;
-}
-
-header button:active{
-    transform: scale(0.9);
-}
-
 /* L'image du header change de position avec le viewport
 -----------------------------------------------------------------*/
 @media screen and (min-width: 1080px){
     #entete{
         background-size: 10%;
-        background-position-x: 90%;
+        background-position: 90% 50%;
     }
 }

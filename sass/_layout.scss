@@ -23,27 +23,20 @@ body {
 .global > header, 
 .global > footer {
     // flex basis pour determiner dimension de base de chaque section
-    flex: 0 1 900px;
+    flex: 0 1 1100px;
     padding: 3rem 1rem 2rem;
     min-width: var(--largeur-global-min);
     max-width: var(--largeur-global-max);
+}
+
+.global > header {
+    flex: 1;
 }
 
 /* Les Sections 
 -------------------------------------------------------------------------*/
 #entete, #footer {
     min-height: 20vh;
-}
-
-#entete {
-    background-image: url("image/github.png");
-    background-size: cover;
-    background-position: center;
-    background-size: 25%;
-    background-repeat: no-repeat;
-    background-color: var(--couleur-arriere-entete);
-    color: var(--couleur-entete);
-    position: relative;
 }
 
 #acceuil {
@@ -100,67 +93,6 @@ blockquote::first-letter{
     color: var(--couleur-premiere-lettre);
     font-size: 2rem;
     margin-right: 0.2rem;
-}
-
-/* Menu dans le header
----------------------------------------------------------------*/
-#entete ul{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
-
-#entete a {
-    width: 5rem;
-    color: var(--couleur-evenements);
-    text-decoration: none;
-    padding: 0.5rem;
-    transition: 0.3s;
-    font-size: clamp(0.813rem, 0.435rem + 1.207vw, 1.25rem);
-    display: flex;
-    justify-content: center;
-}
-
-#entete a:hover{
-    color: var(--couleur-arriere-entete);
-    background-color: var(--couleur-arriere-galerie);
-}
-
-/* Bouton dans le header
-----------------------------------------------------------------*/
-.conteneur-bouton{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-header button{
-    width: 6rem;
-    height: 2.2rem;
-    padding: 0.5rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    background-color: var(--couleur-arriere-acceuil);
-    border: none;
-    box-shadow: 0.2rem 0.2rem;
-    border-radius: 10px;
-    transform: scale(1);
-    transition: 0.3s;
-    background-image: url("image/node_js.png");
-    background-size: 75%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-header button:hover{
-    background-color: var(--couleur-arriere-evenements);
-    transform: scale(1.1);
-    cursor: pointer;
-    transition: 1s;
-}
-
-header button:active{
-    transform: scale(0.9);
 }
 
 /* Galerie divs
@@ -237,13 +169,4 @@ header button:active{
 
 a:hover{
     background-color: var(--couleur-arriere-acceuil);
-}
-
-/* L'image du header change de position avec le viewport
------------------------------------------------------------------*/
-@media screen and (min-width: 1080px){
-    #entete{
-        background-size: 10%;
-        background-position-x: 90%;
-    }
 }

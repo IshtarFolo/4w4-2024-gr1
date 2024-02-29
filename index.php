@@ -56,10 +56,22 @@
                         Norme php avec Wordpress 
                     */
                     if(have_posts()) :
-                        while(have_posts()) : the_post(); ?>
+                        while(have_posts()) : the_post(); 
+                        $titre = get_the_title();
+                        $sigle = substr($titre,0,7);
+                        $titreCours = substr($titre,7,-6);
+
+                        $debut = strpos($titre, '(');
+                        $fin = strpos($titre, ')');
+                        $longueur = $fin - $debut -1;
+
+                        $duree = substr($titre, $debut + 1, $longueur);
+                        ?>
                             <div class="carte">
-                                <h3><?php echo get_the_title(); ?></h3>  
-                                <p><?php echo wp_trim_words(get_the_content(), 20);?></p>
+                                <p><?php echo $sigle; ?></p>
+                                <h3><?php echo $titreCours; ?></h3>  
+                                <p><?php echo $duree ?></p>
+                                <p><?php echo wp_trim_words(get_the_content(), 30);?></p>
                             </div>
                         <?php endwhile; ?>            
                         <?php endif; ?>

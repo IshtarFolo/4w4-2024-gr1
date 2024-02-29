@@ -8,7 +8,6 @@
 .carte{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex: 0 1 20%;
-    border: 1px solid #aaa;
+    justify-content: space-evenly;
+    flex: 0 1 40%;
 }

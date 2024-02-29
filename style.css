@@ -225,6 +225,12 @@ header button:active {
   background-color: var(--couleur-arriere-acceuil);
 }
 
+/* Sigle du cours
+--------------------------------------------------------------*/
+.carte > p:first-child {
+  font-size: clamp(0.85rem, -2.969rem + 12.5vw, 2rem);
+}
+
 /* Texte dans la section galerie
 ---------------------------------------------------------------*/
 #galerie p {
@@ -322,7 +328,7 @@ h2 {
 
 h3 {
   font-weight: 400;
-  font-size: clamp(0.85rem, -2.969rem + 12.5vw, 4.063rem);
+  font-size: clamp(0.85rem, -2.969rem + 12.5vw, 2.7rem);
   padding-bottom: 1rem;
   color: var(--couleur-arriere-galerie);
 }
@@ -424,7 +430,6 @@ h6 {
 .carte {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex: 0 1 20%;
-  border: 1px solid #aaa;
+  justify-content: space-evenly;
+  flex: 0 1 40%;
 }/*# sourceMappingURL=style.css.map */

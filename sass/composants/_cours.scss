@@ -9,5 +9,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    flex: 0 1 40%;
+    margin-bottom: 1rem;
+    flex: 0 1 30%;
+}
+
+/* Sigle du cours
+--------------------------------------------------------------*/
+.carte>p{
+    font-size: clamp(0.8rem, -2.969rem + 12.5vw, 2rem);
+}
+
+/*
+------------------------------------------------------------*/
+.carte>p:last-child{
+    font-size: clamp(0.5rem, -2.969rem + 12.5vw, 1rem);
 }

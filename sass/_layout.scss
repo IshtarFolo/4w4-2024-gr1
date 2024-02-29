@@ -23,7 +23,7 @@ body {
 .global > header, 
 .global > footer {
     // flex basis pour determiner dimension de base de chaque section
-    flex: 0 1 900px;
+    flex: 0 1 1000px;
     padding: 3rem 1rem 2rem;
     min-width: var(--largeur-global-min);
     max-width: var(--largeur-global-max);

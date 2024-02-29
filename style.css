@@ -43,7 +43,7 @@
   /* Largeur de la zone centrale 
   -----------------------------------------------------------------*/
   --largeur-global-min: 10vw;
-  --largeur-global-max: 70vw;
+  --largeur-global-max: 80vw;
   /* Couleurs complémentaires (180deg)
   -----------------------------------------------------------------*/
   --couleur-premiere-lettre: #80FDFF;
@@ -74,7 +74,7 @@ body {
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 900px;
+  flex: 0 1 1000px;
   padding: 3rem 1rem 2rem;
   min-width: var(--largeur-global-min);
   max-width: var(--largeur-global-max);
@@ -328,7 +328,7 @@ h2 {
 
 h3 {
   font-weight: 400;
-  font-size: clamp(0.85rem, -2.969rem + 12.5vw, 2.7rem);
+  font-size: clamp(0.85rem, -2.969rem + 12.5vw, 2.9rem);
   padding-bottom: 1rem;
   color: var(--couleur-arriere-galerie);
 }
@@ -431,5 +431,18 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  flex: 0 1 40%;
+  margin-bottom: 1rem;
+  flex: 0 1 30%;
+}
+
+/* Sigle du cours
+--------------------------------------------------------------*/
+.carte > p {
+  font-size: clamp(0.8rem, -2.969rem + 12.5vw, 2rem);
+}
+
+/*
+------------------------------------------------------------*/
+.carte > p:last-child {
+  font-size: clamp(0.5rem, -2.969rem + 12.5vw, 1rem);
 }/*# sourceMappingURL=style.css.map */

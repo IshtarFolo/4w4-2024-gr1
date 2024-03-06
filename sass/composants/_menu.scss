@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
     background-color: var(--couleur-arriere-menu);
     color: var(--couleur-menu);
 }
@@ -21,7 +20,6 @@
 }
 
 .menu-item { //li
-    margin: 1rem;
     border-radius: 5px;
     background-color: var(--couleur-arriere-menu);
     font-size: clamp(0.5rem, 0.313rem + 1vw, 1rem);
@@ -31,6 +29,7 @@
 }
 
 .menu-item a { //li a
+    margin: 1rem;
     text-decoration: none;
     color: var(--couleur-menu);
 }

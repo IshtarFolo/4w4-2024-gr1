@@ -425,7 +425,6 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
   background-color: var(--couleur-arriere-menu);
   color: var(--couleur-menu);
 }
@@ -444,7 +443,6 @@ h6 {
 }
 
 .menu-item {
-  margin: 1rem;
   border-radius: 5px;
   background-color: var(--couleur-arriere-menu);
   font-size: clamp(0.5rem, 0.313rem + 1vw, 1rem);
@@ -454,6 +452,7 @@ h6 {
 }
 
 .menu-item a {
+  margin: 1rem;
   text-decoration: none;
   color: var(--couleur-menu);
 }

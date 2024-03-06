@@ -30,29 +30,12 @@ body {
 
 .global > .entete__header{
     flex: 1;
+    position: relative;
+    margin-bottom: 1rem;
 } 
 
 /* Les Sections 
 -------------------------------------------------------------------------*/
-#entete, #footer {
-    min-height: 20vh;
-}
-
-// #menu {
-    
-// }
-
-#entete {
-    background-image: url("image/github.png");
-    background-size: cover;
-    background-position: center;
-    background-size: 25%;
-    background-repeat: no-repeat;
-    background-color: var(--couleur-arriere-entete);
-    color: var(--couleur-entete);
-    position: relative;
-}
-
 #acceuil {
     background-color: var(--couleur-arriere-acceuil);
     color: var(--couleur-evenements);
@@ -68,11 +51,13 @@ body {
     background-color: var(--couleur-arriere-galerie);
     color: var(--couleur-galerie);
     position: relative;
+    padding-bottom: 1rem;
 }
 
 #footer {
     background-color: var(--couleur-arriere-footer);
     color: var(--couleur-footer);
+    min-height: 20vh;
 }
 
 #footer p{
@@ -107,30 +92,6 @@ blockquote::first-letter{
     color: var(--couleur-premiere-lettre);
     font-size: 2rem;
     margin-right: 0.2rem;
-}
-
-/* Menu dans le header
----------------------------------------------------------------*/
-#entete ul{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
-
-#entete a {
-    width: 5rem;
-    color: var(--couleur-evenements);
-    text-decoration: none;
-    padding: 0.5rem;
-    transition: 0.3s;
-    font-size: clamp(0.813rem, 0.435rem + 1.207vw, 1.25rem);
-    display: flex;
-    justify-content: center;
-}
-
-#entete a:hover{
-    color: var(--couleur-arriere-entete);
-    background-color: var(--couleur-arriere-galerie);
 }
 
 /* Bouton dans le header

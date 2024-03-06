@@ -7,8 +7,6 @@
     <title>Thème du groupe 1</title>
 
     <!-- Php pour refaire le lien avec stylesheets -->
-    <!-- <link rel="stylesheet" href="http://localhost:8080/4w4-xavier/wp-content/themes/4w4-2024-gr1/normalize.css">
-    <link rel="stylesheet" href="http://localhost:8080/4w4-xavier/wp-content/themes/4w4-2024-gr1/style.css"> -->
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,17 +17,30 @@
 <body>
     <!-- HEADER -->
     <div id="entete" class="global">
-        <header>
-            <ul>
-                <a href="#">Header</a>
-                <a href="#acceuil">Acceuil</a>
-                <a href="#evenements">Évènements</a>
-                <a href="#galerie">Galerie</a>
-                <a href="#footer">Footer</a>
-            </ul>
+        <div id="menu" class="global">
+            <header class="menu__header">
+                <nav class="menu-principal-container">
+                    <ul id="menu-principal" class="menu"><li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33"><a href="http://localhost:8080/4w4-xavier/index.php/2020/10/07/582-3c1-design-dinteractivite-75h/">Design d’interactivité</a></li>
+                        <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-34"><a href="http://localhost:8080/4w4-xavier/index.php/2020/10/07/582-3m5imagerie-3d-75h/">Imagerie 3D</a></li>
+                        <li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-35"><a href="http://localhost:8080/4w4-xavier/index.php/2020/10/07/582-2j2creation-de-jeu-2d-60h/">Création de jeu 2D</a></li>
+                        <li id="menu-item-36" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36"><a href="#acceuil">Acceuil</a></li>
+                        <li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a href="#evenements">Évènements</a></li>
+                        <li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38"><a href="#footer">Pied de page</a></li>
+                    </ul>
+                </nav> 
+                <!-- <ul>
+                    <a href="#">Header</a>
+                    <a href="#acceuil">Acceuil</a>
+                    <a href="#evenements">Évènements</a>
+                    <a href="#galerie">Galerie</a>
+                    <a href="#footer">Footer</a>
+                </ul> -->
+            </header>
+        </div>
+        <section class="entete__header">
             <h1>Thème du groupe 1 (h1)</h1>
-            <button></button>
-        </header>
+            <button class="bouton__header"></button>
+        </section>
         <!-- Vague -->
         <div class="vague">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -49,134 +60,134 @@
                                             <div class="carte">
                                 <p>582-1M1</p>
                                 <h3> Création vidéo</h3>  
-                                <p>75h</p>
-                                <p>3-2-3 2,67 unités Aucun préalable. Ce cours initie l’étudiant au traitement des images en mouvement, au traitement du son ainsi qu'aux bases de la scénarisation linéaire. L’étudiant apprend à utiliser…</p>
+                                <p>3-2-3 2,67 unités Aucun préalable. Ce cours initie l’étudiant au…</p>
+                                <p>Durée: 75h</p>
                             </div>
                                                     <div class="carte">
                                 <p>582-4C2</p>
                                 <h3> Gestion de projets multimédias</h3>  
-                                <p>45h</p>
-                                <p>Ce cours initie l'étudiant aux rudiments de la gestion d’un projet multimédia. L’étudiant apprend à analyser les besoins liés à la réalisation du projet en termes de ressources humaines, matérielles…</p>
+                                <p>Ce cours initie l'étudiant aux rudiments de la gestion d’un…</p>
+                                <p>Durée: 45h</p>
                             </div>
                                                     <div class="carte">
                                 <p>582-4W4</p>
                                 <h3> Conception d’interfaces et développement Web</h3>  
-                                <p>90h</p>
-                                <p>Dans ce cours, l’étudiant poursuit son apprentissage de l’intégration de sites Web dynamiques à l’aide d’un gestionnaire de contenu. L’étudiant apprend à développer par programmation des thèmes personnalisés pour répondre…</p>
+                                <p>Dans ce cours, l’étudiant poursuit son apprentissage de l’intégration de…</p>
+                                <p>Durée: 90h</p>
                             </div>
                                                     <div class="carte">
                                 <p>582-4J4</p>
                                 <h3> Création de jeu en équipe </h3>  
-                                <p>105h</p>
-                                <p>Dans ce cours qui s'appuie sur une pédagogie par projets, l’étudiant réalise un projet d’envergure en équipe de travail. C’est l’occasion pour l’étudiant d’appliquer et d’intégrer l’ensemble des compétences acquises…</p>
+                                <p>Dans ce cours qui s'appuie sur une pédagogie par projets,…</p>
+                                <p>Durée: 105h</p>
                             </div>
                                                     <div class="carte">
                                 <p>582-4PA</p>
                                 <h3> Interfaces Web réactives et animées &#8211; Cours au choix</h3>  
-                                <p>75h</p>
-                                <p>En session 4, l'étudiant doit choisir entre ce cours et le cours Animation 3D. Dans ce cours, l'étudiant ayant un intérêt plus marqué pour la programmation a la possibilité d'approfondir…</p>
+                                <p>En session 4, l'étudiant doit choisir entre ce cours et…</p>
+                                <p>Durée: 75h</p>
                             </div>
                                                     <div class="carte">
                                 <p>582-4MB</p>
                                 <h3> Animation 3D</h3>  
-                                <p>75h</p>
-                                <p>En session 4, l'étudiant doit choisir entre ce cours et le cours Interfaces Web réactives et animées. Ce cours a pour but de permettre à l’étudiant d’approfondir les notions acquises…</p>
+                                <p>En session 4, l'étudiant doit choisir entre ce cours et…</p>
+                                <p>Durée: 75h</p>
                             </div>
                                                     <div class="carte">
                                 <p>393-5E1</p>
                                 <h3> Méthodes de recherche et préparation au marché du travail</h3>  
-                                <p>45h</p>
-                                <p>Ce cours permet à l’étudiant d'acquérir des habiletés en recherche, en organisation et en transmission d’informations numériques. L'étudiant est initié aux notions de base liées à la veille informationnelle et…</p>
+                                <p>Ce cours permet à l’étudiant d'acquérir des habiletés en recherche,…</p>
+                                <p>Durée: 45h</p>
                             </div>
                                                     <div class="carte">
                                 <p>350-5N1</p>
                                 <h3> Communication et dynamique d’une équipe de travail</h3>  
-                                <p>45h</p>
-                                <p>Ce cours permet à l’étudiant de développer ses habiletés en matière de communication interpersonnelle et de mieux interagir dans une équipe multimédia. L’étudiant est appelé à développer sa capacité́ à…</p>
+                                <p>Ce cours permet à l’étudiant de développer ses habiletés en…</p>
+                                <p>Durée: 45h</p>
                             </div>
                                                     <div class="carte">
                                 <p>582-5W5</p>
                                 <h3>	Projet Web en équipe </h3>  
-                                <p>105h</p>
-                                <p>Préalable relatif : Conception d’interfaces et développement Web Dans ce cours, qui s'appuie sur une pédagogie par projets, l’étudiant participe à la réalisation d’un produit multimédia en ligne pour un…</p>
+                                <p>Préalable relatif : Conception d’interfaces et développement Web Dans ce…</p>
+                                <p>Durée: 105h</p>
                             </div>
                                                     <div class="carte">
                                 <p>582-5MB</p>
                                 <h3>	Technologies émergentes et avancées – volet Création</h3>  
-                                <p>60h</p>
-                                <p>En session 5, l'étudiant doit choisir entre ce cours et le cours Technologies émergentes et avancées – volet Programmation. Dans ce cours, l’étudiant davantage intéressé par les aspects créatifs du…</p>
+                                <p>En session 5, l'étudiant doit choisir entre ce cours et…</p>
+                                <p>Durée: 60h</p>
                             </div>
                                                     <div class="carte">
                                 <p>582-3J3</p>
                                 <h3> Création de jeu 3D</h3>  
-                                <p>75h</p>
-                                <p>Ce cours permet à l'étudiant d'intégrer différents types de médias à l'aide des fonctionnalités d'un logiciel d'intégration 3D. L'étudiant est amené à contrôler et à animer les éléments d'une application…</p>
+                                <p>Ce cours permet à l'étudiant d'intégrer différents types de médias…</p>
+                                <p>Durée: 75h</p>
                             </div>
                                                     <div class="carte">
                                 <p>582-3W3</p>
                                 <h3> Création de sites Web dynamiques</h3>  
-                                <p>90h</p>
-                                <p>Dans ce cours, les notions acquises dans les cours « 582-1W1 : Mise en page Web » et « 582-2W2 : Animation et interactivité Web » sont approfondies et complétées…</p>
+                                <p>Dans ce cours, les notions acquises dans les cours «…</p>
+                                <p>Durée: 90h</p>
                             </div>
                                                     <div class="carte">
                                 <p>582-1M2</p>
                                 <h3> Conception graphique et imagerie matricielle</h3>  
-                                <p>90h</p>
-                                <p>Ce cours initie l'étudiant aux rudiments de la conception et de la communication graphique ainsi qu'au traitement des images fixes matricielles. On y aborde les notions de base sur le…</p>
+                                <p>Ce cours initie l'étudiant aux rudiments de la conception et…</p>
+                                <p>Durée: 90h</p>
                             </div>
                                                     <div class="carte">
                                 <p>582-1W1</p>
                                 <h3> Mise en page Web</h3>  
-                                <p>75h</p>
-                                <p>Dans ce cours, l'étudiant apprend les techniques de mise en page Web en utilisant les langages de balisage et de feuilles de styles. L'étudiant apprend également à analyser et schématiser…</p>
+                                <p>Dans ce cours, l'étudiant apprend les techniques de mise en…</p>
+                                <p>Durée: 75h</p>
                             </div>
                                                     <div class="carte">
                                 <p>582-1J1</p>
                                 <h3> Animation et interactivité en jeu</h3>  
-                                <p>75h</p>
-                                <p>Ce cours est consacré aux concepts de base nécessaires à la création d’un jeu numérique. Le cours porte, d’une part, sur l’animation des médias : l’étudiant y apprend à importer…</p>
+                                <p>Ce cours est consacré aux concepts de base nécessaires à…</p>
+                                <p>Durée: 75h</p>
                             </div>
                                                     <div class="carte">
                                 <p>582-2M3</p>
                                 <h3> Effets spéciaux et animation</h3>  
-                                <p>60h</p>
-                                <p>Ce cours permet d'approfondir la formation de l’étudiant en matière de traitement d’images en mouvement et de traitement sonore. L’étudiant poursuit son apprentissage des techniques de prise de vues avec…</p>
+                                <p>Ce cours permet d'approfondir la formation de l’étudiant en matière…</p>
+                                <p>Durée: 60h</p>
                             </div>
                                                     <div class="carte">
                                 <p>582-2M4</p>
                                 <h3> Conception graphique et imagerie vectorielle</h3>  
-                                <p>90h</p>
-                                <p>Dans ce cours, l’étudiant poursuit l’apprentissage des notions liées à la conception, à la communication graphique et au traitement des images fixes vectorielles. L'étudiant développe un concept créatif décliné en…</p>
+                                <p>Dans ce cours, l’étudiant poursuit l’apprentissage des notions liées à…</p>
+                                <p>Durée: 90h</p>
                             </div>
                                                     <div class="carte">
                                 <p>582-2W2</p>
                                 <h3>	Animation et interactivité Web</h3>  
-                                <p>75h</p>
-                                <p>Ce cours permet à l'étudiant d'acquérir les compétences de base requises pour programmer l'interactivité de l'interface-utilisateur d'une application multimédia en ligne. Les notions abordées dans les cours « 582-1W1 Mise…</p>
+                                <p>Ce cours permet à l'étudiant d'acquérir les compétences de base…</p>
+                                <p>Durée: 75h</p>
                             </div>
                                                     <div class="carte">
                                 <p>582-2J2</p>
                                 <h3>	Création de jeu 2D</h3>  
-                                <p>60h</p>
-                                <p>Dans ce cours, l’étudiant approfondit la programmation graphique et s’initie aux concepts de base d'un moteur de jeu. Le cours permet d'approfondir la maîtrise de la structure d'affichage ainsi que…</p>
+                                <p>Dans ce cours, l’étudiant approfondit la programmation graphique et s’initie…</p>
+                                <p>Durée: 60h</p>
                             </div>
                                                     <div class="carte">
                                 <p>582-3M5</p>
                                 <h3>	Imagerie 3D</h3>  
-                                <p>75h</p>
-                                <p>Dans ce cours, l’étudiant est initié au monde de l’imagerie de synthèse. Il est amené à maîtriser les outils et les fonctionnalités de base d’un logiciel de production 3D pour…</p>
+                                <p>Dans ce cours, l’étudiant est initié au monde de l’imagerie…</p>
+                                <p>Durée: 75h</p>
                             </div>
                                                     <div class="carte">
                                 <p>582-3C1</p>
                                 <h3> Design d’interactivité</h3>  
-                                <p>75h</p>
-                                <p>L’étudiant apprend à concevoir des expériences interactives en plaçant les besoins de l’utilisateur au cœur de sa création. Ce cours transpose les techniques de conception et de communication graphique dans…</p>
+                                <p>L’étudiant apprend à concevoir des expériences interactives en plaçant les…</p>
+                                <p>Durée: 75h</p>
                             </div>
                                                     <div class="carte">
                                 <p>582-6N3</p>
                                 <h3> Stage </h3>  
-                                <p>285h</p>
-                                <p>Le stage en entreprise complète la formation de l’étudiant en lui permettant d'intégrer et de mettre en application ses différents acquis dans le milieu professionnel. L’étudiant joint une véritable équipe…</p>
+                                <p>Le stage en entreprise complète la formation de l’étudiant en…</p>
+                                <p>Durée: 285h</p>
                             </div>
                                     
                                             </div>

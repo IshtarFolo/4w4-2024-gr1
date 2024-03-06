@@ -1,0 +1,19 @@
+
+#entete {
+    background-image: url("image/github.png");
+    background-size: cover;
+    background-position: center;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-color: var(--couleur-arriere-entete);
+    color: var(--couleur-entete);
+    position: relative;
+    flex-direction: column;
+    min-height: 20vh;
+}
+
+#entete a:hover{
+    color: var(--couleur-arriere-entete);
+    background-color: var(--couleur-arriere-galerie);
+    transition: 1s;
+}

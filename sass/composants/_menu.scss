@@ -1,0 +1,36 @@
+.menu__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--couleur-arriere-menu);
+    color: var(--couleur-menu);
+}
+
+.menu-principal-container { //nav
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu { //ul
+    list-style: none;
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: center;
+}
+
+.menu-item { //li
+    margin: 1rem;
+    border-radius: 5px;
+    background-color: var(--couleur-arriere-menu);
+    font-size: clamp(0.5rem, 0.313rem + 1vw, 1rem);
+    text-align: center;
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.menu-item a { //li a
+    text-decoration: none;
+    color: var(--couleur-menu);
+}

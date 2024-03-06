@@ -18,7 +18,7 @@
     <div id="entete" class="global">
         <div id="menu" class="global">
             <header class="menu__header">
-                <?php wp_nav_menu(;) ?> 
+                <?php wp_nav_menu(array("container" => "nav")); ?> 
                 <!-- <ul>
                     <a href="#">Header</a>
                     <a href="#acceuil">Acceuil</a>

@@ -16,17 +16,22 @@
 <body>
     <!-- HEADER -->
     <div id="entete" class="global">
-        <header>
-            <ul>
-                <a href="#">Header</a>
-                <a href="#acceuil">Acceuil</a>
-                <a href="#evenements">Évènements</a>
-                <a href="#galerie">Galerie</a>
-                <a href="#footer">Footer</a>
-            </ul>
+        <div id="menu" class="global">
+            <header class="menu__header">
+                <?php wp_nav_menu(;) ?> 
+                <!-- <ul>
+                    <a href="#">Header</a>
+                    <a href="#acceuil">Acceuil</a>
+                    <a href="#evenements">Évènements</a>
+                    <a href="#galerie">Galerie</a>
+                    <a href="#footer">Footer</a>
+                </ul> -->
+            </header>
+        </div>
+        <section class="entete__header">
             <h1>Thème du groupe 1 (h1)</h1>
-            <button></button>
-        </header>
+            <button class="bouton__header"></button>
+        </section>
         <!-- Vague -->
         <div class="vague">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -57,21 +62,21 @@
                     */
                     if(have_posts()) :
                         while(have_posts()) : the_post(); 
-                        $titre = get_the_title();
-                        $sigle = substr($titre,0,7);
-                        $titreCours = substr($titre,7,-6);
+                            $titre = get_the_title();
+                            $sigle = substr($titre,0,7);
+                            $titreCours = substr($titre,7,-6);
 
-                        $debut = strpos($titre, '(');
-                        $fin = strpos($titre, ')');
-                        $longueur = $fin - $debut -1;
+                            $debut = strpos($titre, '(');
+                            $fin = strpos($titre, ')');
+                            $longueur = $fin - $debut -1;
 
-                        $duree = substr($titre, $debut + 1, $longueur);
+                            $duree = substr($titre, $debut + 1, $longueur);
                         ?>
                             <div class="carte">
                                 <p><?php echo $sigle; ?></p>
                                 <h3><?php echo $titreCours; ?></h3>  
-                                <p><?php echo $duree ?></p>
-                                <p><?php echo wp_trim_words(get_the_content(), 30);?></p>
+                                <p><?php echo wp_trim_words(get_the_content(), 10);?></p>
+                                <p>Durée: <?php echo $duree ?></p>
                             </div>
                         <?php endwhile; ?>            
                         <?php endif; ?>

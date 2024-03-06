@@ -2,24 +2,26 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 1rem;
+    gap: 1rem;   
 }
 
 .carte{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    margin-bottom: 1rem;
-    flex: 0 1 30%;
+    justify-content: center;
+    flex: 1  0 calc(900px/4);
+    border : 1px solid #aaa;
+    background-color: var(--_couleur-arriere);
+    padding: 1rem;
 }
-
 /* Sigle du cours
 --------------------------------------------------------------*/
 .carte>p{
-    font-size: clamp(0.8rem, -2.969rem + 12.5vw, 2rem);
+    font-size: clamp(0.8rem, -2.969rem + 12.5vw, 1.5rem);
+    margin-bottom: 0.5rem;
 }
 
-/*
+/* Description du cours
 ------------------------------------------------------------*/
 .carte>p:last-child{
     font-size: clamp(0.5rem, -2.969rem + 12.5vw, 1rem);

@@ -48,6 +48,11 @@
   -----------------------------------------------------------------*/
   --couleur-premiere-lettre: #80FDFF;
   --couleur-lien: #007D80;
+  /* Couleur des cartes
+  ------------------------------------------------------------------*/
+}
+:root .carte {
+  --_couleur-arriere: hsl(var(--u1),100%, 85% );
 }
 
 /* Remise a 0 
@@ -68,7 +73,6 @@ body {
 .global {
   display: flex;
   justify-content: center;
-  min-height: 40vh;
 }
 
 .global > section,
@@ -78,6 +82,10 @@ body {
   padding: 3rem 1rem 2rem;
   min-width: var(--largeur-global-min);
   max-width: var(--largeur-global-max);
+}
+
+.global > .entete__header {
+  flex: 1;
 }
 
 /* Les Sections 
@@ -179,7 +187,7 @@ blockquote::first-letter {
 
 /* Bouton dans le header
 ----------------------------------------------------------------*/
-header button {
+section > .bouton__header {
   width: 6rem;
   height: 2.2rem;
   padding: 0.5rem;
@@ -197,14 +205,14 @@ header button {
   background-repeat: no-repeat;
 }
 
-header button:hover {
+.bouton__header:hover {
   background-color: var(--couleur-arriere-evenements);
   transform: scale(1.1);
   cursor: pointer;
   transition: 1s;
 }
 
-header button:active {
+.bouton__header:active {
   transform: scale(0.9);
 }
 
@@ -327,6 +335,10 @@ h3 {
   color: var(--couleur-arriere-galerie);
 }
 
+.carte > h3 {
+  font-size: clamp(0.85rem, -2.969rem + 12.5vw, 2rem);
+}
+
 h4 {
   font-weight: 300;
   font-size: clamp(0.6rem, -3.156rem + 12.5vw, 2.875rem);
@@ -424,18 +436,21 @@ h6 {
 .carte {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  margin-bottom: 1rem;
-  flex: 0 1 30%;
+  justify-content: center;
+  flex: 1 0 225px;
+  border: 1px solid #aaa;
+  background-color: var(--_couleur-arriere);
+  padding: 1rem;
 }
 
 /* Sigle du cours
 --------------------------------------------------------------*/
 .carte > p {
-  font-size: clamp(0.8rem, -2.969rem + 12.5vw, 2rem);
+  font-size: clamp(0.8rem, -2.969rem + 12.5vw, 1.5rem);
+  margin-bottom: 0.5rem;
 }
 
-/*
+/* Description du cours
 ------------------------------------------------------------*/
 .carte > p:last-child {
   font-size: clamp(0.5rem, -2.969rem + 12.5vw, 1rem);

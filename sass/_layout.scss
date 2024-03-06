@@ -16,7 +16,6 @@ body {
 .global {
     display: flex;
     justify-content: center;
-    min-height: 40vh;
 }
 
 .global > section, 
@@ -29,11 +28,19 @@ body {
     max-width: var(--largeur-global-max);
 }
 
+.global > .entete__header{
+    flex: 1;
+} 
+
 /* Les Sections 
 -------------------------------------------------------------------------*/
 #entete, #footer {
     min-height: 20vh;
 }
+
+// #menu {
+    
+// }
 
 #entete {
     background-image: url("image/github.png");
@@ -128,7 +135,7 @@ blockquote::first-letter{
 
 /* Bouton dans le header
 ----------------------------------------------------------------*/
-header button{
+section > .bouton__header{
     width: 6rem;
     height: 2.2rem;
     padding: 0.5rem;
@@ -146,14 +153,14 @@ header button{
     background-repeat: no-repeat;
 }
 
-header button:hover{
+.bouton__header:hover{
     background-color: var(--couleur-arriere-evenements);
     transform: scale(1.1);
     cursor: pointer;
     transition: 1s;
 }
 
-header button:active{
+.bouton__header:active{
     transform: scale(0.9);
 }
 

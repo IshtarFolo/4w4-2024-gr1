@@ -27,7 +27,7 @@
     transform: translateX(300%);
     transition: 1s transform ease-in-out;
     background-color: var(--couleur-arriere-menu);
-
+    border: 4px solid var(--couleur-menu);
 
     // Fullscreen
     @media (min-width: 700px) {
@@ -39,18 +39,23 @@
 }
 
 .menu-item { //li
-    border-radius: 5px;
     font-size: clamp(0.5rem, 0.313rem + 1vw, 1rem);
     text-align: center;
     display: flex;
     flex: 1 1 auto;
 }
 
+// Hover sur les boutons du menu
+.menu-item:hover {
+    background-color: var(--couleur-menu);
+    transition: 1s background-color ease-in-out;
+}
+
 .menu-item a { //li a
     margin: 1rem;
     padding: 0.5rem;
     text-decoration: none;
-    color: var(--couleur-menu);
+    color: var(--couleur-texte-menu);
 }
 
 /* Gestion du label #burger l'image svg contenue dans un label

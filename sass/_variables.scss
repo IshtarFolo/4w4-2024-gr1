@@ -25,6 +25,7 @@
     /* Couleurs d'avant-plan 
     -----------------------------------------------------------------*/
     --couleur-entete: hsl(var(--u1), 100%, 30%);
+    --couleur-menu: hsl(var(--u1), 100%, 20%);
     --couleur-acceuil: hsl(var(--u2), 100%, 25%);
     --couleur-evenements: hsl(var(--u3), 100%, 15%);
     --couleur-galerie: hsl(var(--u4), 100%, 10%);
@@ -42,6 +43,7 @@
     -----------------------------------------------------------------*/
     --couleur-premiere-lettre: #80FDFF;
     --couleur-lien: #007D80;
+    --couleur-texte-menu: hsl(var(--u1), 60%, 10%);
 
     /* ======================
      *   VARIABLES LOCALES  *

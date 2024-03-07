@@ -1,3 +1,5 @@
+
+<!-- Importation du header.php -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,8 +9,8 @@
     <title>Thème du groupe 1</title>
 
     <!-- Php pour refaire le lien avec stylesheets -->
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://localhost:8080/4w4-xavier/wp-content/themes/4w4-2024-gr1/normalize.css">
+    <link rel="stylesheet" href="http://localhost:8080/4w4-xavier/wp-content/themes/4w4-2024-gr1/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet">
@@ -18,265 +20,236 @@
     <!-- HEADER -->
     <div id="entete" class="global">
         <div id="menu__entete" class="global">
+            <!-- Btn-burger ici! -->
+            <!-- 
+    Gabarit du bouton  burger 
+ -->
+<input type="checkbox" name="" id="chk_burger">
+<label for="chk_burger" id="burger">
+    <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#000">
+        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+    </svg>
+</label> 
+            <!-- Fin btn-burger -->
             <header class="menu__header">
-                <nav class="menu-principal-container">
-                    <ul id="menu-principal" class="menu">
-                        <li id="menu-item-41"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"><a
-                                href="#">Entête</a></li>
-                        <li id="menu-item-36"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36"><a
-                                href="#acceuil">Acceuil</a></li>
-                        <li id="menu-item-37"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a
-                                href="#evenements">Évènements</a></li>
-                        <li id="menu-item-40"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40"><a
-                                href="#galerie">Galerie</a></li>
-                        <li id="menu-item-38"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38"><a
-                                href="#footer">Pied de page</a></li>
-                        <li id="menu-item-33"
-                            class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33"><a
-                                href="http://localhost:8080/4w4-xavier/index.php/2020/10/07/582-3c1-design-dinteractivite-75h/">Design
-                                d’interactivité</a></li>
-                        <li id="menu-item-34"
-                            class="menu-item menu-item-type-post_type menu-item-object-post menu-item-34"><a
-                                href="http://localhost:8080/4w4-xavier/index.php/2020/10/07/582-3m5imagerie-3d-75h/">Imagerie
-                                3D</a></li>
-                        <li id="menu-item-35"
-                            class="menu-item menu-item-type-post_type menu-item-object-post menu-item-35"><a
-                                href="http://localhost:8080/4w4-xavier/index.php/2020/10/07/582-2j2creation-de-jeu-2d-60h/">Création
-                                de jeu 2D</a></li>
-                    </ul>
-                </nav>
-                <!-- <ul>
-                    <a href="#">Header</a>
-                    <a href="#acceuil">Acceuil</a>
-                    <a href="#evenements">Évènements</a>
-                    <a href="#galerie">Galerie</a>
-                    <a href="#footer">Footer</a>
-                </ul> -->
-            </header>
+                <nav class="menu-principal-container"><ul id="menu-principal" class="menu"><li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"><a href="#">Entête</a></li>
+<li id="menu-item-36" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36"><a href="#acceuil">Acceuil</a></li>
+<li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37"><a href="#evenements">Évènements</a></li>
+<li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-40"><a href="#galerie">Galerie</a></li>
+<li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38"><a href="#footer">Pied de page</a></li>
+<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-33"><a href="http://localhost:8080/4w4-xavier/index.php/2020/10/07/582-3c1-design-dinteractivite-75h/">Design d’interactivité</a></li>
+<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-34"><a href="http://localhost:8080/4w4-xavier/index.php/2020/10/07/582-3m5imagerie-3d-75h/">Imagerie 3D</a></li>
+<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-35"><a href="http://localhost:8080/4w4-xavier/index.php/2020/10/07/582-2j2creation-de-jeu-2d-60h/">Création de jeu 2D</a></li>
+<li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-43"><a href="http://localhost:8080/4w4-xavier/index.php/2020/10/07/582-4mb-animation-3d-75h/">Animation 3D</a></li>
+<li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-44"><a href="http://localhost:8080/4w4-xavier/index.php/2020/10/07/582-3j3-creation-de-jeu-3d-75h/">Création de jeu 3D</a></li>
+</ul></nav>            </header>
         </div>
-        <section class="entete__header">
-            <h1>Thème du groupe 1 (h1)</h1>
-            <button class="bouton__header"></button>
+<!-- Début du site sous le menu principal -->
+<section class="entete__header">
+    <h1>Thème du groupe 1 (h1)</h1>
+    <button class="bouton__header"></button>
+</section>
+<!-- Vague ici! -->
+<!-- 
+    Gabarit de base pour la création de vagues entre le header et l'acceuil et la galerie et le footer 
+ -->
+<div class="vague">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="remplissage"></path>
+    </svg>
+</div><!-- Fin de la vague -->
+</div>
+<!-- FIN HEADER -->
+
+<div id="acceuil" class="global">
+    <section>
+        <h2>Acceuil (h2)</h2>
+        <h3>test h3</h3>
+        <div class="cours">
+            <!-- Boucle php pour afficher articles dans la table posts à partir de la base de données -->
+                                <div class="carte">
+                        <p>582-1M1</p>
+                        <h3> Création vidéo</h3>
+                        <p>3-2-3 2,67 unités Aucun préalable. Ce cours initie l’étudiant au…</p>
+                        <p>Durée: 75h</p>
+                    </div>
+                                    <div class="carte">
+                        <p>582-4C2</p>
+                        <h3> Gestion de projets multimédias</h3>
+                        <p>Ce cours initie l'étudiant aux rudiments de la gestion d’un…</p>
+                        <p>Durée: 45h</p>
+                    </div>
+                                    <div class="carte">
+                        <p>582-4W4</p>
+                        <h3> Conception d’interfaces et développement Web</h3>
+                        <p>Dans ce cours, l’étudiant poursuit son apprentissage de l’intégration de…</p>
+                        <p>Durée: 90h</p>
+                    </div>
+                                    <div class="carte">
+                        <p>582-4J4</p>
+                        <h3> Création de jeu en équipe </h3>
+                        <p>Dans ce cours qui s'appuie sur une pédagogie par projets,…</p>
+                        <p>Durée: 105h</p>
+                    </div>
+                                    <div class="carte">
+                        <p>582-4PA</p>
+                        <h3> Interfaces Web réactives et animées &#8211; Cours au choix</h3>
+                        <p>En session 4, l'étudiant doit choisir entre ce cours et…</p>
+                        <p>Durée: 75h</p>
+                    </div>
+                                    <div class="carte">
+                        <p>582-4MB</p>
+                        <h3> Animation 3D</h3>
+                        <p>En session 4, l'étudiant doit choisir entre ce cours et…</p>
+                        <p>Durée: 75h</p>
+                    </div>
+                                    <div class="carte">
+                        <p>393-5E1</p>
+                        <h3> Méthodes de recherche et préparation au marché du travail</h3>
+                        <p>Ce cours permet à l’étudiant d'acquérir des habiletés en recherche,…</p>
+                        <p>Durée: 45h</p>
+                    </div>
+                                    <div class="carte">
+                        <p>350-5N1</p>
+                        <h3> Communication et dynamique d’une équipe de travail</h3>
+                        <p>Ce cours permet à l’étudiant de développer ses habiletés en…</p>
+                        <p>Durée: 45h</p>
+                    </div>
+                                    <div class="carte">
+                        <p>582-5W5</p>
+                        <h3>	Projet Web en équipe </h3>
+                        <p>Préalable relatif : Conception d’interfaces et développement Web Dans ce…</p>
+                        <p>Durée: 105h</p>
+                    </div>
+                                    <div class="carte">
+                        <p>582-5MB</p>
+                        <h3>	Technologies émergentes et avancées – volet Création</h3>
+                        <p>En session 5, l'étudiant doit choisir entre ce cours et…</p>
+                        <p>Durée: 60h</p>
+                    </div>
+                                    <div class="carte">
+                        <p>582-3J3</p>
+                        <h3> Création de jeu 3D</h3>
+                        <p>Ce cours permet à l'étudiant d'intégrer différents types de médias…</p>
+                        <p>Durée: 75h</p>
+                    </div>
+                                    <div class="carte">
+                        <p>582-3W3</p>
+                        <h3> Création de sites Web dynamiques</h3>
+                        <p>Dans ce cours, les notions acquises dans les cours «…</p>
+                        <p>Durée: 90h</p>
+                    </div>
+                                    <div class="carte">
+                        <p>582-1M2</p>
+                        <h3> Conception graphique et imagerie matricielle</h3>
+                        <p>Ce cours initie l'étudiant aux rudiments de la conception et…</p>
+                        <p>Durée: 90h</p>
+                    </div>
+                                    <div class="carte">
+                        <p>582-1W1</p>
+                        <h3> Mise en page Web</h3>
+                        <p>Dans ce cours, l'étudiant apprend les techniques de mise en…</p>
+                        <p>Durée: 75h</p>
+                    </div>
+                                    <div class="carte">
+                        <p>582-1J1</p>
+                        <h3> Animation et interactivité en jeu</h3>
+                        <p>Ce cours est consacré aux concepts de base nécessaires à…</p>
+                        <p>Durée: 75h</p>
+                    </div>
+                                    <div class="carte">
+                        <p>582-2M3</p>
+                        <h3> Effets spéciaux et animation</h3>
+                        <p>Ce cours permet d'approfondir la formation de l’étudiant en matière…</p>
+                        <p>Durée: 60h</p>
+                    </div>
+                                    <div class="carte">
+                        <p>582-2M4</p>
+                        <h3> Conception graphique et imagerie vectorielle</h3>
+                        <p>Dans ce cours, l’étudiant poursuit l’apprentissage des notions liées à…</p>
+                        <p>Durée: 90h</p>
+                    </div>
+                                    <div class="carte">
+                        <p>582-2W2</p>
+                        <h3>	Animation et interactivité Web</h3>
+                        <p>Ce cours permet à l'étudiant d'acquérir les compétences de base…</p>
+                        <p>Durée: 75h</p>
+                    </div>
+                                    <div class="carte">
+                        <p>582-2J2</p>
+                        <h3>	Création de jeu 2D</h3>
+                        <p>Dans ce cours, l’étudiant approfondit la programmation graphique et s’initie…</p>
+                        <p>Durée: 60h</p>
+                    </div>
+                                    <div class="carte">
+                        <p>582-3M5</p>
+                        <h3>	Imagerie 3D</h3>
+                        <p>Dans ce cours, l’étudiant est initié au monde de l’imagerie…</p>
+                        <p>Durée: 75h</p>
+                    </div>
+                                    <div class="carte">
+                        <p>582-3C1</p>
+                        <h3> Design d’interactivité</h3>
+                        <p>L’étudiant apprend à concevoir des expériences interactives en plaçant les…</p>
+                        <p>Durée: 75h</p>
+                    </div>
+                                    <div class="carte">
+                        <p>582-6N3</p>
+                        <h3> Stage </h3>
+                        <p>Le stage en entreprise complète la formation de l’étudiant en…</p>
+                        <p>Durée: 285h</p>
+                    </div>
+                                    </div>
+        <!-- Fin de la boucle php -->
+
+    </section>
+</div>
+<div id="evenements" class="global diagonale">
+    <section>
+        <h2>Évènements (h2)</h2>
+        <h4>test h4</h4>
+        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut repellat possimus molestias, est harum ducimus velit fugit a tenetur architecto inventore sapiente cupiditate soluta totam nam deleniti minus suscipit?</blockquote>
+    </section>
+</div>
+
+<div id="galerie" class="global">
+    <section>
+        <h2>Galerie (h2)</h2>
+        <h5>test h5</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo qui eligendi magnam impedit. Odit, reiciendis fugiat. Deleniti, corrupti facere veniam nihil, atque voluptatum voluptate ipsam labore repudiandae rerum pariatur consequuntur?</p>
+        <section id="conteneur-images">
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
         </section>
-        <!-- Vague -->
-        <div class="vague">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path
-                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                    class="shape-fill"></path>
-            </svg>
-        </div>
-        <!-- Fin vague -->
-    </div>
-    <!-- FIN HEADER -->
+        <button>voir plus</button>
+    </section>
+    <!-- Vague ici!-->
+    <!-- 
+    Gabarit de base pour la création de vagues entre le header et l'acceuil et la galerie et le footer 
+ -->
+<div class="vague">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="remplissage"></path>
+    </svg>
+</div>    <!-- Fin de la vague -->
+</div>
 
-    <div id="acceuil" class="global">
-        <section>
-            <h2>Acceuil (h2)</h2>
-            <h3>test h3</h3>
-            <div class="cours">
-                <!-- Boucle php pour afficher articles dans la table posts -->
-                <div class="carte">
-                    <p>582-1M1</p>
-                    <h3> Création vidéo</h3>
-                    <p>3-2-3 2,67 unités Aucun préalable. Ce cours initie l’étudiant au…</p>
-                    <p>Durée: 75h</p>
-                </div>
-                <div class="carte">
-                    <p>582-4C2</p>
-                    <h3> Gestion de projets multimédias</h3>
-                    <p>Ce cours initie l'étudiant aux rudiments de la gestion d’un…</p>
-                    <p>Durée: 45h</p>
-                </div>
-                <div class="carte">
-                    <p>582-4W4</p>
-                    <h3> Conception d’interfaces et développement Web</h3>
-                    <p>Dans ce cours, l’étudiant poursuit son apprentissage de l’intégration de…</p>
-                    <p>Durée: 90h</p>
-                </div>
-                <div class="carte">
-                    <p>582-4J4</p>
-                    <h3> Création de jeu en équipe </h3>
-                    <p>Dans ce cours qui s'appuie sur une pédagogie par projets,…</p>
-                    <p>Durée: 105h</p>
-                </div>
-                <div class="carte">
-                    <p>582-4PA</p>
-                    <h3> Interfaces Web réactives et animées &#8211; Cours au choix</h3>
-                    <p>En session 4, l'étudiant doit choisir entre ce cours et…</p>
-                    <p>Durée: 75h</p>
-                </div>
-                <div class="carte">
-                    <p>582-4MB</p>
-                    <h3> Animation 3D</h3>
-                    <p>En session 4, l'étudiant doit choisir entre ce cours et…</p>
-                    <p>Durée: 75h</p>
-                </div>
-                <div class="carte">
-                    <p>393-5E1</p>
-                    <h3> Méthodes de recherche et préparation au marché du travail</h3>
-                    <p>Ce cours permet à l’étudiant d'acquérir des habiletés en recherche,…</p>
-                    <p>Durée: 45h</p>
-                </div>
-                <div class="carte">
-                    <p>350-5N1</p>
-                    <h3> Communication et dynamique d’une équipe de travail</h3>
-                    <p>Ce cours permet à l’étudiant de développer ses habiletés en…</p>
-                    <p>Durée: 45h</p>
-                </div>
-                <div class="carte">
-                    <p>582-5W5</p>
-                    <h3> Projet Web en équipe </h3>
-                    <p>Préalable relatif : Conception d’interfaces et développement Web Dans ce…</p>
-                    <p>Durée: 105h</p>
-                </div>
-                <div class="carte">
-                    <p>582-5MB</p>
-                    <h3> Technologies émergentes et avancées – volet Création</h3>
-                    <p>En session 5, l'étudiant doit choisir entre ce cours et…</p>
-                    <p>Durée: 60h</p>
-                </div>
-                <div class="carte">
-                    <p>582-3J3</p>
-                    <h3> Création de jeu 3D</h3>
-                    <p>Ce cours permet à l'étudiant d'intégrer différents types de médias…</p>
-                    <p>Durée: 75h</p>
-                </div>
-                <div class="carte">
-                    <p>582-3W3</p>
-                    <h3> Création de sites Web dynamiques</h3>
-                    <p>Dans ce cours, les notions acquises dans les cours «…</p>
-                    <p>Durée: 90h</p>
-                </div>
-                <div class="carte">
-                    <p>582-1M2</p>
-                    <h3> Conception graphique et imagerie matricielle</h3>
-                    <p>Ce cours initie l'étudiant aux rudiments de la conception et…</p>
-                    <p>Durée: 90h</p>
-                </div>
-                <div class="carte">
-                    <p>582-1W1</p>
-                    <h3> Mise en page Web</h3>
-                    <p>Dans ce cours, l'étudiant apprend les techniques de mise en…</p>
-                    <p>Durée: 75h</p>
-                </div>
-                <div class="carte">
-                    <p>582-1J1</p>
-                    <h3> Animation et interactivité en jeu</h3>
-                    <p>Ce cours est consacré aux concepts de base nécessaires à…</p>
-                    <p>Durée: 75h</p>
-                </div>
-                <div class="carte">
-                    <p>582-2M3</p>
-                    <h3> Effets spéciaux et animation</h3>
-                    <p>Ce cours permet d'approfondir la formation de l’étudiant en matière…</p>
-                    <p>Durée: 60h</p>
-                </div>
-                <div class="carte">
-                    <p>582-2M4</p>
-                    <h3> Conception graphique et imagerie vectorielle</h3>
-                    <p>Dans ce cours, l’étudiant poursuit l’apprentissage des notions liées à…</p>
-                    <p>Durée: 90h</p>
-                </div>
-                <div class="carte">
-                    <p>582-2W2</p>
-                    <h3> Animation et interactivité Web</h3>
-                    <p>Ce cours permet à l'étudiant d'acquérir les compétences de base…</p>
-                    <p>Durée: 75h</p>
-                </div>
-                <div class="carte">
-                    <p>582-2J2</p>
-                    <h3> Création de jeu 2D</h3>
-                    <p>Dans ce cours, l’étudiant approfondit la programmation graphique et s’initie…</p>
-                    <p>Durée: 60h</p>
-                </div>
-                <div class="carte">
-                    <p>582-3M5</p>
-                    <h3> Imagerie 3D</h3>
-                    <p>Dans ce cours, l’étudiant est initié au monde de l’imagerie…</p>
-                    <p>Durée: 75h</p>
-                </div>
-                <div class="carte">
-                    <p>582-3C1</p>
-                    <h3> Design d’interactivité</h3>
-                    <p>L’étudiant apprend à concevoir des expériences interactives en plaçant les…</p>
-                    <p>Durée: 75h</p>
-                </div>
-                <div class="carte">
-                    <p>582-6N3</p>
-                    <h3> Stage </h3>
-                    <p>Le stage en entreprise complète la formation de l’étudiant en…</p>
-                    <p>Durée: 285h</p>
-                </div>
-
-            </div>
-            <!-- Fin de la boucle php -->
-
-        </section>
-    </div>
-    <div id="evenements" class="global diagonale">
-        <section>
-            <h2>Évènements (h2)</h2>
-            <h4>test h4</h4>
-            <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut repellat possimus
-                molestias, est harum ducimus velit fugit a tenetur architecto inventore sapiente cupiditate soluta totam
-                nam deleniti minus suscipit?</blockquote>
-        </section>
-    </div>
-
-    <div id="galerie" class="global">
-        <section>
-            <h2>Galerie (h2)</h2>
-            <h5>test h5</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo qui eligendi magnam impedit. Odit,
-                reiciendis fugiat. Deleniti, corrupti facere veniam nihil, atque voluptatum voluptate ipsam labore
-                repudiandae rerum pariatur consequuntur?</p>
-            <section id="conteneur-images">
-                <div class="image"></div>
-                <div class="image"></div>
-                <div class="image"></div>
-                <div class="image"></div>
-                <div class="image"></div>
-                <div class="image"></div>
-            </section>
-            <button>voir plus</button>
-        </section>
-        <!-- Vague -->
-        <div class="vague">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                preserveAspectRatio="none">
-                <path
-                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                    class="shape-fill"></path>
-            </svg>
-        </div>
-        <!-- Fin vague -->
-    </div>
-
-    <!-- FOOTER -->
-    <div id="footer" class="global">
-        <footer>
-            <h2>Footer (h2)</h2>
-            <h6>test h6</h6>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, aperiam dolorem est quam repellendus
-                tenetur sit ipsum natus voluptas fugit, dignissimos dolorum corrupti pariatur dolor! Repellendus
-                accusantium voluptatem eos rerum.
-                Cum perspiciatis expedita adipisci voluptates harum vitae, corporis placeat soluta aliquid in velit nam
-                animi repellat molestiae. Laboriosam sit fugiat doloremque fuga expedita enim aperiam dolorem, explicabo
-                error odio iure!
-                Distinctio odit quibusdam vel voluptatem quasi architecto placeat veniam facilis vitae, neque expedita
-                sequi natus omnis alias ipsa labore deserunt. Suscipit qui tenetur a tempora itaque incidunt ea nesciunt
-                velit?</p>
-            <a href="#">&#8593</a>
-        </footer>
-    </div>
-    <!-- FIN FOOTER -->
+<!-- FOOTER -->
+<div id="footer" class="global">
+    <footer>
+        <h2>Footer (h2)</h2>
+        <h6>test h6</h6>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, aperiam dolorem est quam repellendus tenetur sit ipsum natus voluptas fugit, dignissimos dolorum corrupti pariatur dolor! Repellendus accusantium voluptatem eos rerum.
+            Cum perspiciatis expedita adipisci voluptates harum vitae, corporis placeat soluta aliquid in velit nam animi repellat molestiae. Laboriosam sit fugiat doloremque fuga expedita enim aperiam dolorem, explicabo error odio iure!
+            Distinctio odit quibusdam vel voluptatem quasi architecto placeat veniam facilis vitae, neque expedita sequi natus omnis alias ipsa labore deserunt. Suscipit qui tenetur a tempora itaque incidunt ea nesciunt velit?</p>
+        <a href="#">&#8593</a>
+    </footer>
+</div>
+<!-- FIN FOOTER -->
 </body>
 
 </html>

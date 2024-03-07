@@ -11,9 +11,3 @@
     flex-direction: column;
     min-height: 20vh;
 }
-
-#entete a:hover{
-    color: var(--couleur-arriere-entete);
-    background-color: var(--couleur-arriere-galerie);
-    transition: 1s;
-}

@@ -8,6 +8,7 @@
 </section>
 <!-- Vague ici! -->
 <?php get_template_part('gabarits/vagues'); ?>
+<!-- Fin de la vague -->
 </div>
 <!-- FIN HEADER -->
 
@@ -68,7 +69,7 @@
     </section>
     <!-- Vague ici!-->
     <?php get_template_part('gabarits/vagues'); ?>
-
+    <!-- Fin de la vague -->
 </div>
 
 <!-- FOOTER -->

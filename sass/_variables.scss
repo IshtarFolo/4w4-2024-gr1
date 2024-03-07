@@ -1,19 +1,4 @@
 :root {
-    /* Couleurs des arriere-plans */
-    // --couleur-arriere-entete: rgba(0, 0, 0, 0.9);
-    // --couleur-arriere-acceuil: rgba(4, 194, 4, 0.5);
-    // --couleur-arriere-evenements: rgba(27, 151, 3, 0.7);
-    // --couleur-arriere-gallerie: rgba(255, 196, 0, 0.7);
-    // --couleur-arriere-footer: rgba(0, 0, 0, 0.9);
-
-    // /* Niveaux de transparence des H */
-    // --transparence-h1: 0.4;
-    // --transparence-h2: 0.5;
-    // --transparence-h3: 0.6;
-    // --transparence-h4: 0.7;
-    // --transparence-h5: 0.8;
-    // --transparence-h6: 1;
-
     /* Calcul des teintes 
     -----------------------------------------------------------------*/
     --u1: 181; // Couleur initiale
@@ -58,9 +43,22 @@
     --couleur-premiere-lettre: #80FDFF;
     --couleur-lien: #007D80;
 
+    /* ======================
+     *   VARIABLES LOCALES  *
+    ========================*/
     /* Couleur des cartes
     ------------------------------------------------------------------*/
     .carte {
         --_couleur-arriere: hsl(var(--u1),100%, 85% );
+    }
+
+    /* Couleur des vagues
+    -------------------------------------------------------------------*/
+    #entete .vague .remplissage {
+        --_couleur-arriere-vague: var(--couleur-arriere-acceuil);
+    }
+
+    #galerie .vague .remplissage {
+        --_couleur-arriere-vague: var(--couleur-arriere-footer);
     }
 }

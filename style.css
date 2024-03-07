@@ -11,7 +11,6 @@
     Use it to make something cool, have fun, and share what you've learned with others.
 */
 :root {
-  /* Couleurs des arriere-plans */
   /* Calcul des teintes 
   -----------------------------------------------------------------*/
   --u1: 181;
@@ -49,11 +48,22 @@
   -----------------------------------------------------------------*/
   --couleur-premiere-lettre: #80FDFF;
   --couleur-lien: #007D80;
+  /* ======================
+   *   VARIABLES LOCALES  *
+  ========================*/
   /* Couleur des cartes
   ------------------------------------------------------------------*/
+  /* Couleur des vagues
+  -------------------------------------------------------------------*/
 }
 :root .carte {
   --_couleur-arriere: hsl(var(--u1),100%, 85% );
+}
+:root #entete .vague .remplissage {
+  --_couleur-arriere-vague: var(--couleur-arriere-acceuil);
+}
+:root #galerie .vague .remplissage {
+  --_couleur-arriere-vague: var(--couleur-arriere-footer);
 }
 
 /* Remise a 0 
@@ -94,7 +104,7 @@ body {
 /* Les Sections 
 -------------------------------------------------------------------------*/
 #menu__entete {
-  background-color: var(--couleur-arriere-menu);
+  position: relative;
 }
 
 #acceuil {
@@ -352,11 +362,11 @@ h6 {
 }
 
 #entete .vague .remplissage {
-  fill: var(--couleur-arriere-acceuil);
+  fill: var(--_couleur-arriere-vague);
 }
 
 #galerie .vague .remplissage {
-  fill: var(--couleur-arriere-footer);
+  fill: var(--_couleur-arriere-vague);
 }
 
 /** Pour mobile **/
@@ -430,9 +440,12 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--couleur-menu);
-  position: fixed;
-  z-index: 2;
+}
+@media (min-width: 700px) {
+  .menu__header {
+    position: fixed;
+    z-index: 2;
+  }
 }
 
 .menu-principal-container {
@@ -444,9 +457,22 @@ h6 {
 .menu {
   list-style: none;
   display: flex;
+  position: absolute;
   flex-direction: column;
   flex: 0 1 auto;
   justify-content: center;
+  z-index: 1;
+  transform: translateX(300%);
+  transition: 1s transform ease-in-out;
+  background-color: var(--couleur-arriere-acceuil);
+}
+@media (min-width: 700px) {
+  .menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    transform: translateX(0);
+  }
 }
 
 .menu-item {
@@ -464,42 +490,29 @@ h6 {
   color: var(--couleur-menu);
 }
 
-/* Écrans plus larges
--------------------------------------------------------------*/
-@media (min-width: 1080px) {
-  .menu__header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--couleur-menu);
-    position: relative;
-    z-index: 0;
-  }
-  .menu-principal-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .menu {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex: 0 1 auto;
-    justify-content: center;
-  }
-  .menu-item {
-    border-radius: 5px;
-    font-size: clamp(0.5rem, 0.313rem + 1vw, 1rem);
-    text-align: center;
-    display: flex;
-    flex: 1 1 auto;
-  }
-  .menu-item a {
-    margin: 1rem;
-    text-decoration: none;
-    color: var(--couleur-menu);
+/* Gestion du label #burger l'image svg contenue dans un label
+------------------------------------------------------------------------------*/
+#burger {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+}
+@media (min-width: 700px) {
+  #burger {
+    display: none;
   }
 }
+
+input {
+  display: none;
+}
+
+#chk_burger:checked ~ .menu__header .menu-principal-container .menu {
+  transform: translateX(110%);
+}
+
 #entete {
   background-image: url("image/github.png");
   background-size: cover;

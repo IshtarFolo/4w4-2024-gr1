@@ -2,9 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--couleur-menu);
-    position: fixed;
-    z-index: 2;
+
+    // Fullscreen
+    @media (min-width: 700px) {
+        position: fixed;
+        z-index: 2;
+    }
 }
 
 .menu-principal-container { //nav
@@ -16,10 +19,23 @@
 .menu { //ul
     list-style: none;
     display: flex;
+    position: absolute;
     flex-direction: column;
     flex: 0 1 auto;
-    // background-color: black/*var(--couleur-arriere-menu)*/;
     justify-content: center;
+    z-index: 1;
+    transform: translateX(300%);
+    transition: 1s transform ease-in-out;
+    background-color: var(--couleur-arriere-acceuil);
+
+
+    // Fullscreen
+    @media (min-width: 700px) {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        transform: translateX(0);
+    }
 }
 
 .menu-item { //li
@@ -37,43 +53,25 @@
     color: var(--couleur-menu);
 }
 
-/* Écrans plus larges
--------------------------------------------------------------*/
-@media (min-width: 1080px) {
-    .menu__header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: var(--couleur-menu);
-        position: relative;
-        z-index: 0;
-    }
+/* Gestion du label #burger l'image svg contenue dans un label
+------------------------------------------------------------------------------*/
+#burger { // Btn burger
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
 
-    .menu-principal-container { //nav
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    // Fullscreen
+    @media (min-width: 700px) {
+        display: none;
     }
-    
-    .menu { //ul
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        flex: 0 1 auto;
-        justify-content: center;
-    }
-    
-    .menu-item { //li
-        border-radius: 5px;
-        font-size: clamp(0.5rem, 0.313rem + 1vw, 1rem);
-        text-align: center;
-        display: flex;
-        flex: 1 1 auto;
-    }
-    
-    .menu-item a { //li a
-        margin: 1rem;
-        text-decoration: none;
-        color: var(--couleur-menu);
-    }
+}
+
+input { //input
+    display: none;
+}
+
+#chk_burger:checked ~ .menu__header .menu-principal-container .menu {
+    transform: translateX(110%);
 }

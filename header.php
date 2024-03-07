@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,10 @@
     <!-- HEADER -->
     <div id="entete" class="global">
         <div id="menu__entete" class="global">
+            <!-- Btn-burger ici! -->
+            <?php get_template_part("gabarits/btn-burger") ?> 
+            <!-- Fin btn-burger -->
             <header class="menu__header">
-                <?php wp_nav_menu(array("container" => "nav")); ?> 
+                <?php wp_nav_menu(array("container" => "nav")); ?>
             </header>
         </div>

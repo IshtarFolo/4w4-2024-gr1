@@ -36,6 +36,10 @@ body {
 
 /* Les Sections 
 -------------------------------------------------------------------------*/
+#menu__entete {
+    background-color: var(--couleur-arriere-menu);
+}
+
 #acceuil {
     background-color: var(--couleur-arriere-acceuil);
     color: var(--couleur-evenements);

@@ -27,6 +27,7 @@
   /* Couleurs d'arriere-plan
   -----------------------------------------------------------------*/
   --couleur-arriere-entete: hsl(var(--u1), 100%, 25%);
+  --couleur-arriere-menu: hsl(var(--u1), 100%, 40%);
   --couleur-arriere-acceuil: hsl(var(--u1), 100%, 20%);
   --couleur-arriere-evenements: hsl(var(--u1), 100%, 15%);
   --couleur-arriere-galerie: hsl(var(--u1), 100%, 10%);
@@ -92,6 +93,10 @@ body {
 
 /* Les Sections 
 -------------------------------------------------------------------------*/
+#menu__entete {
+  background-color: var(--couleur-arriere-menu);
+}
+
 #acceuil {
   background-color: var(--couleur-arriere-acceuil);
   color: var(--couleur-evenements);
@@ -346,11 +351,11 @@ h6 {
   height: 150px;
 }
 
-#entete .vague .shape-fill {
+#entete .vague .remplissage {
   fill: var(--couleur-arriere-acceuil);
 }
 
-#galerie .vague .shape-fill {
+#galerie .vague .remplissage {
   fill: var(--couleur-arriere-footer);
 }
 
@@ -425,8 +430,9 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--couleur-arriere-menu);
   color: var(--couleur-menu);
+  position: fixed;
+  z-index: 2;
 }
 
 .menu-principal-container {
@@ -438,13 +444,13 @@ h6 {
 .menu {
   list-style: none;
   display: flex;
+  flex-direction: column;
   flex: 0 1 auto;
   justify-content: center;
 }
 
 .menu-item {
   border-radius: 5px;
-  background-color: var(--couleur-arriere-menu);
   font-size: clamp(0.5rem, 0.313rem + 1vw, 1rem);
   text-align: center;
   display: flex;
@@ -453,10 +459,47 @@ h6 {
 
 .menu-item a {
   margin: 1rem;
+  padding: 0.5rem;
   text-decoration: none;
   color: var(--couleur-menu);
 }
 
+/* Écrans plus larges
+-------------------------------------------------------------*/
+@media (min-width: 1080px) {
+  .menu__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--couleur-menu);
+    position: relative;
+    z-index: 0;
+  }
+  .menu-principal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 auto;
+    justify-content: center;
+  }
+  .menu-item {
+    border-radius: 5px;
+    font-size: clamp(0.5rem, 0.313rem + 1vw, 1rem);
+    text-align: center;
+    display: flex;
+    flex: 1 1 auto;
+  }
+  .menu-item a {
+    margin: 1rem;
+    text-decoration: none;
+    color: var(--couleur-menu);
+  }
+}
 #entete {
   background-image: url("image/github.png");
   background-size: cover;

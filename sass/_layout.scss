@@ -11,6 +11,8 @@ body {
     font-family: 'Prompt', sans-serif;
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
+    overflow-x: hidden;
 }
 
 .global {
@@ -28,10 +30,20 @@ body {
     max-width: var(--largeur-global-max);
 }
 
+header {
+    width: 100%;
+}
+
 .global > .entete__header{
     flex: 1;
     position: relative;
     margin-bottom: 1rem;
+    
+    // Fullscreen
+    @media (min-width: 700px){
+        margin-bottom: 4rem;
+        margin-top: 15rem;
+    }
 } 
 
 /* Les Sections 
@@ -196,10 +208,6 @@ section > .bouton__header{
     border-radius: 50%;
     z-index: 2;
     transition: 0.3s;
-}
-
-a:hover{
-    background-color: var(--couleur-arriere-acceuil);
 }
 
 /* L'image du header change de position avec le viewport

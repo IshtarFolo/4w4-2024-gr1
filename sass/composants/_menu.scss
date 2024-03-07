@@ -6,7 +6,7 @@
     // Fullscreen
     @media (min-width: 700px) {
         position: fixed;
-        z-index: 2;
+        z-index: 3;
     }
 }
 
@@ -26,7 +26,7 @@
     z-index: 1;
     transform: translateX(300%);
     transition: 1s transform ease-in-out;
-    background-color: var(--couleur-arriere-acceuil);
+    background-color: var(--couleur-arriere-menu);
 
 
     // Fullscreen
@@ -73,5 +73,9 @@ input { //input
 }
 
 #chk_burger:checked ~ .menu__header .menu-principal-container .menu {
-    transform: translateX(110%);
+    transform: translateX(110%) translateY(40%);
+
+    @media (min-width: 700px) {
+        transform: translateX(0);
+    }
 }

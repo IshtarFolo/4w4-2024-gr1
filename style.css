@@ -79,6 +79,8 @@ body {
   font-family: "Prompt", sans-serif;
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
+  overflow-x: hidden;
 }
 
 .global {
@@ -95,10 +97,20 @@ body {
   max-width: var(--largeur-global-max);
 }
 
+header {
+  width: 100%;
+}
+
 .global > .entete__header {
   flex: 1;
   position: relative;
   margin-bottom: 1rem;
+}
+@media (min-width: 700px) {
+  .global > .entete__header {
+    margin-bottom: 4rem;
+    margin-top: 15rem;
+  }
 }
 
 /* Les Sections 
@@ -263,10 +275,6 @@ section > .bouton__header {
   transition: 0.3s;
 }
 
-a:hover {
-  background-color: var(--couleur-arriere-acceuil);
-}
-
 /* L'image du header change de position avec le viewport
 -----------------------------------------------------------------*/
 @media screen and (min-width: 1080px) {
@@ -295,7 +303,7 @@ h1 {
 h2 {
   font-weight: 500;
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
-  z-index: 2;
+  z-index: 1;
   position: relative;
   color: var(--couleur-arriere-galerie);
 }
@@ -444,7 +452,7 @@ h6 {
 @media (min-width: 700px) {
   .menu__header {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
   }
 }
 
@@ -464,7 +472,7 @@ h6 {
   z-index: 1;
   transform: translateX(300%);
   transition: 1s transform ease-in-out;
-  background-color: var(--couleur-arriere-acceuil);
+  background-color: var(--couleur-arriere-menu);
 }
 @media (min-width: 700px) {
   .menu {
@@ -510,7 +518,12 @@ input {
 }
 
 #chk_burger:checked ~ .menu__header .menu-principal-container .menu {
-  transform: translateX(110%);
+  transform: translateX(110%) translateY(40%);
+}
+@media (min-width: 700px) {
+  #chk_burger:checked ~ .menu__header .menu-principal-container .menu {
+    transform: translateX(0);
+  }
 }
 
 #entete {

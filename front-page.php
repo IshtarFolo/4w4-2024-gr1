@@ -3,7 +3,7 @@
 
 <!-- Début du site sous le menu principal -->
 <section class="entete__header">
-    <h1>Thème du groupe 1 (h1)</h1>
+    <h1>FrontPage</h1>
     <button class="bouton__header"></button>
 </section>
 <!-- Vague ici! -->
@@ -17,16 +17,16 @@
         <h2>Acceuil (h2)</h2>
         <h3>test h3</h3>
         <div class="cours">
+
             <!-- Boucle php pour afficher articles dans la table posts à partir de la base de données -->
             <?php
             if (have_posts()) :
                 while (have_posts()) : the_post();
                     $titre = get_the_title();
-
             ?>
                     <div class="carte">
                         <h3><?php echo $titre; ?></h3>
-                        <p><?php the_content(); ?></p>
+                        <p><?php echo wp_trim_words(get_the_content(), 10); ?></p>
                     </div>
                 <?php endwhile; ?>
             <?php endif; ?>

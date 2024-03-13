@@ -7,11 +7,15 @@
 
 /* Debut CSS Global 
 -----------------------------------------------------------------------*/
+html, body{
+    position: relative;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Prompt', sans-serif;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
 }
 
 .global {

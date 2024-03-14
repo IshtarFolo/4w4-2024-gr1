@@ -3,7 +3,7 @@
 
 <!-- Début du site sous le menu principal -->
 <section class="entete__header">
-    <h1>FrontPage</h1>
+    <h1>Theme Gr1</h1>
     <button class="bouton__header"></button>
 </section>
 <!-- Vague ici! -->
@@ -19,14 +19,14 @@
         <div class="cours">
 
             <!-- Boucle php pour afficher articles dans la table posts à partir de la base de données -->
-            <?php
-            if (have_posts()) :
-                while (have_posts()) : the_post();
-                    $titre = get_the_title();
-            ?>
+            <?php if (have_posts()) :
+                while (have_posts()) : the_post(); ?>
+
                     <div class="carte">
-                        <h3><?php echo $titre; ?></h3>
+                        <h3><?php the_title(); ?></h3>
                         <p><?php echo wp_trim_words(get_the_content(), 10); ?></p>
+                        <!-- Ajoute un lien vers l'article selctionné -->
+                        <a href="<?php the_permalink(); ?>">Suite</a>
                     </div>
                 <?php endwhile; ?>
             <?php endif; ?>

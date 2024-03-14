@@ -58,6 +58,10 @@
     color: var(--couleur-texte-menu);
 }
 
+.menu-item a:hover {
+    color: var(--couleur-arriere-menu);
+}
+
 /* Gestion du label #burger l'image svg contenue dans un label
 ------------------------------------------------------------------------------*/
 #burger { // Btn burger
@@ -78,7 +82,7 @@ input { //input
 }
 
 #chk_burger:checked ~ .menu__header .menu-principal-container .menu {
-    transform: translateX(110%) translateY(40%);
+    transform: translateX(110%) translateY(34%);
 
     @media (min-width: 700px) {
         transform: translateX(0);

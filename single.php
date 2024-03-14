@@ -21,6 +21,7 @@
                     <div class="carte">
                         <h2><?php the_title(); ?></h2>
                         <p><?php the_content(); ?></p>
+                        <!-- Lien pour revenir au menu principal -->
                     </div>
                 <?php endif; ?>
             </div>

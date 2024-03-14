@@ -18,7 +18,8 @@
     <!-- HEADER -->
     <div id="entete" class="global">
         <div id="menu__entete" class="global">
-            <!-- Btn-burger ici! -->
+        <?php echo get_custom_logo(); ?> 
+        <!-- Btn-burger ici! -->
             <?php get_template_part("gabarits/btn-burger") ?> 
             <!-- Fin btn-burger -->
             <header class="menu__header">

@@ -304,7 +304,7 @@ h1 {
 h2 {
   font-weight: 500;
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
-  z-index: 1;
+  z-index: 0;
   position: relative;
   color: var(--couleur-arriere-galerie);
 }
@@ -422,6 +422,26 @@ h6 {
   gap: 1rem;
 }
 
+.cours a {
+  width: 11%;
+  padding: 2px 2px 1px;
+  text-decoration: none;
+  border: 1px solid var(--couleur-menu);
+  color: var(--couleur-texte-menu);
+}
+@media screen and (min-width: 700px) {
+  .cours a {
+    width: 14%;
+  }
+}
+
+.cours a:hover {
+  border: 2px solid var(--couleur-menu);
+  background-color: var(--couleur-texte-menu);
+  color: var(--_couleur-arriere);
+  transition: 0.5s background-color ease-in-out;
+}
+
 .carte {
   display: flex;
   flex-direction: column;
@@ -504,6 +524,10 @@ h6 {
   color: var(--couleur-texte-menu);
 }
 
+.menu-item a:hover {
+  color: var(--couleur-arriere-menu);
+}
+
 /* Gestion du label #burger l'image svg contenue dans un label
 ------------------------------------------------------------------------------*/
 #burger {
@@ -524,7 +548,7 @@ input {
 }
 
 #chk_burger:checked ~ .menu__header .menu-principal-container .menu {
-  transform: translateX(110%) translateY(40%);
+  transform: translateX(110%) translateY(34%);
 }
 @media (min-width: 700px) {
   #chk_burger:checked ~ .menu__header .menu-principal-container .menu {
@@ -543,4 +567,20 @@ input {
   position: relative;
   flex-direction: column;
   min-height: 20vh;
+}
+
+.custom-logo {
+  width: 50px;
+  height: 50px;
+  height: auto;
+  margin-top: 1rem;
+  padding: 0;
+}
+@media screen and (min-width: 700px) {
+  .custom-logo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    right: 45rem;
+  }
 }/*# sourceMappingURL=style.css.map */

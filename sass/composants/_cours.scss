@@ -5,6 +5,25 @@
     gap: 1rem;   
 }
 
+.cours a {
+    width: 11%;
+    padding: 2px 2px 1px;
+    text-decoration: none;
+    border: 1px solid var(--couleur-menu);
+    color: var(--couleur-texte-menu);
+
+    @media screen and (min-width: 700px){
+        width: 14%;
+    }
+}
+
+.cours a:hover {
+    border: 2px solid var(--couleur-menu);
+    background-color: var(--couleur-texte-menu);
+    color: var(--_couleur-arriere);
+    transition: 0.5s background-color ease-in-out;
+}
+
 .carte{
     display: flex;
     flex-direction: column;

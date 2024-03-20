@@ -59,7 +59,7 @@
   -------------------------------------------------------------------*/
 }
 :root .carte {
-  --_couleur-arriere: hsl(var(--u1),100%, 85% );
+  --_couleur-arriere: hsl(var(--u1),100%, 50% );
 }
 :root #entete .vague .remplissage {
   --_couleur-arriere-vague: var(--couleur-arriere-acceuil);
@@ -157,6 +157,28 @@ body {
   background-color: var(--couleur-arriere-galerie);
   color: var(--couleur-entete);
   font-size: clamp(0.813rem, 0.435rem + 1.207vw, 1.25rem);
+}
+
+.post-categories {
+  margin-bottom: 1rem;
+}
+
+.post-categories li {
+  list-style: none;
+  display: inline;
+  margin-right: 0.3rem;
+}
+
+.post-categories li > a {
+  border: none;
+  padding: 2px 2px 2px 2px;
+  color: var(--couleur-evenements);
+}
+
+.post-categories li > a:hover {
+  border: none;
+  background-color: transparent;
+  color: blue;
 }
 
 /* Blockquote Section Évènements
@@ -315,17 +337,18 @@ h2 {
 
 #evenements h2 {
   color: var(--couleur-arriere-acceuil);
+  z-index: 2;
 }
 
 h3 {
   font-weight: 400;
-  font-size: clamp(0.85rem, -2.969rem + 12.5vw, 2.9rem);
+  font-size: clamp(1rem, -2.969rem + 14vw, 2.9rem);
   padding-bottom: 1rem;
   color: var(--couleur-arriere-galerie);
 }
 
 .carte > h3 {
-  font-size: clamp(0.85rem, -2.969rem + 12.5vw, 2rem);
+  font-size: clamp(1.5rem, -2.969rem + 12.5vw, 2.5rem);
 }
 
 h4 {
@@ -415,27 +438,22 @@ h6 {
     height: 20vw;
   }
 }
-.cours {
+.destination {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 1rem;
 }
 
-.cours a {
-  width: 11%;
-  padding: 2px 2px 1px;
+.destination a {
+  text-align: center;
   text-decoration: none;
   border: 1px solid var(--couleur-menu);
-  color: var(--couleur-texte-menu);
-}
-@media screen and (min-width: 700px) {
-  .cours a {
-    width: 14%;
-  }
+  color: var(--couleur-evenements);
+  width: 20%;
 }
 
-.cours a:hover {
+.destination a:hover {
   border: 2px solid var(--couleur-menu);
   background-color: var(--couleur-texte-menu);
   color: var(--_couleur-arriere);
@@ -449,7 +467,9 @@ h6 {
   flex: 1 0 225px;
   border: 1px solid #aaa;
   background-color: var(--_couleur-arriere);
+  opacity: 0.7;
   padding: 1rem;
+  margin: 1rem 0 1rem 0;
 }
 
 /* Sigle du cours
@@ -495,13 +515,17 @@ h6 {
   transition: 1s transform ease-in-out;
   background-color: var(--couleur-arriere-menu);
   border: 4px solid var(--couleur-menu);
+  padding-top: 4rem;
 }
 @media (min-width: 700px) {
   .menu {
+    padding-top: 0rem;
+    text-align: center;
     position: static;
     display: flex;
     flex-direction: row;
     transform: translateX(0);
+    border: 4px solid var(--couleur-menu);
   }
 }
 
@@ -548,7 +572,7 @@ input {
 }
 
 #chk_burger:checked ~ .menu__header .menu-principal-container .menu {
-  transform: translateX(110%) translateY(34%);
+  transform: translateX(120%) translateY(40%);
 }
 @media (min-width: 700px) {
   #chk_burger:checked ~ .menu__header .menu-principal-container .menu {

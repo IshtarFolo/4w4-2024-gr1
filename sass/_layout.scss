@@ -91,6 +91,29 @@ body {
     font-size: clamp(0.813rem, 0.435rem + 1.207vw, 1.25rem);
 }
 
+// Nom de la categorie du post
+.post-categories{
+    margin-bottom: 1rem;
+}
+
+.post-categories li{
+    list-style: none;
+    display: inline;
+    margin-right: 0.3rem;
+}
+
+.post-categories li > a{
+    border: none;
+    padding: 2px 2px 2px 2px;
+    color: var(--couleur-evenements);
+}
+
+.post-categories li > a:hover{
+    border: none;
+    background-color: transparent;
+    color: blue;
+}
+
 /* Blockquote Section Évènements
 ----------------------------------------------------------------*/
 #evenements blockquote{

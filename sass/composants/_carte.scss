@@ -1,23 +1,19 @@
-.cours{
+.destination{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 1rem;   
 }
 
-.cours a {
-    width: 11%;
-    padding: 2px 2px 1px;
+.destination a {
+    text-align: center;
     text-decoration: none;
     border: 1px solid var(--couleur-menu);
-    color: var(--couleur-texte-menu);
-
-    @media screen and (min-width: 700px){
-        width: 14%;
-    }
+    color: var(--couleur-evenements);
+    width: 20%;
 }
 
-.cours a:hover {
+.destination a:hover {
     border: 2px solid var(--couleur-menu);
     background-color: var(--couleur-texte-menu);
     color: var(--_couleur-arriere);
@@ -31,7 +27,9 @@
     flex: 1  0 calc(900px/4);
     border : 1px solid #aaa;
     background-color: var(--_couleur-arriere);
+    opacity: 0.7;
     padding: 1rem;
+    margin: 1rem 0 1rem 0;
 }
 /* Sigle du cours
 --------------------------------------------------------------*/

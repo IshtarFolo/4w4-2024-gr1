@@ -14,7 +14,7 @@
 
     <div id="acceuil" class="global">
         <section>
-            <div class="cours">
+            <div class="destination">
 
                 <!-- Boucle php pour afficher articles dans la table posts à partir de la base de données -->
                 <?php if (have_posts()) : the_post(); ?>
@@ -32,8 +32,7 @@
 
     <div id="galerie" class="global">
         <section>
-            <h2>Galerie (h2)</h2>
-            <h5>test h5</h5>
+            <h2>Galerie</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo qui eligendi magnam impedit. Odit, reiciendis fugiat. Deleniti, corrupti facere veniam nihil, atque voluptatum voluptate ipsam labore repudiandae rerum pariatur consequuntur?</p>
             <section id="conteneur-images">
                 <div class="image"></div>

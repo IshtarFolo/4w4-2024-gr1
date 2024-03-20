@@ -28,13 +28,17 @@
     transition: 1s transform ease-in-out;
     background-color: var(--couleur-arriere-menu);
     border: 4px solid var(--couleur-menu);
+    padding-top: 4rem;
 
     // Fullscreen
     @media (min-width: 700px) {
+        padding-top: 0rem;
+        text-align: center;
         position: static;
         display: flex;
         flex-direction: row;
         transform: translateX(0);
+        border: 4px solid var(--couleur-menu);
     }
 }
 
@@ -82,7 +86,7 @@ input { //input
 }
 
 #chk_burger:checked ~ .menu__header .menu-principal-container .menu {
-    transform: translateX(110%) translateY(34%);
+    transform: translateX(120%) translateY(40%);
 
     @media (min-width: 700px) {
         transform: translateX(0);

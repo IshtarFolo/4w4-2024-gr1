@@ -30,17 +30,18 @@ h2 {
 
 #evenements h2{
     color: var(--couleur-arriere-acceuil);
+    z-index: 2;
 }
 
 h3 {
     font-weight: 400;
-    font-size: clamp(0.85rem, -2.969rem + 12.5vw, 2.90rem);
+    font-size: clamp(1rem, -2.969rem + 14vw, 2.90rem);
     padding-bottom: 1rem;
     color: var(--couleur-arriere-galerie);
 }
 
 .carte > h3 {
-    font-size: clamp(0.85rem, -2.969rem + 12.5vw, 2rem);
+    font-size: clamp(1.5rem, -2.969rem + 12.5vw, 2.5rem);
 }
 
 h4 {

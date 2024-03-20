@@ -1,4 +1,3 @@
-
 <!-- Importation du header.php -->
 <!DOCTYPE html>
 <html lang="en">
@@ -6,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thème du groupe 1</title>
+    <title>Club de Voyage</title>
 
     <!-- Php pour refaire le lien avec stylesheets -->
     <link rel="stylesheet" href="normalize.css">
@@ -20,165 +19,222 @@
     <!-- HEADER -->
     <div id="entete" class="global">
         <div id="menu__entete" class="global">
-        <a href="http://localhost:8080/4w4-xavier/" class="custom-logo-link" rel="home" aria-current="page"><img width="250" height="250" src="http://localhost:8080/4w4-xavier/wp-content/uploads/2024/03/voyage4-1.jpg" class="custom-logo" alt="Club de Voyage" decoding="async" fetchpriority="high" /></a> 
-        <!-- Btn-burger ici! -->
-            <!-- 
-    Gabarit du bouton  burger 
- -->
-<input type="checkbox" name="" id="chk_burger">
-<label for="chk_burger" id="burger">
-    <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#000">
-        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
-    </svg>
-</label> 
+            <a href="http://localhost:8080/4w4-xavier/" class="custom-logo-link" rel="home" aria-current="page"><img
+                    width="250" height="250"
+                    src="http://localhost:8080/4w4-xavier/wp-content/uploads/2024/03/voyage4-1.jpg" class="custom-logo"
+                    alt="Club de Voyage" decoding="async" fetchpriority="high" /></a>
+            <!-- Btn-burger ici! -->
+            <!-- Gabarit du bouton  burger -->
+            <input type="checkbox" name="" id="chk_burger">
+            <label for="chk_burger" id="burger">
+                <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                    color="#000">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </label>
             <!-- Fin btn-burger -->
             <header class="menu__header">
-                <nav class="menu-principal-container"><ul id="menu-principal" class="menu"><li id="menu-item-91" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91"><a href="#galerie">Galerie</a></li>
-<li id="menu-item-93" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-93"><a href="http://localhost:8080/4w4-xavier/category/sport/">Sport</a></li>
-<li id="menu-item-94" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-94"><a href="http://localhost:8080/4w4-xavier/category/pleine-nature/">Pleine nature</a></li>
-<li id="menu-item-95" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-95"><a href="http://localhost:8080/4w4-xavier/category/croisiere/">Croisière</a></li>
-<li id="menu-item-96" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-96"><a href="http://localhost:8080/4w4-xavier/category/aventure/">Aventure</a></li>
-<li id="menu-item-97" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-97"><a href="http://localhost:8080/4w4-xavier/category/culturel/">Culturel</a></li>
-<li id="menu-item-98" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-98"><a href="http://localhost:8080/4w4-xavier/category/repos/">Repos</a></li>
-<li id="menu-item-99" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-99"><a href="http://localhost:8080/4w4-xavier/category/zen/">Zen</a></li>
-</ul></nav>            </header>
+                <nav class="menu-principal-container">
+                    <ul id="menu-principal" class="menu">
+                        <li id="menu-item-91"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91"><a
+                                href="#galerie">Galerie</a></li>
+                        <li id="menu-item-93"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-93"><a
+                                href="http://localhost:8080/4w4-xavier/category/sport/">Sport</a></li>
+                        <li id="menu-item-94"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-94"><a
+                                href="http://localhost:8080/4w4-xavier/category/pleine-nature/">Pleine nature</a></li>
+                        <li id="menu-item-95"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-95"><a
+                                href="http://localhost:8080/4w4-xavier/category/croisiere/">Croisière</a></li>
+                        <li id="menu-item-96"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-96"><a
+                                href="http://localhost:8080/4w4-xavier/category/aventure/">Aventure</a></li>
+                        <li id="menu-item-97"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-97"><a
+                                href="http://localhost:8080/4w4-xavier/category/culturel/">Culturel</a></li>
+                        <li id="menu-item-98"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-98"><a
+                                href="http://localhost:8080/4w4-xavier/category/repos/">Repos</a></li>
+                        <li id="menu-item-99"
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-99"><a
+                                href="http://localhost:8080/4w4-xavier/category/zen/">Zen</a></li>
+                    </ul>
+                </nav>
+            </header>
         </div>
-<!-- Début du site sous le menu principal -->
-<section class="entete__header">
-    <h1>Club de Voyage</h1>
-    <h2>Avant tous les membres</h2>
-    <button class="bouton__header"></button>
-</section>
-<!-- Vague ici! -->
-<!-- 
-    Gabarit de base pour la création de vagues entre le header et l'acceuil et la galerie et le footer 
- -->
-<div class="vague">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="remplissage"></path>
-    </svg>
-</div><!-- Fin de la vague -->
-</div>
-<!-- FIN HEADER -->
-
-<div id="acceuil" class="global">
-    <section>
-        <h2>Acceuil</h2>
-        <h3>Les destinations par catégories</h3>
-        <div class="destination">
-
-            <!-- Boucle php pour afficher articles dans la table posts à partir de la base de données -->
-                                <div class="carte">
-                        <h3>Costa Rica</h3>
-                        <p>Le Costa Rica, joyau d'aventures en Amérique centrale, offre une…</p>
-                        <ul class="post-categories">
-	<li><a href="http://localhost:8080/4w4-xavier/category/aventure/" rel="category tag">Aventure</a></li>
-	<li><a href="http://localhost:8080/4w4-xavier/category/pleine-nature/" rel="category tag">Pleine nature</a></li>
-	<li><a href="http://localhost:8080/4w4-xavier/category/populaire/" rel="category tag">Populaire</a></li></ul> 
-                        <!-- Ajoute un lien vers l'article selctionné -->
-                        <a href="http://localhost:8080/4w4-xavier/2024/03/20/costa-rica/">Suite</a>
-                    </div>
-                                    <div class="carte">
-                        <h3>Kyoto, Japon</h3>
-                        <p>Kyoto incarne l'essence même de la tradition japonaise. En tant…</p>
-                        <ul class="post-categories">
-	<li><a href="http://localhost:8080/4w4-xavier/category/culturel/" rel="category tag">Culturel</a></li>
-	<li><a href="http://localhost:8080/4w4-xavier/category/populaire/" rel="category tag">Populaire</a></li>
-	<li><a href="http://localhost:8080/4w4-xavier/category/repos/" rel="category tag">Repos</a></li>
-	<li><a href="http://localhost:8080/4w4-xavier/category/zen/" rel="category tag">Zen</a></li></ul> 
-                        <!-- Ajoute un lien vers l'article selctionné -->
-                        <a href="http://localhost:8080/4w4-xavier/2024/03/20/kyoto-japon/">Suite</a>
-                    </div>
-                                    <div class="carte">
-                        <h3>Lake Tahoe, Californie/Nevada, États-Unis</h3>
-                        <p>Lake Tahoe, situé à cheval sur la frontière entre la…</p>
-                        <ul class="post-categories">
-	<li><a href="http://localhost:8080/4w4-xavier/category/populaire/" rel="category tag">Populaire</a></li>
-	<li><a href="http://localhost:8080/4w4-xavier/category/sport/" rel="category tag">Sport</a></li></ul> 
-                        <!-- Ajoute un lien vers l'article selctionné -->
-                        <a href="http://localhost:8080/4w4-xavier/2024/03/20/lake-tahoe-californie-nevada-etats-unis/">Suite</a>
-                    </div>
-                                    <div class="carte">
-                        <h3>Parc national des Cinque Terre, Italie</h3>
-                        <p>Situé sur la côte nord-ouest de l'Italie, le parc national…</p>
-                        <ul class="post-categories">
-	<li><a href="http://localhost:8080/4w4-xavier/category/pleine-nature/" rel="category tag">Pleine nature</a></li>
-	<li><a href="http://localhost:8080/4w4-xavier/category/populaire/" rel="category tag">Populaire</a></li></ul> 
-                        <!-- Ajoute un lien vers l'article selctionné -->
-                        <a href="http://localhost:8080/4w4-xavier/2024/03/20/parc-national-des-cinque-terre-italie/">Suite</a>
-                    </div>
-                                    <div class="carte">
-                        <h3>Paris, France</h3>
-                        <p>Paris, surnommée la Ville Lumière, est un véritable joyau culturel.…</p>
-                        <ul class="post-categories">
-	<li><a href="http://localhost:8080/4w4-xavier/category/culturel/" rel="category tag">Culturel</a></li>
-	<li><a href="http://localhost:8080/4w4-xavier/category/populaire/" rel="category tag">Populaire</a></li></ul> 
-                        <!-- Ajoute un lien vers l'article selctionné -->
-                        <a href="http://localhost:8080/4w4-xavier/2024/03/20/paris-france/">Suite</a>
-                    </div>
-                                    <div class="carte">
-                        <h3>Queenstown, Nouvelle-Zélande</h3>
-                        <p>Queenstown, nichée au bord du magnifique lac Wakatipu et entourée…</p>
-                        <ul class="post-categories">
-	<li><a href="http://localhost:8080/4w4-xavier/category/populaire/" rel="category tag">Populaire</a></li>
-	<li><a href="http://localhost:8080/4w4-xavier/category/repos/" rel="category tag">Repos</a></li>
-	<li><a href="http://localhost:8080/4w4-xavier/category/sport/" rel="category tag">Sport</a></li></ul> 
-                        <!-- Ajoute un lien vers l'article selctionné -->
-                        <a href="http://localhost:8080/4w4-xavier/2024/03/20/queenstown-nouvelle-zelande/">Suite</a>
-                    </div>
-                                    </div>
-        <!-- Fin de la boucle php -->
-
-    </section>
-</div>
-<div id="evenements" class="global diagonale">
-    <section>
-        <h2>Évènements</h2>
-        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut repellat possimus molestias, est harum ducimus velit fugit a tenetur architecto inventore sapiente cupiditate soluta totam nam deleniti minus suscipit?</blockquote>
-    </section>
-</div>
-
-<div id="galerie" class="global">
-    <section>
-        <h2>Galerie</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo qui eligendi magnam impedit. Odit, reiciendis fugiat. Deleniti, corrupti facere veniam nihil, atque voluptatum voluptate ipsam labore repudiandae rerum pariatur consequuntur?</p>
-        <section id="conteneur-images">
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
-            <div class="image"></div>
+        <!-- Début du site sous le menu principal -->
+        <section class="entete__header">
+            <h1>Club de Voyage</h1>
+            <h2>Avant tous les membres</h2>
+            <button class="bouton__header"></button>
         </section>
-        <button>voir plus</button>
-    </section>
-    <!-- Vague ici!-->
-    <!-- 
+        <!-- Vague ici! -->
+        <!-- Gabarit de base pour la création de vagues entre le header et l'acceuil et la galerie et le footer -->
+        <div class="vague">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="remplissage"></path>
+            </svg>
+        </div><!-- Fin de la vague -->
+    </div>
+    <!-- FIN HEADER -->
+
+    <div id="acceuil" class="global">
+        <section>
+            <h2>Acceuil</h2>
+            <h3>Les destinations par catégories</h3>
+            <div class="destination">
+
+                <!-- Boucle php pour afficher articles dans la table posts à partir de la base de données -->
+                <div class="carte">
+                    <h3>Costa Rica</h3>
+                    <p>Le Costa Rica, joyau d'aventures en Amérique centrale, offre une…</p>
+                    <ul class="post-categories">
+                        <li><a href="http://localhost:8080/4w4-xavier/category/aventure/"
+                                rel="category tag">Aventure</a></li>
+                        <li><a href="http://localhost:8080/4w4-xavier/category/pleine-nature/" rel="category tag">Pleine
+                                nature</a></li>
+                        <li><a href="http://localhost:8080/4w4-xavier/category/populaire/"
+                                rel="category tag">Populaire</a></li>
+                    </ul>
+                    <!-- Ajoute un lien vers l'article selctionné -->
+                    <a href="http://localhost:8080/4w4-xavier/2024/03/20/costa-rica/">Suite</a>
+                </div>
+                <div class="carte">
+                    <h3>Kyoto, Japon</h3>
+                    <p>Kyoto incarne l'essence même de la tradition japonaise. En tant…</p>
+                    <ul class="post-categories">
+                        <li><a href="http://localhost:8080/4w4-xavier/category/culturel/"
+                                rel="category tag">Culturel</a></li>
+                        <li><a href="http://localhost:8080/4w4-xavier/category/populaire/"
+                                rel="category tag">Populaire</a></li>
+                        <li><a href="http://localhost:8080/4w4-xavier/category/repos/" rel="category tag">Repos</a></li>
+                        <li><a href="http://localhost:8080/4w4-xavier/category/zen/" rel="category tag">Zen</a></li>
+                    </ul>
+                    <!-- Ajoute un lien vers l'article selctionné -->
+                    <a href="http://localhost:8080/4w4-xavier/2024/03/20/kyoto-japon/">Suite</a>
+                </div>
+                <div class="carte">
+                    <h3>Lake Tahoe, Californie/Nevada, États-Unis</h3>
+                    <p>Lake Tahoe, situé à cheval sur la frontière entre la…</p>
+                    <ul class="post-categories">
+                        <li><a href="http://localhost:8080/4w4-xavier/category/populaire/"
+                                rel="category tag">Populaire</a></li>
+                        <li><a href="http://localhost:8080/4w4-xavier/category/sport/" rel="category tag">Sport</a></li>
+                    </ul>
+                    <!-- Ajoute un lien vers l'article selctionné -->
+                    <a
+                        href="http://localhost:8080/4w4-xavier/2024/03/20/lake-tahoe-californie-nevada-etats-unis/">Suite</a>
+                </div>
+                <div class="carte">
+                    <h3>Parc national des Cinque Terre, Italie</h3>
+                    <p>Situé sur la côte nord-ouest de l'Italie, le parc national…</p>
+                    <ul class="post-categories">
+                        <li><a href="http://localhost:8080/4w4-xavier/category/pleine-nature/" rel="category tag">Pleine
+                                nature</a></li>
+                        <li><a href="http://localhost:8080/4w4-xavier/category/populaire/"
+                                rel="category tag">Populaire</a></li>
+                    </ul>
+                    <!-- Ajoute un lien vers l'article selctionné -->
+                    <a
+                        href="http://localhost:8080/4w4-xavier/2024/03/20/parc-national-des-cinque-terre-italie/">Suite</a>
+                </div>
+                <div class="carte">
+                    <h3>Paris, France</h3>
+                    <p>Paris, surnommée la Ville Lumière, est un véritable joyau culturel.…</p>
+                    <ul class="post-categories">
+                        <li><a href="http://localhost:8080/4w4-xavier/category/culturel/"
+                                rel="category tag">Culturel</a></li>
+                        <li><a href="http://localhost:8080/4w4-xavier/category/populaire/"
+                                rel="category tag">Populaire</a></li>
+                    </ul>
+                    <!-- Ajoute un lien vers l'article selctionné -->
+                    <a href="http://localhost:8080/4w4-xavier/2024/03/20/paris-france/">Suite</a>
+                </div>
+                <div class="carte">
+                    <h3>Queenstown, Nouvelle-Zélande</h3>
+                    <p>Queenstown, nichée au bord du magnifique lac Wakatipu et entourée…</p>
+                    <ul class="post-categories">
+                        <li><a href="http://localhost:8080/4w4-xavier/category/populaire/"
+                                rel="category tag">Populaire</a></li>
+                        <li><a href="http://localhost:8080/4w4-xavier/category/repos/" rel="category tag">Repos</a></li>
+                        <li><a href="http://localhost:8080/4w4-xavier/category/sport/" rel="category tag">Sport</a></li>
+                    </ul>
+                    <!-- Ajoute un lien vers l'article selctionné -->
+                    <a href="http://localhost:8080/4w4-xavier/2024/03/20/queenstown-nouvelle-zelande/">Suite</a>
+                </div>
+            </div>
+            <!-- Fin de la boucle php -->
+
+        </section>
+    </div>
+    <div id="evenements" class="global diagonale">
+        <section>
+            <h2>Évènements</h2>
+            <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut repellat possimus
+                molestias, est harum ducimus velit fugit a tenetur architecto inventore sapiente cupiditate soluta totam
+                nam deleniti minus suscipit?</blockquote>
+        </section>
+    </div>
+
+    <div id="galerie" class="global">
+        <section>
+            <h2>Galerie</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo qui eligendi magnam impedit. Odit,
+                reiciendis fugiat. Deleniti, corrupti facere veniam nihil, atque voluptatum voluptate ipsam labore
+                repudiandae rerum pariatur consequuntur?</p>
+            <section id="conteneur-images">
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+            </section>
+            <button>voir plus</button>
+        </section>
+        <!-- Vague ici!-->
+        <!-- 
     Gabarit de base pour la création de vagues entre le header et l'acceuil et la galerie et le footer 
  -->
-<div class="vague">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="remplissage"></path>
-    </svg>
-</div>    <!-- Fin de la vague -->
-</div>
+        <div class="vague">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="remplissage"></path>
+            </svg>
+        </div> <!-- Fin de la vague -->
+    </div>
 
-<!-- Importation du footer.php -->
-<!-- Template du footer -->
-<!-- Ce gabarit est appelé à la fin de chacun des modèles de thèmes -->
+    <!-- Importation du footer.php -->
+    <!-- Template du footer -->
+    <!-- Ce gabarit est appelé à la fin de chacun des modèles de thèmes -->
 
-<div id="footer" class="global">
-    <footer>
-        <h2>Footer</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, aperiam dolorem est quam repellendus tenetur sit ipsum natus voluptas fugit, dignissimos dolorum corrupti pariatur dolor! Repellendus accusantium voluptatem eos rerum.
-            Cum perspiciatis expedita adipisci voluptates harum vitae, corporis placeat soluta aliquid in velit nam animi repellat molestiae. Laboriosam sit fugiat doloremque fuga expedita enim aperiam dolorem, explicabo error odio iure!
-            Distinctio odit quibusdam vel voluptatem quasi architecto placeat veniam facilis vitae, neque expedita sequi natus omnis alias ipsa labore deserunt. Suscipit qui tenetur a tempora itaque incidunt ea nesciunt velit?</p>
-        <a href="#">&#8593</a>
+    <div id="footer" class="global">
+        <footer>
+            <h2>Footer</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, aperiam dolorem est quam repellendus
+                tenetur sit ipsum natus voluptas fugit, dignissimos dolorum corrupti pariatur dolor! Repellendus
+                accusantium voluptatem eos rerum.
+                Cum perspiciatis expedita adipisci voluptates harum vitae, corporis placeat soluta aliquid in velit nam
+                animi repellat molestiae. Laboriosam sit fugiat doloremque fuga expedita enim aperiam dolorem, explicabo
+                error odio iure!
+                Distinctio odit quibusdam vel voluptatem quasi architecto placeat veniam facilis vitae, neque expedita
+                sequi natus omnis alias ipsa labore deserunt. Suscipit qui tenetur a tempora itaque incidunt ea nesciunt
+                velit?</p>
+            <a href="#">&#8593</a>
 
-        <p>par Xavier Arbour</p>
-    </footer>
-</div>
-<!-- FIN FOOTER -->
+            <p>par Xavier Arbour</p>
+        </footer>
+    </div>
+    <!-- FIN FOOTER -->
 </body>
 
 </html>

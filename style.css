@@ -320,7 +320,7 @@ h1 {
   font-style: normal;
   font-size: clamp(1.5rem, -2.656rem + 12.5vw, 4.375rem);
   padding-bottom: 1rem;
-  color: var(--couleur-arriere-galerie);
+  color: var(--couleur-arriere-menu);
 }
 
 h2 {
@@ -581,16 +581,21 @@ input {
 }
 
 #entete {
-  background-image: url("image/github.png");
+  background-image: url("image/trip.jpg");
   background-size: cover;
   background-position: center;
-  background-size: 25%;
+  background-size: 150%;
   background-repeat: no-repeat;
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
   position: relative;
   flex-direction: column;
   min-height: 20vh;
+}
+@media screen and (min-width: 700px) {
+  #entete {
+    background-size: 100%;
+  }
 }
 
 .custom-logo {

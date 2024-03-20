@@ -1,15 +1,19 @@
 
 #entete {
-    background-image: url("image/github.png");
+    background-image: url("image/trip.jpg");
     background-size: cover;
     background-position: center;
-    background-size: 25%;
+    background-size: 150%;
     background-repeat: no-repeat;
     background-color: var(--couleur-arriere-entete);
     color: var(--couleur-entete);
     position: relative;
     flex-direction: column;
     min-height: 20vh;
+
+    @media screen and (min-width: 700px) {
+        background-size: 100%;
+    }
 }
 
 // Pour ajuster le logo

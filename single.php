@@ -3,7 +3,7 @@
 
     <!-- Début du site sous le menu principal -->
     <section class="entete__header">
-        <h1>Theme Gr1</h1>
+        <h1>Club de Voyage</h1>
         <button class="bouton__header"></button>
     </section>
     <!-- Vague ici! -->

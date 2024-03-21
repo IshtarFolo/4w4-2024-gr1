@@ -10,7 +10,15 @@
     Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-@import "variables";
+/* Initialisation des variables Sass et CSS */
+
+@import "utile/couleurs";
+
+/* Création des classes de couleurs */
+
+@import "utile/couleurs-classes";
+
+/* Bases */
 
 @import "layout";
 

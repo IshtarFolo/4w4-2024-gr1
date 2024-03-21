@@ -4,7 +4,7 @@
 <!-- Début du site sous le menu principal -->
 <section class="entete__header">
     <h1>Club de Voyage</h1>
-    <button class="bouton__header"></button>
+    <button class="bouton__header" onclick="location.href='<?php echo esc_url(get_permalink(get_page_by_path('category-ID.php'))); ?>'"></button>
 </section>
 <!-- Vague ici! -->
 <?php get_template_part('gabarits/vagues'); ?>
@@ -12,7 +12,7 @@
 </div>
 <!-- FIN HEADER -->
 
-<div id="acceuil" class="global">
+<div id="acceuil" class="global clr-rose-pale">
     <section>
         <h2>Acceuil</h2>
         <div class="destination">

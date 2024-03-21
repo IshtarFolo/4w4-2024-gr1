@@ -17,7 +17,7 @@
 <body>
     <!-- HEADER -->
     <div id="entete" class="global">
-        <div id="menu__entete" class="global">
+        <div id="menu__entete" class="global clr-agencement-primaire">
         <?php echo get_custom_logo(); ?> 
         <!-- Btn-burger ici! -->
             <?php get_template_part("gabarits/btn-burger") ?> 

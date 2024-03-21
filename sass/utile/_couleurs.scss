@@ -1,3 +1,67 @@
+/*===================
+ ** Variables Sass **
+====================*/
+/* 
+Palette de couleur 
+----------------------------------------------*/
+$--clr-bleu-pale : hsl(220, 100%, 85%);
+$--clr-bleu-leger : hsl(220, 100%, 60%);
+$--clr-bleu-moyen : hsl(220, 100%, 30%);
+$--clr-bleu-fonce : hsl(220, 100%, 15%);
+
+$--clr-orange-pale: hsl(40, 100%, 85%);
+$--clr-orange-leger : hsl(40, 100%, 50%);
+$--clr-orange-moyen : hsl(40, 100%, 30%);
+$--clr-orange-fonce : hsl(40, 100%, 15%);
+
+$--clr-rose-pale: hsl(320, 67%, 74%);
+$--clr-rose-leger : hsl(320, 100%, 50%);
+$--clr-rose-moyen : hsl(320, 100%, 30%);
+$--clr-rose-fonce : hsl(320, 100%, 15%);
+
+$--clr-vert-pale: hsl(70, 100%, 85%);
+$--clr-vert-leger : hsl(70, 100%, 50%);
+$--clr-vert-moyen : hsl(70, 100%, 30%);
+$--clr-vert-fonce : hsl(70, 100%, 15%);
+
+/* 
+Map des couleurs:
+---------------------------------------------------------
+   À partir de la palette choisie on crée un mapping
+   en catégorisant les différentes couleurs.
+   Ce map contient un map principal et plusieurs sous-maps
+----------------------------------------------------------*/
+$defaut: (
+    primaire : (100: $--clr-bleu-pale,
+        200: $--clr-bleu-leger,
+        300: $--clr-bleu-moyen,
+        400: $--clr-bleu-fonce ),
+    secondaire : (100: $--clr-orange-pale,
+        200: $--clr-orange-leger,
+        300: $--clr-orange-moyen,
+        400: $--clr-orange-fonce ),
+    ternaire : (100: $--clr-rose-pale,
+        200: $--clr-rose-leger,
+        300: $--clr-rose-moyen,
+        400: $--clr-rose-fonce ),
+    vert : (100: $--clr-vert-pale,
+        200: $--clr-vert-leger,
+        300: $--clr-vert-moyen,
+        400: $--clr-vert-fonce )
+);
+
+/* 
+Agencement de couleurs
+---------------------------------------------------------------------------*/
+$agencement-couleur :(primaire: ($--clr-bleu-fonce, ($--clr-bleu-pale, $--clr-bleu-leger)),
+    secondaire: ($--clr-orange-fonce, $--clr-orange-pale),
+    ternaire: ($--clr-rose-fonce, $--clr-rose-pale),
+    vert: ($--clr-vert-fonce, $--clr-vert-pale));
+
+
+/*==================
+ ** VARIABLES CSS **
+ ==================*/
 :root {
     /* Calcul des teintes 
     -----------------------------------------------------------------*/
@@ -13,7 +77,7 @@
     --l-arriere-plan: 30%;
     --l-avant-plan: 42%;
 
-    /* Couleurs d'arriere-plan
+    /* Couleurs d'arriere-plan (avec HSL: Hue, Saturation, Lightness)
     -----------------------------------------------------------------*/
     --couleur-arriere-entete: hsl(var(--u1), 100%, 25%);
     --couleur-arriere-menu: hsl(var(--u1), 100%, 40%);
@@ -51,7 +115,7 @@
     /* Couleur des cartes
     ------------------------------------------------------------------*/
     .carte {
-        --_couleur-arriere: hsl(var(--u1),100%, 50% );
+        --_couleur-arriere: hsl(var(--u1), 100%, 50%);
     }
 
     /* Couleur des vagues

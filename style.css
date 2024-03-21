@@ -10,6 +10,26 @@
     This theme, like WordPress, is licensed under the GPL.
     Use it to make something cool, have fun, and share what you've learned with others.
 */
+/* Initialisation des variables Sass et CSS */
+/*===================
+ ** Variables Sass **
+====================*/
+/* 
+Palette de couleur 
+----------------------------------------------*/
+/* 
+Map des couleurs:
+---------------------------------------------------------
+   À partir de la palette choisie on crée un mapping
+   en catégorisant les différentes couleurs.
+   Ce map contient un map principal et plusieurs sous-maps
+----------------------------------------------------------*/
+/* 
+Agencement de couleurs
+---------------------------------------------------------------------------*/
+/*==================
+ ** VARIABLES CSS **
+ ==================*/
 :root {
   /* Calcul des teintes 
   -----------------------------------------------------------------*/
@@ -23,7 +43,7 @@
   --s-avant-plan: 50%;
   --l-arriere-plan: 30%;
   --l-avant-plan: 42%;
-  /* Couleurs d'arriere-plan
+  /* Couleurs d'arriere-plan (avec HSL: Hue, Saturation, Lightness)
   -----------------------------------------------------------------*/
   --couleur-arriere-entete: hsl(var(--u1), 100%, 25%);
   --couleur-arriere-menu: hsl(var(--u1), 100%, 40%);
@@ -59,7 +79,7 @@
   -------------------------------------------------------------------*/
 }
 :root .carte {
-  --_couleur-arriere: hsl(var(--u1),100%, 50% );
+  --_couleur-arriere: hsl(var(--u1), 100%, 50%);
 }
 :root #entete .vague .remplissage {
   --_couleur-arriere-vague: var(--couleur-arriere-acceuil);
@@ -68,6 +88,162 @@
   --_couleur-arriere-vague: var(--couleur-arriere-footer);
 }
 
+/* Création des classes de couleurs */
+/*
+Création de classes de couleurs
+--------------------------------------------*/
+.clr-primaire-100 {
+  color: hsl(220, 100%, 85%);
+}
+
+.bck-primaire-100 {
+  background-color: hsl(220, 100%, 85%);
+}
+
+.clr-primaire-200 {
+  color: hsl(220, 100%, 60%);
+}
+
+.bck-primaire-200 {
+  background-color: hsl(220, 100%, 60%);
+}
+
+.clr-primaire-300 {
+  color: hsl(220, 100%, 30%);
+}
+
+.bck-primaire-300 {
+  background-color: hsl(220, 100%, 30%);
+}
+
+.clr-primaire-400 {
+  color: hsl(220, 100%, 15%);
+}
+
+.bck-primaire-400 {
+  background-color: hsl(220, 100%, 15%);
+}
+
+.clr-secondaire-100 {
+  color: hsl(40, 100%, 85%);
+}
+
+.bck-secondaire-100 {
+  background-color: hsl(40, 100%, 85%);
+}
+
+.clr-secondaire-200 {
+  color: hsl(40, 100%, 50%);
+}
+
+.bck-secondaire-200 {
+  background-color: hsl(40, 100%, 50%);
+}
+
+.clr-secondaire-300 {
+  color: hsl(40, 100%, 30%);
+}
+
+.bck-secondaire-300 {
+  background-color: hsl(40, 100%, 30%);
+}
+
+.clr-secondaire-400 {
+  color: hsl(40, 100%, 15%);
+}
+
+.bck-secondaire-400 {
+  background-color: hsl(40, 100%, 15%);
+}
+
+.clr-ternaire-100 {
+  color: hsl(320, 67%, 74%);
+}
+
+.bck-ternaire-100 {
+  background-color: hsl(320, 67%, 74%);
+}
+
+.clr-ternaire-200 {
+  color: hsl(320, 100%, 50%);
+}
+
+.bck-ternaire-200 {
+  background-color: hsl(320, 100%, 50%);
+}
+
+.clr-ternaire-300 {
+  color: hsl(320, 100%, 30%);
+}
+
+.bck-ternaire-300 {
+  background-color: hsl(320, 100%, 30%);
+}
+
+.clr-ternaire-400 {
+  color: hsl(320, 100%, 15%);
+}
+
+.bck-ternaire-400 {
+  background-color: hsl(320, 100%, 15%);
+}
+
+.clr-vert-100 {
+  color: hsl(70, 100%, 85%);
+}
+
+.bck-vert-100 {
+  background-color: hsl(70, 100%, 85%);
+}
+
+.clr-vert-200 {
+  color: hsl(70, 100%, 50%);
+}
+
+.bck-vert-200 {
+  background-color: hsl(70, 100%, 50%);
+}
+
+.clr-vert-300 {
+  color: hsl(70, 100%, 30%);
+}
+
+.bck-vert-300 {
+  background-color: hsl(70, 100%, 30%);
+}
+
+.clr-vert-400 {
+  color: hsl(70, 100%, 15%);
+}
+
+.bck-vert-400 {
+  background-color: hsl(70, 100%, 15%);
+}
+
+/* 
+Mixin pour agencement des couleurs
+--------------------------------------------*/
+.clr-agencement-primaire {
+  color: hsl(220, 100%, 15%);
+  background-image: linear-gradient(-90deg, hsl(220, 100%, 85%), hsl(220, 100%, 60%));
+}
+
+.clr-agencement-secondaire {
+  color: hsl(40, 100%, 15%);
+  background-color: hsl(40, 100%, 85%);
+}
+
+.clr-agencement-ternaire {
+  color: hsl(320, 100%, 15%);
+  background-color: hsl(320, 67%, 74%);
+}
+
+.clr-agencement-vert {
+  color: hsl(70, 100%, 15%);
+  background-color: hsl(70, 100%, 85%);
+}
+
+/* Bases */
 /* Remise a 0 
 -----------------------------------------------------------------------*/
 * {
@@ -117,6 +293,7 @@ body {
 /* Les Sections 
 -------------------------------------------------------------------------*/
 #menu__entete {
+  background-color: var(--couleur-arriere-menu);
   position: relative;
 }
 
@@ -252,12 +429,6 @@ section > .bouton__header {
 ---------------------------------------------------------------*/
 #galerie p {
   color: var(--couleur-entete);
-}
-
-#galerie p::first-letter {
-  color: var(--couleur-premiere-lettre);
-  font-size: 2rem;
-  margin-right: 0.2rem;
 }
 
 /* Bouton au bas de la galerie 
@@ -460,6 +631,10 @@ h6 {
   transition: 0.5s background-color ease-in-out;
 }
 
+.categories a {
+  width: 60%;
+}
+
 .carte {
   display: flex;
   flex-direction: column;
@@ -557,7 +732,7 @@ h6 {
 #burger {
   display: block;
   position: absolute;
-  top: 10px;
+  top: 25px;
   right: 10px;
   z-index: 2;
 }
@@ -586,7 +761,6 @@ input {
   background-position: center;
   background-size: 150%;
   background-repeat: no-repeat;
-  background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
   position: relative;
   flex-direction: column;

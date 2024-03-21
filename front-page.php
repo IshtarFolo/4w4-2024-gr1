@@ -22,7 +22,7 @@
             <!-- Boucle php pour afficher articles dans la table posts à partir de la base de données -->
             <?php if (have_posts()) :
                 while (have_posts()) : the_post(); ?>
-                    <div class="carte">
+                    <div class="carte bck-primaire-100">
                         <h3><?php the_title(); ?></h3>
                         <p><?php echo wp_trim_words(get_the_content(), 10); ?></p>
                         <?php the_category(); ?>
@@ -52,7 +52,7 @@
             $categories = get_categories();
             foreach ($categories as $category) {
             ?>
-                <div class="carte">
+                <div class="carte bck-primaire-100">
                     <h3><?php echo $category->name; ?></h3>
                     <p><?php echo $category->count . ' articles'; ?></p>
                     <p>
@@ -62,7 +62,7 @@
                             echo implode(" ", $first_10_words) . "...";
                         ?> 
                     </p>
-                    <a href="<?php echo get_category_link($category->term_id); ?>">Voir les destinations</a>
+                    <a class="clr-primaire-200" href="<?php echo get_category_link($category->term_id); ?>">Voir les destinations</a>
                 </div>
             <?php
             }

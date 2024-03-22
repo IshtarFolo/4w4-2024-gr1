@@ -4,7 +4,7 @@
 <!-- Début du site sous le menu principal -->
 <section class="entete__header">
     <h1 class="clr-primaire-400">Horizon Voyage</h1>
-    <button class="bouton__header"></button>
+    <button class="bouton__header bck-primaire-200 clr-primaire-400">Acheter un billet</button>
 </section>
 <!-- Vague ici! -->
 <?php get_template_part('gabarits/vagues'); ?>

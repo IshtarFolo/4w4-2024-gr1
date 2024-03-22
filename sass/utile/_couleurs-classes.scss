@@ -14,6 +14,10 @@ Création de classes de couleurs
 
             background-color: #{$couleur};
         }
+
+        .fill-#{$nom}-#{$valeur} {
+            fill: #{$couleur};
+        }
     }
 }
 
@@ -28,7 +32,7 @@ Mixin pour agencement des couleurs
     }
 
     @else {
-        background-image: linear-gradient(-90deg, $bck);
+        background-image: linear-gradient(0deg, $bck);
     }
 }
 

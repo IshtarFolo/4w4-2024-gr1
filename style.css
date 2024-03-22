@@ -93,35 +93,51 @@ Agencement de couleurs
 Création de classes de couleurs
 --------------------------------------------*/
 .clr-primaire-100 {
-  color: hsl(220, 100%, 85%);
+  color: hsl(204, 74%, 67%);
 }
 
 .bck-primaire-100 {
-  background-color: hsl(220, 100%, 85%);
+  background-color: hsl(204, 74%, 67%);
+}
+
+.fill-primaire-100 {
+  fill: hsl(204, 74%, 67%);
 }
 
 .clr-primaire-200 {
-  color: hsl(220, 100%, 60%);
+  color: hsl(204, 47%, 41%);
 }
 
 .bck-primaire-200 {
-  background-color: hsl(220, 100%, 60%);
+  background-color: hsl(204, 47%, 41%);
+}
+
+.fill-primaire-200 {
+  fill: hsl(204, 47%, 41%);
 }
 
 .clr-primaire-300 {
-  color: hsl(220, 100%, 30%);
+  color: hsl(204, 100%, 30%);
 }
 
 .bck-primaire-300 {
-  background-color: hsl(220, 100%, 30%);
+  background-color: hsl(204, 100%, 30%);
+}
+
+.fill-primaire-300 {
+  fill: hsl(204, 100%, 30%);
 }
 
 .clr-primaire-400 {
-  color: hsl(220, 100%, 15%);
+  color: hsl(204, 100%, 15%);
 }
 
 .bck-primaire-400 {
-  background-color: hsl(220, 100%, 15%);
+  background-color: hsl(204, 100%, 15%);
+}
+
+.fill-primaire-400 {
+  fill: hsl(204, 100%, 15%);
 }
 
 .clr-secondaire-100 {
@@ -132,12 +148,20 @@ Création de classes de couleurs
   background-color: hsl(40, 100%, 85%);
 }
 
+.fill-secondaire-100 {
+  fill: hsl(40, 100%, 85%);
+}
+
 .clr-secondaire-200 {
   color: hsl(40, 100%, 50%);
 }
 
 .bck-secondaire-200 {
   background-color: hsl(40, 100%, 50%);
+}
+
+.fill-secondaire-200 {
+  fill: hsl(40, 100%, 50%);
 }
 
 .clr-secondaire-300 {
@@ -148,12 +172,20 @@ Création de classes de couleurs
   background-color: hsl(40, 100%, 30%);
 }
 
+.fill-secondaire-300 {
+  fill: hsl(40, 100%, 30%);
+}
+
 .clr-secondaire-400 {
   color: hsl(40, 100%, 15%);
 }
 
 .bck-secondaire-400 {
   background-color: hsl(40, 100%, 15%);
+}
+
+.fill-secondaire-400 {
+  fill: hsl(40, 100%, 15%);
 }
 
 .clr-ternaire-100 {
@@ -164,12 +196,20 @@ Création de classes de couleurs
   background-color: hsl(320, 67%, 74%);
 }
 
+.fill-ternaire-100 {
+  fill: hsl(320, 67%, 74%);
+}
+
 .clr-ternaire-200 {
   color: hsl(320, 100%, 50%);
 }
 
 .bck-ternaire-200 {
   background-color: hsl(320, 100%, 50%);
+}
+
+.fill-ternaire-200 {
+  fill: hsl(320, 100%, 50%);
 }
 
 .clr-ternaire-300 {
@@ -180,12 +220,20 @@ Création de classes de couleurs
   background-color: hsl(320, 100%, 30%);
 }
 
+.fill-ternaire-300 {
+  fill: hsl(320, 100%, 30%);
+}
+
 .clr-ternaire-400 {
   color: hsl(320, 100%, 15%);
 }
 
 .bck-ternaire-400 {
   background-color: hsl(320, 100%, 15%);
+}
+
+.fill-ternaire-400 {
+  fill: hsl(320, 100%, 15%);
 }
 
 .clr-vert-100 {
@@ -196,12 +244,20 @@ Création de classes de couleurs
   background-color: hsl(70, 100%, 85%);
 }
 
+.fill-vert-100 {
+  fill: hsl(70, 100%, 85%);
+}
+
 .clr-vert-200 {
   color: hsl(70, 100%, 50%);
 }
 
 .bck-vert-200 {
   background-color: hsl(70, 100%, 50%);
+}
+
+.fill-vert-200 {
+  fill: hsl(70, 100%, 50%);
 }
 
 .clr-vert-300 {
@@ -212,6 +268,10 @@ Création de classes de couleurs
   background-color: hsl(70, 100%, 30%);
 }
 
+.fill-vert-300 {
+  fill: hsl(70, 100%, 30%);
+}
+
 .clr-vert-400 {
   color: hsl(70, 100%, 15%);
 }
@@ -220,12 +280,16 @@ Création de classes de couleurs
   background-color: hsl(70, 100%, 15%);
 }
 
+.fill-vert-400 {
+  fill: hsl(70, 100%, 15%);
+}
+
 /* 
 Mixin pour agencement des couleurs
 --------------------------------------------*/
 .clr-agencement-primaire {
-  color: hsl(220, 100%, 15%);
-  background-image: linear-gradient(-90deg, hsl(220, 100%, 85%), hsl(220, 100%, 60%));
+  color: hsl(204, 100%, 15%);
+  background-image: linear-gradient(0deg, hsl(204, 74%, 67%), hsl(204, 47%, 41%));
 }
 
 .clr-agencement-secondaire {
@@ -283,7 +347,7 @@ body {
   position: relative;
   margin-bottom: 1rem;
 }
-@media (min-width: 700px) {
+@media screen and (min-width: 700px) {
   .global > .entete__header {
     margin-bottom: 4rem;
     margin-top: 15rem;
@@ -293,30 +357,15 @@ body {
 /* Les Sections 
 -------------------------------------------------------------------------*/
 #menu__entete {
-  background-color: var(--couleur-arriere-menu);
   position: relative;
 }
 
-#acceuil {
-  background-color: var(--couleur-arriere-acceuil);
-  color: var(--couleur-evenements);
-}
-
-#evenements {
-  background: var(--couleur-arriere-acceuil);
-  background: linear-gradient(180deg, var(--couleur-arriere-acceuil) 0%, var(--couleur-arriere-galerie) 100%);
-  color: var(--couleur-evenements);
-}
-
 #galerie {
-  background-color: var(--couleur-arriere-galerie);
-  color: var(--couleur-galerie);
   position: relative;
   padding-bottom: 1rem;
 }
 
 #footer {
-  background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);
   min-height: 20vh;
 }
@@ -331,8 +380,6 @@ body {
 #acceuil blockquote {
   padding: 1rem;
   border-radius: 15px;
-  background-color: var(--couleur-arriere-galerie);
-  color: var(--couleur-entete);
   font-size: clamp(0.813rem, 0.435rem + 1.207vw, 1.25rem);
 }
 
@@ -355,7 +402,7 @@ body {
 .post-categories li > a:hover {
   border: none;
   background-color: transparent;
-  color: blue;
+  color: hsl(255, 100%, 100%);
 }
 
 /* Blockquote Section Évènements
@@ -364,8 +411,6 @@ body {
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 15px;
-  background-color: var(--couleur-arriere-footer);
-  color: var(--couleur-arriere-galerie);
   font-size: clamp(0.813rem, 0.435rem + 1.207vw, 1.25rem);
   z-index: 2;
   position: relative;
@@ -423,12 +468,6 @@ section > .bouton__header {
   margin: 1rem;
   padding: 1rem;
   background-color: var(--couleur-arriere-acceuil);
-}
-
-/* Texte dans la section galerie
----------------------------------------------------------------*/
-#galerie p {
-  color: var(--couleur-entete);
 }
 
 /* Bouton au bas de la galerie 
@@ -491,7 +530,6 @@ h1 {
   font-style: normal;
   font-size: clamp(1.5rem, -2.656rem + 12.5vw, 4.375rem);
   padding-bottom: 1rem;
-  color: var(--couleur-arriere-menu);
 }
 
 h2 {
@@ -499,23 +537,31 @@ h2 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   z-index: 0;
   position: relative;
-  color: var(--couleur-arriere-galerie);
-}
-
-#galerie h2 {
-  color: var(--couleur-arriere-acceuil);
 }
 
 #evenements h2 {
-  color: var(--couleur-arriere-acceuil);
   z-index: 2;
+  margin-bottom: 1rem;
+}
+
+#galerie h2 {
+  margin: 0 0 1rem 0;
+}
+@media screen and (min-width: 700px) {
+  #galerie h2 {
+    margin-top: 4rem;
+  }
+}
+
+#footer h2 {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 h3 {
   font-weight: 400;
   font-size: clamp(1rem, -2.969rem + 14vw, 2.9rem);
   padding-bottom: 1rem;
-  color: var(--couleur-arriere-galerie);
 }
 
 .carte > h3 {
@@ -528,17 +574,12 @@ h4 {
   z-index: 2;
   position: relative;
   padding-bottom: 1rem;
-  color: var(--couleur-arriere-acceuil);
 }
 
 h5 {
   font-weight: 200;
   font-size: clamp(0.4rem, -3.281rem + 12.5vw, 2.5rem);
   padding-bottom: 1rem;
-}
-
-#galerie h5 {
-  color: var(--couleur-arriere-acceuil);
 }
 
 h6 {
@@ -562,14 +603,6 @@ h6 {
   display: block;
   width: calc(100% + 1.3px);
   height: 150px;
-}
-
-#entete .vague .remplissage {
-  fill: var(--_couleur-arriere-vague);
-}
-
-#galerie .vague .remplissage {
-  fill: var(--_couleur-arriere-vague);
 }
 
 /** Pour mobile **/
@@ -597,7 +630,7 @@ h6 {
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: var(--couleur-arriere-evenements);
+  background-color: hsl(204, 50%, 30%);
   z-index: 1;
   transform: skewY(-5deg);
 }
@@ -638,7 +671,7 @@ h6 {
 }
 
 .categories a:hover {
-  color: var(--couleur-menu);
+  color: hsl(204, 74%, 67%);
   transition: 0.5s background-color ease-in-out;
 }
 
@@ -694,8 +727,7 @@ h6 {
   z-index: 1;
   transform: translateX(300%);
   transition: 1s transform ease-in-out;
-  background-color: var(--couleur-arriere-menu);
-  border: 4px solid var(--couleur-menu);
+  background-color: hsl(204, 67%, 15%);
   padding-top: 4rem;
 }
 @media (min-width: 700px) {
@@ -726,7 +758,7 @@ h6 {
   margin: 1rem;
   padding: 0.5rem;
   text-decoration: none;
-  color: var(--couleur-texte-menu);
+  color: hsl(255, 100%, 100%);
 }
 
 .menu-item a:hover {
@@ -784,6 +816,8 @@ input {
   height: auto;
   margin-top: 1rem;
   padding: 0;
+  transform: scale(1);
+  transition: 1s transform ease-in-out;
 }
 @media screen and (min-width: 700px) {
   .custom-logo {
@@ -792,4 +826,8 @@ input {
     position: relative;
     right: 45rem;
   }
+}
+
+.custom-logo:hover {
+  transform: scale(1.3);
 }/*# sourceMappingURL=style.css.map */

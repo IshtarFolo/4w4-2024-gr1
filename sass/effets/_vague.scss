@@ -15,14 +15,6 @@
     height: 150px;
 }
 
-#entete .vague .remplissage {
-    fill: var(--_couleur-arriere-vague);
-}
-
-#galerie .vague .remplissage {
-    fill: var(--_couleur-arriere-vague);
-}
-
 /** Pour mobile **/
 @media (min-width: 767px) {
     .vague svg {

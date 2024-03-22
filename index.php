@@ -3,7 +3,7 @@
 
 <!-- Début du site sous le menu principal -->
 <section class="entete__header">
-    <h1>Club de Voyage</h1>
+    <h1 class="clr-primaire-400">Horizon Voyage</h1>
     <button class="bouton__header" onclick="location.href='<?php echo esc_url(get_permalink(get_page_by_path('category-ID.php'))); ?>'"></button>
 </section>
 <!-- Vague ici! -->
@@ -12,7 +12,7 @@
 </div>
 <!-- FIN HEADER -->
 
-<div id="acceuil" class="global clr-rose-pale">
+<div id="acceuil" class="global bck-primaire-200">
     <section>
         <h2>Acceuil</h2>
         <div class="destination">
@@ -23,7 +23,7 @@
                     $titre = get_the_title();
 
             ?>
-                    <div class="carte">
+                    <div class="carte bck-primaire-100">
                         <h3><?php echo $titre; ?></h3>
                         <p><?php the_content(); ?></p>
                     </div>
@@ -35,7 +35,7 @@
     </section>
 </div>
 
-<div id="galerie" class="global">
+<div id="galerie" class="global bck-primaire-100">
     <section>
         <h2>Galerie</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo qui eligendi magnam impedit. Odit, reiciendis fugiat. Deleniti, corrupti facere veniam nihil, atque voluptatum voluptate ipsam labore repudiandae rerum pariatur consequuntur?</p>
@@ -55,7 +55,7 @@
 </div>
 
 <!-- FOOTER -->
-<div id="footer" class="global">
+<div id="footer" class="global bck-primaire-200">
     <footer>
         <h2>Footer</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, aperiam dolorem est quam repellendus tenetur sit ipsum natus voluptas fugit, dignissimos dolorum corrupti pariatur dolor! Repellendus accusantium voluptatem eos rerum.

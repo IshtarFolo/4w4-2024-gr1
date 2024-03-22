@@ -39,7 +39,7 @@ body {
     margin-bottom: 1rem;
     
     // Fullscreen
-    @media (min-width: 700px){
+    @media screen and (min-width: 700px){
         margin-bottom: 4rem;
         margin-top: 15rem;
     }
@@ -48,30 +48,15 @@ body {
 /* Les Sections 
 -------------------------------------------------------------------------*/
 #menu__entete {
-     background-color: var(--couleur-arriere-menu);
     position: relative;
 }
 
-#acceuil {
-    background-color: var(--couleur-arriere-acceuil);
-    color: var(--couleur-evenements);
-}
-
-#evenements {
-    background: var(--couleur-arriere-acceuil);
-    background: linear-gradient(180deg, var(--couleur-arriere-acceuil) 0%, var(--couleur-arriere-galerie) 100%);
-    color: var(--couleur-evenements);
-}
-
 #galerie {
-    background-color: var(--couleur-arriere-galerie);
-    color: var(--couleur-galerie);
     position: relative;
     padding-bottom: 1rem;
 }
 
 #footer {
-    background-color: var(--couleur-arriere-footer);
     color: var(--couleur-footer);
     min-height: 20vh;
 }
@@ -86,8 +71,6 @@ body {
 #acceuil blockquote{
     padding: 1rem;
     border-radius: 15px;
-    background-color: var(--couleur-arriere-galerie);
-    color: var(--couleur-entete);
     font-size: clamp(0.813rem, 0.435rem + 1.207vw, 1.25rem);
 }
 
@@ -111,7 +94,7 @@ body {
 .post-categories li > a:hover{
     border: none;
     background-color: transparent;
-    color: blue;
+    color: hsl(255,100%,100%);
 }
 
 /* Blockquote Section Évènements
@@ -120,8 +103,6 @@ body {
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 15px;
-    background-color: var(--couleur-arriere-footer);
-    color: var(--couleur-arriere-galerie);
     font-size: clamp(0.813rem, 0.435rem + 1.207vw, 1.25rem);
     z-index: 2;
     position: relative;
@@ -179,13 +160,6 @@ section > .bouton__header{
     margin: 1rem;
     padding: 1rem;
     background-color: var(--couleur-arriere-acceuil);
-}
-
-
-/* Texte dans la section galerie
----------------------------------------------------------------*/
-#galerie p{
-    color: var(--couleur-entete);
 }
 
 /* Bouton au bas de la galerie 

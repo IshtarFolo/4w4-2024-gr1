@@ -721,6 +721,11 @@ h6 {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 700px) {
+  .menu-principal-container {
+    width: 2000rem;
+  }
+}
 
 .menu {
   width: 50%;
@@ -734,7 +739,7 @@ h6 {
   transform: translateX(300%);
   transition: 1s transform ease-in-out;
   background-color: hsl(204, 67%, 15%);
-  padding-top: 6rem;
+  padding-top: 8rem;
 }
 @media (min-width: 700px) {
   .menu {
@@ -749,6 +754,7 @@ h6 {
 }
 
 .menu-item {
+  height: 5rem;
   font-size: clamp(0.5rem, 0.313rem + 1vw, 1rem);
   text-align: center;
   display: flex;
@@ -769,6 +775,7 @@ h6 {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  flex-grow: 1;
 }
 
 #menu-item-91 a img {
@@ -776,7 +783,7 @@ h6 {
   height: 50%;
   padding: 0;
   margin: 0;
-  transform: scaleX(0.3) scaleY(0.5);
+  transform: scaleX(0.2) scaleY(1);
   filter: invert(1);
 }
 
@@ -785,7 +792,7 @@ h6 {
   height: 50%;
   padding: 0;
   margin: 0;
-  transform: scaleX(0.4) scaleY(0.7);
+  transform: scaleX(0.2) scaleY(1);
   filter: invert(1);
 }
 
@@ -794,7 +801,7 @@ h6 {
   height: 50%;
   padding: 0;
   margin: 0;
-  transform: scaleX(0.4) scaleY(0.7);
+  transform: scaleX(0.2) scaleY(1);
   filter: invert(1);
 }
 
@@ -803,7 +810,7 @@ h6 {
   height: 50%;
   padding: 0;
   margin: 0;
-  transform: scaleX(0.4) scaleY(0.7);
+  transform: scaleX(0.2) scaleY(1);
   filter: invert(1);
 }
 
@@ -812,7 +819,7 @@ h6 {
   height: 50%;
   padding: 0;
   margin: 0;
-  transform: scaleX(0.4) scaleY(0.7);
+  transform: scaleX(0.2) scaleY(1);
   filter: invert(1);
 }
 
@@ -821,7 +828,7 @@ h6 {
   height: 50%;
   padding: 0;
   margin: 0;
-  transform: scaleX(0.4) scaleY(0.7);
+  transform: scaleX(0.2) scaleY(1);
   filter: invert(1);
 }
 
@@ -830,7 +837,7 @@ h6 {
   height: 50%;
   padding: 0;
   margin: 0;
-  transform: scaleX(0.4) scaleY(0.7);
+  transform: scaleX(0.2) scaleY(1);
   filter: invert(1);
 }
 
@@ -839,7 +846,7 @@ h6 {
   height: 50%;
   padding: 0;
   margin: 0;
-  transform: scaleX(0.4) scaleY(0.7);
+  transform: scaleX(0.2) scaleY(1);
   filter: invert(1);
 }
 
@@ -875,6 +882,11 @@ input {
   }
 }
 
+@media screen and (min-width: 700px) {
+  #menu-principal {
+    width: 100%;
+  }
+}
 #entete {
   background-image: url("image/trip.jpg");
   background-size: cover;
@@ -895,7 +907,6 @@ input {
 .custom-logo {
   width: 50px;
   height: 50px;
-  height: auto;
   margin-top: 1rem;
   padding: 0;
   transform: scale(1);
@@ -906,7 +917,8 @@ input {
     width: 100px;
     height: 100px;
     position: relative;
-    right: 45rem;
+    right: 75rem;
+    top: 1.5rem;
   }
 }
 

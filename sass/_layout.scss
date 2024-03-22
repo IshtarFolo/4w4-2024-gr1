@@ -119,23 +119,27 @@ blockquote::first-letter{
 section > .bouton__header{
     width: 6rem;
     height: 2.2rem;
-    padding: 0.5rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    background-color: var(--couleur-arriere-acceuil);
+    padding: 0.5rem, 0.5rem, 0.5rem, 0.5rem;
     border: none;
     box-shadow: 0.2rem 0.2rem;
     border-radius: 10px;
     transform: scale(1);
     transition: 0.3s;
-    background-image: url("image/node_js.png");
-    background-size: 75%;
+    font-size: 12px;
+    text-align: center;
+    font-size: clamp(0.8rem, 0.553rem + 0.898vi, 1.2rem);
     background-position: center;
     background-repeat: no-repeat;
+
+    @media screen and (min-width: 700px) {
+        width: 8rem;
+        height: 3rem;
+    }
 }
 
 .bouton__header:hover{
-    background-color: var(--couleur-arriere-evenements);
     transform: scale(1.1);
     cursor: pointer;
     transition: 1s;

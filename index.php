@@ -4,7 +4,7 @@
 <!-- Début du site sous le menu principal -->
 <section class="entete__header">
     <h1 class="clr-primaire-400">Horizon Voyage</h1>
-    <button class="bouton__header" onclick="location.href='<?php echo esc_url(get_permalink(get_page_by_path('category-ID.php'))); ?>'"></button>
+    <button class="bouton__header"></button>
 </section>
 <!-- Vague ici! -->
 <?php get_template_part('gabarits/vagues'); ?>

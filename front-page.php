@@ -50,6 +50,7 @@
         
         <!-- Les catégories -->
         <div class="categories">
+            <!-- Boucoe php pour créer les catégories -->
             <?php
             $categories = get_categories();
             foreach ($categories as $category) {

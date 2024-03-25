@@ -110,6 +110,8 @@ body {
     font-size: clamp(0.813rem, 0.435rem + 1.207vw, 1.25rem);
     z-index: 2;
     position: relative;
+
+    cursor: context-menu;
 }
 
 blockquote::first-letter{
@@ -178,6 +180,8 @@ section > .bouton__header{
 #galerie section p:nth-of-type(1) {
     margin: 1rem 0 1rem 0;
     font-size: clamp(1.125rem, 0.909rem + 0.69vi, 1.375rem);
+
+    cursor: context-menu;
 }
 
 #galerie section p:nth-of-type(2) {
@@ -228,6 +232,14 @@ section > .bouton__header{
     border-radius: 50%;
     z-index: 2;
     transition: 0.3s;
+}
+
+#footer a:hover{
+    transform: scale(1.5);
+}
+
+#footer p {
+    cursor: context-menu;
 }
 
 /* L'image du header change de position avec le viewport

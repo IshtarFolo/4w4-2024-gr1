@@ -14,3 +14,4 @@
 
     add_action( 'pre_get_posts', '_4W4_modifie_requete_principal' );
 
+    remove_filter( 'the_content', 'wpautop' );

@@ -1,11 +1,10 @@
 
 #entete {
-    background-image: url("image/trip.jpg");
+    background-image: url("image/trip2.jpg");
     background-size: cover;
     background-position: center;
-    background-size: 150%;
+    background-size: 300%;
     background-repeat: no-repeat;
-    color: var(--couleur-entete);
     position: relative;
     flex-direction: column;
     min-height: 20vh;
@@ -28,8 +27,8 @@
         width: 100px;
         height: 100px;
         position: relative;
-        right: 75rem;
-        top: 1.5rem;
+        right: 55rem;
+        top: 1.6rem;
     }
 }
 

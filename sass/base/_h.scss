@@ -9,15 +9,15 @@
     en plusieurs fichiers css (avec fait en sorte que 1 css)
 */
 h1 {
-    font-weight: 600;
+    font-weight: 900;
     font-style: normal;
-    font-size: clamp(1.5rem, -2.656rem + 12.5vw, 4.375rem);
-    padding-bottom: 1rem;
+    font-family: 'Playfair Display';
+    font-size: clamp(2.875rem, 2.659rem + 0.69vi, 3.125rem);
 }
 
 h2 {
     font-weight: 500;
-    font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+    font-size: clamp(1.875rem, 1.659rem + 0.69vi, 2.125rem);
     z-index: 0;
     position: relative;
 }
@@ -42,7 +42,7 @@ h2 {
 
 h3 {
     font-weight: 400;
-    font-size: clamp(1rem, -2.969rem + 14vw, 2.90rem);
+    font-size: clamp(1.5rem, 1.392rem + 0.345vi, 1.625rem);
     padding-bottom: 1rem;
 }
 

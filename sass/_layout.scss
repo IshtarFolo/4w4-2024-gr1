@@ -36,12 +36,13 @@ body {
 .global > .entete__header{
     flex: 1;
     position: relative;
-    margin-bottom: 1rem;
+    margin: 2rem;
+    padding: 0;
     
     // Fullscreen
     @media screen and (min-width: 700px){
         margin-bottom: 4rem;
-        margin-top: 15rem;
+        margin-top: 5rem;
     }
 } 
 
@@ -53,7 +54,10 @@ body {
 
 #galerie {
     position: relative;
-    padding-bottom: 1rem;
+
+    @media screen and (min-width: 700px){
+        padding-top: 5rem;
+    }
 }
 
 #footer {
@@ -117,24 +121,26 @@ blockquote::first-letter{
 /* Bouton dans le header
 ----------------------------------------------------------------*/
 section > .bouton__header{
-    width: 6rem;
+    width: 4rem;
     height: 2.2rem;
     margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-top: 12rem;
     padding: 0.5rem, 0.5rem, 0.5rem, 0.5rem;
     border: none;
     box-shadow: 0.2rem 0.2rem;
-    border-radius: 10px;
+    border-radius: 50px;
     transform: scale(1);
     transition: 0.3s;
     font-size: 12px;
     text-align: center;
     font-size: clamp(0.8rem, 0.553rem + 0.898vi, 1.2rem);
+    background-image: url("image/shopping-cart.png");
     background-position: center;
+    background-size: 45%;
     background-repeat: no-repeat;
 
     @media screen and (min-width: 700px) {
-        width: 8rem;
+        width: 5rem;
         height: 3rem;
     }
 }
@@ -156,6 +162,26 @@ section > .bouton__header{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+#galerie section {
+    padding-bottom: 3rem;
+}
+
+#galerie section .categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#galerie section p:nth-of-type(1) {
+    margin: 1rem 0 1rem 0;
+    font-size: clamp(1.125rem, 0.909rem + 0.69vi, 1.375rem);
+}
+
+#galerie section p:nth-of-type(2) {
+    font-size: clamp(1rem, 0.784rem + 0.69vi, 1.25rem);
 }
 
 #galerie .image {

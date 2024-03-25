@@ -42,7 +42,6 @@
         display: flex;
         flex-direction: row;
         transform: translateX(0);
-        border: 4px solid var(--couleur-menu);
     }
 }
 
@@ -52,108 +51,134 @@
     text-align: center;
     display: flex;
     flex: 1 1 auto;
+    align-items: stretch; 
+
+    @media screen and (min-width: 700px){
+        justify-content: flex-start;
+        flex: 1 1 auto;
+        align-content: stretch;
+    }
 }
 
 // Hover sur les boutons du menu
 .menu-item:hover {
-    background-color: var(--couleur-menu);
+    background-color: hsl(24, 95%, 58%);
     transition: 1s background-color ease-in-out;
 }
 
 .menu-item a { //li a
-    margin: 1rem 0 1rem 0;
+    margin: 0;
     padding: 0.5rem 0 0.5rem 0;
     text-decoration: none;
     color: hsl(255, 100%, 100%);
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
-    flex-grow: 1;
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+.menu-item a p { //li a p
+    flex: 2; 
 }
 
 // Image catégories
-#menu-item-91 a img {
-    width: 30%;
-    height: 50%;
+#menu-item-94 a img {
+    width: 100%;
+    height: 30%;
     padding: 0;
     margin: 0;
-    transform: scaleX(0.2) scaleY(1);
+    transform: scaleX(0.3) scaleY(1.3);
     filter: invert(1); 
+    flex: 1;
+
+    @media screen and (min-width: 700px){
+        transform: scaleX(0.3) scaleY(1.4);
+    }
 }
 
 // Image sports
-#menu-item-93 a img {
-    width: 30%;
-    height: 50%;
+#menu-item-95 a img {
+    width: 100%;
+    height: 30%;
     padding: 0;
     margin: 0;
-    transform: scaleX(0.2) scaleY(1);
+    transform: scaleX(0.3) scaleY(1.3);
     filter: invert(1); 
+    flex: 1;
+
+    @media screen and (min-width: 700px){
+        transform: scaleX(0.4) scaleY(1.4);
+    }
 }
 
 // Image nature
-#menu-item-94 a img {
-    width: 30%;
-    height: 50%;
+#menu-item-96 a img {
+    width: 100%;
+    height: 30%;
     padding: 0;
     margin: 0;
-    transform: scaleX(0.2) scaleY(1);
+    transform: scaleX(0.4) scaleY(1.3);
     filter: invert(1); 
+    flex: 1;
+
+    @media screen and (min-width: 700px){
+        transform: scaleX(0.3) scaleY(1.4);
+    }
 }
 
 // Image croisière
-#menu-item-95 a img {
-    width: 30%;
-    height: 50%;
+#menu-item-97 a img {
+    width: 100%;
+    height: 30%;
     padding: 0;
     margin: 0;
-    transform: scaleX(0.2) scaleY(1);
+    transform: scaleX(0.4) scaleY(1.5);
     filter: invert(1); 
+    flex: 1;
 }
 
 // Image aventure
-#menu-item-96 a img {
-    width: 30%;
-    height: 50%;
+#menu-item-98 a img {
+    width: 100%;
+    height: 30%;
     padding: 0;
     margin: 0;
-    transform: scaleX(0.2) scaleY(1);
+    transform: scaleX(0.4) scaleY(1.4);
     filter: invert(1); 
+    flex: 1;
 }
 
 // Image culture
-#menu-item-97 a img {
-    width: 30%;
-    height: 50%;
+#menu-item-99 a img {
+    width: 100%;
+    height: 30%;
     padding: 0;
     margin: 0;
-    transform: scaleX(0.2) scaleY(1);
+    transform: scaleX(0.4) scaleY(1.4);
     filter: invert(1); 
+    flex: 1;
 }
 
 // Image repos
-#menu-item-98 a img {
-    width: 30%;
-    height: 50%;
+#menu-item-100 a img {
+    width: 100%;
+    height: 30%;
     padding: 0;
     margin: 0;
-    transform: scaleX(0.2) scaleY(1);
+    transform: scaleX(0.4) scaleY(1.4);
     filter: invert(1); 
+    flex: 1;
 }
 
 // Image zen
-#menu-item-99 a img {
-    width: 30%;
-    height: 50%;
+#menu-item-101 a img {
+    width: 100%;
+    height: 30%;
     padding: 0;
     margin: 0;
-    transform: scaleX(0.2) scaleY(1);
+    transform: scaleX(0.4) scaleY(1.4);
     filter: invert(1); 
-}
-
-.menu-item a:hover {
-    color: var(--couleur-arriere-menu);
+    flex: 1;
 }
 
 /* Gestion du label #burger l'image svg contenue dans un label

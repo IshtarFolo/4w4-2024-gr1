@@ -3,9 +3,9 @@
 
 <!-- Début du site sous le menu principal -->
 <section class="entete__header">
-    <h1 class="clr-primaire-400"><?php echo get_bloginfo("name"); ?></h1>
-    <h2 class="clr-primaire-300"><?php echo get_bloginfo("description"); ?></h2>
-    <button class="bouton__header bck-primaire-200 clr-primaire-400">Acheter un billet</button>
+    <h1 class="clr-secondaire-100"><?php echo get_bloginfo("name"); ?></h1>
+    <h2 class="clr-secondaire-100"><?php echo get_bloginfo("description"); ?></h2>
+    <button class="bouton__header bck-secondaire-300 clr-primaire-400"></button>
 </section>
 <!-- Vague ici! -->
 <?php get_template_part('gabarits/vagues'); ?>
@@ -60,8 +60,8 @@
                     <p>
                         <?php 
                             $description_words = explode(" ", $category->description);
-                            $first_10_words = array_slice($description_words, 0, 10);
-                            echo implode(" ", $first_10_words) . "...";
+                            $premiers_10_mots = array_slice($description_words, 0, 10);
+                            echo implode(" ", $premiers_10_mots) . "...";
                         ?> 
                     </p>
                     <a class="clr-primaire-400" href="<?php echo get_category_link($category->term_id); ?>">Voir les destinations</a>

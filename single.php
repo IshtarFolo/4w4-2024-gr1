@@ -3,8 +3,8 @@
 
     <!-- Début du site sous le menu principal -->
     <section class="entete__header">
-        <h1>Horizon Voyage</h1>
-        <button class="bouton__header bck-secondaire-300 clr-primaire-400"></button>
+        <h1 class="clr-secondaire-100">Horizon Voyage</h1>
+        <button class="bouton__header bck-secondaire-300 clr-secondaire-100"></button>
     </section>
     <!-- Vague ici! -->
     <?php get_template_part('gabarits/vagues'); ?>
@@ -17,6 +17,7 @@
             <div class="destination">
 
                 <!-- Boucle php pour afficher articles dans la table posts à partir de la base de données -->
+                <!-- single -->
                 <?php if (have_posts()) : the_post(); ?>
                     <div class="carte bck-primaire-100">
                         <h2><?php the_title(); ?></h2>

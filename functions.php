@@ -6,6 +6,7 @@
     // Comme get_event_listener, mais pour WordPress
     function _4W4_modifie_requete_principal( $query ) {
         if ( $query->is_home() && $query->is_main_query() && ! is_admin() ) {
+          // Fait apparaitre, en premier, les categories populaires
           $query->set( 'category_name', 'populaire' );
           $query->set( 'orderby', 'title' );
           $query->set( 'order', 'ASC' );

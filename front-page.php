@@ -20,8 +20,11 @@
         <div class="destination">
 
             <!-- Boucle php pour afficher articles dans la table posts à partir de la base de données -->
-            <?php if (have_posts()) :
-                while (have_posts()) : the_post(); ?>
+            <!-- front -->
+            <?php 
+            if (have_posts()) :
+                while (have_posts()) : the_post(); 
+            ?>
                     <div class="carte bck-primaire-100">
                         <h3><?php the_title(); ?></h3>
                         <p><?php echo wp_trim_words(get_the_content(), 10); ?></p>

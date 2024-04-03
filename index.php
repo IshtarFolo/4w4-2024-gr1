@@ -3,7 +3,7 @@
 
 <!-- Début du site sous le menu principal -->
 <section class="entete__header">
-    <h1 class="clr-primaire-100">Horizon Voyage</h1>
+    <h1 class="clr-secondaire-100">Horizon Voyage</h1>
     <button class="bouton__header bck-secondaire-300 clr-primaire-400"></button>
 </section>
 <!-- Vague ici! -->
@@ -17,11 +17,11 @@
         <h2>Acceuil</h2>
         <div class="destination">
             <!-- Boucle php pour afficher articles dans la table posts à partir de la base de données -->
+            <!-- index -->
             <?php
             if (have_posts()) :
                 while (have_posts()) : the_post();
                     $titre = get_the_title();
-
             ?>
                     <div class="carte bck-primaire-100">
                         <h3><?php echo $titre; ?></h3>

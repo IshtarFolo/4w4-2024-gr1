@@ -66,6 +66,8 @@ body {
 }
 
 #footer p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     text-align: center;
     font-size: clamp(0.313rem, 0.151rem + 0.517vw, 0.5rem);
 }

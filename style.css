@@ -434,7 +434,7 @@ section > .bouton__header {
   width: 4rem;
   height: 2.2rem;
   margin-bottom: 2rem;
-  margin-top: 12rem;
+  margin-top: 5rem;
   padding: 0.5rem, 0.5rem, 0.5rem, 0.5rem;
   border: none;
   box-shadow: 0.2rem 0.2rem;
@@ -970,6 +970,10 @@ input[type=checkbox] {
   display: none;
 }
 
+form {
+  margin-top: 5rem;
+}
+
 form div {
   display: flex;
   flex: 1 0 auto;
@@ -1020,7 +1024,7 @@ form div {
     width: 100px;
     height: 100px;
     position: relative;
-    right: 45rem;
+    right: 70rem;
     top: 1.6rem;
   }
 }

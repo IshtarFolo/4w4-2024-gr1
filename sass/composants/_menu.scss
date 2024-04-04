@@ -203,7 +203,11 @@ input[type="checkbox"] { //input case a cocher
     display: none;
 }
 
-form div {
+form { // tag form de la barre de recherche
+    margin-top: 5rem;
+}
+
+form div { // conteneur de la barre de recherche
     display: flex;
     flex: 1 0 auto;
     flex-direction: column;

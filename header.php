@@ -24,6 +24,5 @@
             <!-- Fin btn-burger -->
             <header class="menu__header">
                 <?php wp_nav_menu(array("container" => "nav")); ?>
-                <?php get_search_form(); ?> 
             </header>
         </div>

@@ -93,12 +93,12 @@
     height: 30%;
     padding: 0;
     margin: 0;
-    transform: scaleX(0.3) scaleY(1.3);
+    transform: scaleX(0.4) scaleY(1.3);
     filter: invert(1); 
     flex: 1;
 
     @media screen and (min-width: 700px){
-        transform: scaleX(0.3) scaleY(1.4);
+        transform: scaleX(0.4) scaleY(1.4);
     }
 }
 
@@ -108,12 +108,12 @@
     height: 30%;
     padding: 0;
     margin: 0;
-    transform: scaleX(0.3) scaleY(1.3);
+    transform: scaleX(0.4) scaleY(1.3);
     filter: invert(1); 
     flex: 1;
 
     @media screen and (min-width: 700px){
-        transform: scaleX(0.4) scaleY(1.4);
+        transform: scaleX(0.5) scaleY(1.4);
     }
 }
 
@@ -123,12 +123,12 @@
     height: 30%;
     padding: 0;
     margin: 0;
-    transform: scaleX(0.4) scaleY(1.3);
+    transform: scaleX(0.5) scaleY(1.3);
     filter: invert(1); 
     flex: 1;
 
     @media screen and (min-width: 700px){
-        transform: scaleX(0.3) scaleY(1.4);
+        transform: scaleX(0.4) scaleY(1.4);
     }
 }
 
@@ -138,9 +138,13 @@
     height: 30%;
     padding: 0;
     margin: 0;
-    transform: scaleX(0.4) scaleY(1.5);
+    transform: scaleX(0.5) scaleY(1.5);
     filter: invert(1); 
     flex: 1;
+
+    @media screen and (min-width: 700px) {
+        transform: scaleX(0.5) scaleY(1.4);
+    }
 }
 
 // Image aventure
@@ -149,9 +153,13 @@
     height: 30%;
     padding: 0;
     margin: 0;
-    transform: scaleX(0.4) scaleY(1.4);
+    transform: scaleX(0.5) scaleY(1.4);
     filter: invert(1); 
     flex: 1;
+
+    @media screen and (min-width: 700px) {
+        transform: scaleX(0.5) scaleY(1.4);
+    }
 }
 
 // Image culture
@@ -160,9 +168,13 @@
     height: 30%;
     padding: 0;
     margin: 0;
-    transform: scaleX(0.4) scaleY(1.4);
+    transform: scaleX(0.5) scaleY(1.4);
     filter: invert(1); 
     flex: 1;
+
+    @media screen and (min-width: 700px) {
+        transform: scaleX(0.6) scaleY(1.5);
+    }
 }
 
 // Image repos
@@ -171,9 +183,13 @@
     height: 30%;
     padding: 0;
     margin: 0;
-    transform: scaleX(0.4) scaleY(1.4);
+    transform: scaleX(0.5) scaleY(1.4);
     filter: invert(1); 
     flex: 1;
+
+    @media screen and (min-width: 700px) {
+        transform: scaleX(0.6) scaleY(1.5);
+    }
 }
 
 // Image zen
@@ -185,6 +201,11 @@
     transform: scaleX(0.4) scaleY(1.4);
     filter: invert(1); 
     flex: 1;
+
+
+@media screen and (min-width: 700px) {
+      transform: scaleX(0.6) scaleY(1.5);
+  }
 }
 
 /*

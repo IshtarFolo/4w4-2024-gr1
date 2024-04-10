@@ -870,7 +870,7 @@ h6 {
   padding-right: 2rem;
 }
 
-#menu-item-106 a img {
+#menu-item-218 a img {
   width: 100%;
   height: 30%;
   padding: 0;
@@ -880,12 +880,12 @@ h6 {
   flex: 1;
 }
 @media screen and (min-width: 700px) {
-  #menu-item-106 a img {
+  #menu-item-218 a img {
     transform: scaleX(0.4) scaleY(1.4);
   }
 }
 
-#menu-item-107 a img {
+#menu-item-211 a img {
   width: 100%;
   height: 30%;
   padding: 0;
@@ -895,12 +895,12 @@ h6 {
   flex: 1;
 }
 @media screen and (min-width: 700px) {
-  #menu-item-107 a img {
+  #menu-item-211 a img {
     transform: scaleX(0.5) scaleY(1.4);
   }
 }
 
-#menu-item-108 a img {
+#menu-item-212 a img {
   width: 100%;
   height: 30%;
   padding: 0;
@@ -910,12 +910,12 @@ h6 {
   flex: 1;
 }
 @media screen and (min-width: 700px) {
-  #menu-item-108 a img {
+  #menu-item-212 a img {
     transform: scaleX(0.4) scaleY(1.4);
   }
 }
 
-#menu-item-109 a img {
+#menu-item-213 a img {
   width: 100%;
   height: 30%;
   padding: 0;
@@ -925,12 +925,12 @@ h6 {
   flex: 1;
 }
 @media screen and (min-width: 700px) {
-  #menu-item-109 a img {
+  #menu-item-213 a img {
     transform: scaleX(0.5) scaleY(1.4);
   }
 }
 
-#menu-item-110 a img {
+#menu-item-214 a img {
   width: 100%;
   height: 30%;
   padding: 0;
@@ -940,12 +940,12 @@ h6 {
   flex: 1;
 }
 @media screen and (min-width: 700px) {
-  #menu-item-110 a img {
+  #menu-item-214 a img {
     transform: scaleX(0.5) scaleY(1.4);
   }
 }
 
-#menu-item-111 a img {
+#menu-item-215 a img {
   width: 100%;
   height: 30%;
   padding: 0;
@@ -955,12 +955,12 @@ h6 {
   flex: 1;
 }
 @media screen and (min-width: 700px) {
-  #menu-item-111 a img {
+  #menu-item-215 a img {
     transform: scaleX(0.6) scaleY(1.5);
   }
 }
 
-#menu-item-112 a img {
+#menu-item-216 a img {
   width: 100%;
   height: 30%;
   padding: 0;
@@ -970,12 +970,12 @@ h6 {
   flex: 1;
 }
 @media screen and (min-width: 700px) {
-  #menu-item-112 a img {
+  #menu-item-216 a img {
     transform: scaleX(0.6) scaleY(1.5);
   }
 }
 
-#menu-item-113 a img {
+#menu-item-217 a img {
   width: 100%;
   height: 30%;
   padding: 0;
@@ -985,7 +985,7 @@ h6 {
   flex: 1;
 }
 @media screen and (min-width: 700px) {
-  #menu-item-113 a img {
+  #menu-item-217 a img {
     transform: scaleX(0.6) scaleY(1.5);
   }
 }
@@ -1101,7 +1101,7 @@ form div {
     width: 100px;
     height: 100px;
     position: relative;
-    right: 55rem;
+    right: 45rem;
     top: 1.6rem;
   }
 }

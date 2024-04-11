@@ -53,6 +53,10 @@
     align-items: center;
     margin: 20px 2rem;
     flex: 1 0 200px;
+
+    @media screen and (min-width: 700px){
+        
+    }
 }
 
 #menu_404 > ul {
@@ -62,11 +66,6 @@
     list-style-type: none;
     flex-wrap: wrap;
     padding: 0;
-
-    @media screen and (min-width: 700px) {
-        margin: 0;    
-        justify-content: space-between;  
-    }
 }
 
 .logo_404 {

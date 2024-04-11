@@ -1190,7 +1190,6 @@ form.recherche .recherche__bouton {
   margin: 20px 2rem;
   flex: 1 0 200px;
 }
-
 #menu_404 > ul {
   display: flex;
   flex-direction: row;
@@ -1198,12 +1197,6 @@ form.recherche .recherche__bouton {
   list-style-type: none;
   flex-wrap: wrap;
   padding: 0;
-}
-@media screen and (min-width: 700px) {
-  #menu_404 > ul {
-    margin: 0;
-    justify-content: space-between;
-  }
 }
 
 .logo_404 {

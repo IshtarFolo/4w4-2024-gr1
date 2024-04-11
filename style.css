@@ -1086,7 +1086,7 @@ form div {
 }
 @media screen and (min-width: 700px) {
   #entete {
-    background-size: 100%;
+    background-size: 200%;
   }
 }
 
@@ -1148,9 +1148,13 @@ form.recherche .recherche__bouton {
 }
 @media screen and (min-width: 700px) {
   #erreur_404 {
-    margin-top: -40rem;
-    top: 32rem;
+    margin-top: -20rem;
+    top: 30rem;
   }
+}
+
+#entete > form {
+  margin-left: 2rem;
 }
 
 #erreur_404 > section {
@@ -1163,10 +1167,10 @@ form.recherche .recherche__bouton {
 }
 
 #erreur_404 > section > a {
+  width: 10rem;
   text-decoration: none;
   padding: 5px;
   border: 2px solid hsl(204, 74%, 67%);
-  border-radius: 50px;
   color: white;
 }
 
@@ -1182,6 +1186,9 @@ form.recherche .recherche__bouton {
   align-items: center;
 }
 
+#erreur_404 > section > form {
+  margin-left: 2rem;
+}
 @media screen and (min-width: 700px) {
   #erreur_404 > section > form {
     margin-top: 2rem;
@@ -1247,6 +1254,7 @@ form.recherche .recherche__bouton {
 #footer_404 > footer > form {
   margin-top: 16rem;
   margin-bottom: 2rem;
+  margin-left: 8rem;
 }
 @media screen and (min-width: 700px) {
   #footer_404 > footer > form {

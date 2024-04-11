@@ -6,6 +6,12 @@
     margin-top: -22rem;
     text-align: center;
     flex-wrap: wrap;
+
+    @media screen and (min-width: 700px) {
+        margin-top: -30rem;
+        top: 31rem;
+        
+    }
 }
 
 #erreur_404 > section {
@@ -56,6 +62,22 @@
     list-style-type: none;
     flex-wrap: wrap;
     padding: 0;
+
+    @media screen and (min-width: 700px) {
+        margin: 0;    
+        justify-content: space-between;  
+    }
+}
+
+.logo_404 {
+    display: none;
+
+    @media screen and (min-width: 700px) {
+        display: flex;
+        width: 400px;
+        height: 400px;
+        margin: 2rem;
+    }
 }
 
 // FOOTER
@@ -65,17 +87,23 @@
     justify-content: center;
     align-items: center;
     margin-top: 5rem;
+
+    @media screen and (min-width: 700px){
+        margin-top: 10rem;
+    }
 }
 
 #footer_404 footer > p {
     position: relative;
     margin-top: 2rem;
     font-size: 10px;
+
+    @media screen and (min-width: 700px){
+        margin-top: 5rem;
+    }
 }
 
 #footer_404 > footer > form {
     margin-top: 16rem;
     margin-bottom: 2rem;
 }
-
-

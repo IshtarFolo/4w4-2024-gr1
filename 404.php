@@ -14,6 +14,8 @@
         <a href="<?php echo get_bloginfo("url");?>" class="bck-primaire-300"><?php echo get_bloginfo("name"); ?></a>
         <?php get_search_form(); ?>     
     </section>
+    <img src="http://localhost:8085/4w4-2024-gr1/wp-content/uploads/2024/04/logo404.png" alt="" class="logo_404">
+
     <div id="menu_404">
     <ul class="menu-items">
         <li><a href="#">Aventure</a></li>

@@ -8,9 +8,8 @@
     flex-wrap: wrap;
 
     @media screen and (min-width: 700px) {
-        margin-top: -30rem;
-        top: 31rem;
-        
+        margin-top: -40rem;
+        top: 32rem;
     }
 }
 
@@ -45,6 +44,13 @@
     align-items: center;
 }
 
+#erreur_404 > section > form {
+    @media screen and (min-width: 700px){
+        margin-top: 2rem;
+        width: 80rem;
+    }
+}
+
 // Menu section
 #menu_404 {
     display: flex;
@@ -53,10 +59,6 @@
     align-items: center;
     margin: 20px 2rem;
     flex: 1 0 200px;
-
-    @media screen and (min-width: 700px){
-        
-    }
 }
 
 #menu_404 > ul {
@@ -65,6 +67,7 @@
     justify-content: space-around;
     list-style-type: none;
     flex-wrap: wrap;
+    flex: 1 0 200px;
     padding: 0;
 }
 
@@ -105,4 +108,11 @@
 #footer_404 > footer > form {
     margin-top: 16rem;
     margin-bottom: 2rem;
+
+    @media screen and (min-width: 700px){
+        margin-top: 20rem;
+        width: 80rem;
+        margin-left: 65rem;
+    }
 }
+

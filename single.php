@@ -20,6 +20,7 @@
                 <!-- single -->
                 <?php if (have_posts()) : the_post(); ?>
                     <div class="carte bck-primaire-100">
+                        <?php the_post_thumbnail("full"); ?> 
                         <h2><?php the_title(); ?></h2>
                         <p><?php the_content(); ?></p>
                         <!-- Lien pour revenir au menu principal -->

@@ -3,11 +3,11 @@
     background-image: url("image/trip2.jpg");
     background-size: cover;
     background-position: center;
-    background-size: 300%;
+    background-size: 400%;
     background-repeat: no-repeat;
     position: relative;
     flex-direction: column;
-    min-height: 20vh;
+    min-height: 100vh;
 
     @media screen and (min-width: 700px) {
         background-size: 100%;

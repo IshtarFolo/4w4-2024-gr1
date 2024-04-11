@@ -1,0 +1,81 @@
+
+// DIV
+#erreur_404 {
+    position: relative;
+    top: 23rem;
+    margin-top: -22rem;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+#erreur_404 > section {
+    margin: 2rem 0 2rem 0;
+    padding: 2rem;
+    background-color: hsl(204, 74%, 67%);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 10px hsl(204, 74%, 67%);
+}
+
+// Bouton retour 4w4
+#erreur_404 > section > a {
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid hsl(204, 74%, 67%);
+    border-radius: 50px;
+    color: white;
+}
+
+#erreur_404 > section > a:hover {
+    transform: scale(1.1);
+    transition: 1s transform ease-in-out;
+}
+
+// SECTION
+#erreur_404 section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// Menu section
+#menu_404 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 2rem;
+    flex: 1 0 200px;
+}
+
+#menu_404 > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+// FOOTER
+#footer_404 footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+#footer_404 footer > p {
+    position: relative;
+    margin-top: 2rem;
+    font-size: 10px;
+}
+
+#footer_404 > footer > form {
+    margin-top: 16rem;
+    margin-bottom: 2rem;
+}
+
+

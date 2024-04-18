@@ -360,6 +360,7 @@ body {
 /* Les Sections 
 -------------------------------------------------------------------------*/
 #menu__entete {
+  margin-top: 2rem;
   position: relative;
 }
 

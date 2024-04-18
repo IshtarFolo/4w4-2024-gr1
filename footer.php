@@ -14,6 +14,8 @@
     </footer>
 </div>
 <!-- FIN FOOTER -->
-</body>
 
+<!-- Ajout des wp_enqueue_scripts/style -->
+<?php wp_footer(); ?>
+</body>
 </html>

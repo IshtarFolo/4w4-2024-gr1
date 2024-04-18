@@ -29,5 +29,3 @@
 
     remove_filter( 'the_content', 'wpautop' );
 
-    // Retire la marge en haut de la barre admin
-    add_theme_support( 'admin-bar', array( 'callback' => '__return_false' ) );

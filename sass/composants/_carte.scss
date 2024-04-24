@@ -44,23 +44,18 @@
     transition: 0.5s background-color ease-in-out;
 }
 
-.carte{
+.carte {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex: 1  0 calc(900px/4);
-    opacity: 0.7;
     padding: 1rem;
     margin: 1rem 0 1rem 0;
+    z-index: 1;
     
     @media screen and (min-width: 700px){
         flex: 1 0 calc(900px/4);
     }
-}
-
-.carte:hover{
-    opacity: 1;
-    transition: 0.5s opacity ease-in-out;
 }
 
 /*

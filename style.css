@@ -541,7 +541,7 @@ section > .bouton__header {
   text-decoration: none;
   padding: 0.5rem;
   border-radius: 50%;
-  z-index: 2;
+  z-index: 1100;
   transition: 0.3s;
 }
 
@@ -744,19 +744,14 @@ h6 {
   flex-direction: column;
   justify-content: center;
   flex: 1 0 225px;
-  opacity: 0.7;
   padding: 1rem;
   margin: 1rem 0 1rem 0;
+  z-index: 1;
 }
 @media screen and (min-width: 700px) {
   .carte {
     flex: 1 0 225px;
   }
-}
-
-.carte:hover {
-  opacity: 1;
-  transition: 0.5s opacity ease-in-out;
 }
 
 /*
@@ -795,7 +790,7 @@ h6 {
 @media (min-width: 700px) {
   .menu__header {
     position: fixed;
-    z-index: 3;
+    z-index: 10;
   }
 }
 
@@ -822,7 +817,7 @@ h6 {
   transform: translateX(300%);
   transition: 1s transform ease-in-out;
   background-color: hsl(204, 67%, 15%);
-  padding-top: 8rem;
+  padding-top: 6rem;
 }
 @media (min-width: 700px) {
   .menu {
@@ -864,13 +859,13 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 1 1 auto;
+  flex: 0 0 200px;
   width: 100%;
 }
 
 .menu-item a p {
   flex: 2;
-  padding-right: 2rem;
+  padding-right: 5rem;
 }
 
 #menu-item-218 a img {
@@ -878,7 +873,7 @@ h6 {
   height: 30%;
   padding: 0;
   margin: 0;
-  transform: scaleX(0.4) scaleY(1.3);
+  transform: scaleX(0.1) scaleY(1.3);
   filter: invert(1);
   flex: 1;
 }
@@ -893,7 +888,7 @@ h6 {
   height: 30%;
   padding: 0;
   margin: 0;
-  transform: scaleX(0.4) scaleY(1.3);
+  transform: scaleX(0.1) scaleY(1.3);
   filter: invert(1);
   flex: 1;
 }
@@ -908,7 +903,7 @@ h6 {
   height: 30%;
   padding: 0;
   margin: 0;
-  transform: scaleX(0.5) scaleY(1.3);
+  transform: scaleX(0.1) scaleY(1.3);
   filter: invert(1);
   flex: 1;
 }
@@ -923,7 +918,7 @@ h6 {
   height: 30%;
   padding: 0;
   margin: 0;
-  transform: scaleX(0.5) scaleY(1.5);
+  transform: scaleX(0.1) scaleY(1.5);
   filter: invert(1);
   flex: 1;
 }
@@ -938,7 +933,7 @@ h6 {
   height: 30%;
   padding: 0;
   margin: 0;
-  transform: scaleX(0.5) scaleY(1.4);
+  transform: scaleX(0.1) scaleY(1.4);
   filter: invert(1);
   flex: 1;
 }
@@ -953,7 +948,7 @@ h6 {
   height: 30%;
   padding: 0;
   margin: 0;
-  transform: scaleX(0.5) scaleY(1.4);
+  transform: scaleX(0.1) scaleY(1.4);
   filter: invert(1);
   flex: 1;
 }
@@ -968,7 +963,7 @@ h6 {
   height: 30%;
   padding: 0;
   margin: 0;
-  transform: scaleX(0.5) scaleY(1.4);
+  transform: scaleX(0.1) scaleY(1.4);
   filter: invert(1);
   flex: 1;
 }
@@ -983,7 +978,7 @@ h6 {
   height: 30%;
   padding: 0;
   margin: 0;
-  transform: scaleX(0.4) scaleY(1.4);
+  transform: scaleX(0.1) scaleY(1.4);
   filter: invert(1);
   flex: 1;
 }
@@ -1104,8 +1099,8 @@ form div {
     width: 100px;
     height: 100px;
     position: relative;
-    right: 55rem;
-    top: 1.6rem;
+    right: 45rem;
+    top: 1rem;
   }
 }
 

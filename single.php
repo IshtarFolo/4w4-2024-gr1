@@ -28,28 +28,7 @@
                 <?php endif; ?>
             </div>
             <!-- Fin de la boucle php -->
-
         </section>
     </div>
-
-    <div id="galerie" class="global bck-primaire-100">
-        <section>
-            <h2>Galerie</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo qui eligendi magnam impedit. Odit, reiciendis fugiat. Deleniti, corrupti facere veniam nihil, atque voluptatum voluptate ipsam labore repudiandae rerum pariatur consequuntur?</p>
-            <section id="conteneur-images">
-                <div class="image"></div>
-                <div class="image"></div>
-                <div class="image"></div>
-                <div class="image"></div>
-                <div class="image"></div>
-                <div class="image"></div>
-            </section>
-            <button>voir plus</button>
-        </section>
-        <!-- Vague ici!-->
-        <?php get_template_part('gabarits/vagues'); ?>
-        <!-- Fin de la vague -->
-    </div>
-
     <!-- Importation du footer.php -->
     <?php get_footer(); ?>

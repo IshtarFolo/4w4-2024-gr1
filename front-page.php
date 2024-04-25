@@ -51,7 +51,7 @@
 <div id="galerie" class="global bck-primaire-100">
     <section>
         <h2>Catégories</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo qui eligendi magnam impedit. Odit, reiciendis fugiat. Deleniti, corrupti facere veniam nihil, atque voluptatum voluptate ipsam labore repudiandae rerum pariatur consequuntur?</p>
+        <p>Ici, vous retrouverez tous les types de destinations à portée de click!</p>
         
         <!-- Les catégories -->
         <div class="categories">

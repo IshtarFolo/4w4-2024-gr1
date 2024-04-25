@@ -237,6 +237,14 @@ section > .bouton__header{
     transition: 0.3s;
 }
 
+.bouton-retour:hover {
+    transform: scale(1.2);
+}
+
+#footer .menu {
+    z-index: 0;
+}
+
 #footer .menu-bas-container #menu-bas a:hover{
     transform: scale(1.5);
 }

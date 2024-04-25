@@ -11,6 +11,7 @@
             <a href="#" class="bouton-retour bck-primaire-300 clr-primaire-100">&#8593</a>
 
         <p>par Xavier Arbour</p>
+        <a class="adresse_Github" href="https://github.com/IshtarFolo/4w4-carrousel/tree/tp2">Github</a>
     </footer>
 </div>
 <!-- FIN FOOTER -->

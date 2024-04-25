@@ -6,11 +6,12 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: -1rem;
 
     // Fullscreen
     @media (min-width: 700px) {
         position: fixed;
-        z-index: 10;
+        z-index: 2;
     }
 }
 
@@ -244,6 +245,31 @@ footer .menu {
 
 footer .menu-bas-container a {
     bottom: 0;
+}
+
+footer .menu-bas-container ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    align-content: stretch;
+    height: 5rem;
+}
+
+.adresse_Github {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    align-content: stretch;
+    height: 5rem;
+    color: white;
+}
+
+.adresse_Github:hover {
+    color: hsl(24, 95%, 58%);
+    transition: 1s color ease-in-out, 0.5s transform ease-in-out;
 }
 
 /* Gestion du label #burger l'image svg contenue dans un label

@@ -70,7 +70,7 @@ body {
 
 #footer p{
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
     text-align: center;
     font-size: clamp(0.313rem, 0.151rem + 0.517vw, 0.5rem);
 }
@@ -237,7 +237,7 @@ section > .bouton__header{
     transition: 0.3s;
 }
 
-#footer a:hover{
+#footer .menu-bas-container #menu-bas a:hover{
     transform: scale(1.5);
 }
 

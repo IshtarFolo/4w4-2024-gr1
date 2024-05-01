@@ -258,6 +258,19 @@ section > .bouton__header{
     height: 6rem;
 }
 
+.sociaux { // Div des logos de médias sociaux
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1 1 200px;
+}
+
+.logo-sociaux {
+    width: 2rem;
+    height: 2rem;
+}
+
 #footer .menu-bas-container #menu-bas a:hover{
     transform: scale(1.5);
 }

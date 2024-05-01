@@ -1,4 +1,5 @@
 <!-- Importation du header.php -->
+<!-- FRONT-PAGE -->
 <?php get_header(); ?>
 
 <!-- Début du site sous le menu principal -->

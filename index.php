@@ -1,9 +1,12 @@
 <!-- Importation du header.php -->
+<!-- INDEX -->
 <?php get_header(); ?>
 
 <!-- Début du site sous le menu principal -->
 <section class="entete__header">
-    <h1 class="clr-secondaire-100">Horizon Voyage</h1>
+    <h1 class="clr-secondaire-100"><?php echo get_bloginfo("name"); ?></h1>
+    <h2 class="clr-secondaire-100"><?php echo get_bloginfo("description"); ?></h2>
+    <?php get_search_form(); ?> 
     <button class="bouton__header bck-secondaire-300 clr-primaire-400"></button>
 </section>
 <!-- Vague ici! -->

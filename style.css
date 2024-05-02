@@ -566,7 +566,7 @@ section > .bouton__header {
   height: 6rem;
 }
 
-.recherche {
+#footer .recherche {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -582,6 +582,10 @@ section > .bouton__header {
 
 #footer > footer > div.recherche > form > label > input {
   width: 100%;
+}
+
+#footer > footer > div.recherche > form > button {
+  width: 3rem;
 }
 
 .sociaux {

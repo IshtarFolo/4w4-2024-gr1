@@ -32,15 +32,7 @@
 <!-- Fin contenu principal -->
 
 <!-- FOOTER -->
-<div id="footer_404" class="global bck-primaire-100">
-    <footer>
-        <?php get_search_form(); ?> 
-        <?php wp_nav_menu(array("theme_location" => "bas")); ?>
-        <a href="#" class="bouton-retour bck-primaire-300 clr-primaire-100">&#8593</a>
-
-        <p>par Xavier Arbour</p>
-    </footer>
-</div>
+<?php get_template_part("footer"); ?> 
 <!-- FIN FOOTER -->
 </body>
 

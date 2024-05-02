@@ -73,6 +73,12 @@
 ---------------------------------------------------------------*/
 .wp-block-gallery > .wp-block-image img {
     cursor: pointer;
+
+    transition: transform 0.25s;
+}
+
+.wp-block-gallery > .wp-block-image img:hover {
+    transform: scale(1.1);
 }
 
 /* Sigle du cours

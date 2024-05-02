@@ -64,6 +64,7 @@ body {
 }
 
 #footer {
+    position: relative;
     color: var(--couleur-footer);
     min-height: 20vh;
 }
@@ -263,6 +264,13 @@ section > .bouton__header{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+#footer > div > svg > path {
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    fill: hsl(204, 100%, 15%);
 }
 
 /*

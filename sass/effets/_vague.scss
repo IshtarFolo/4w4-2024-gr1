@@ -15,6 +15,14 @@
     height: 150px;
 }
 
+// La vague du footer
+#footer .vague {
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    fill: hsl(204, 100%, 15%);
+}
+
 /** Pour mobile **/
 @media (min-width: 767px) {
     .vague svg {

@@ -1,7 +1,8 @@
 <!-- Template du footer -->
 <!-- Ce gabarit est appelé à la fin de chacun des modèles de thèmes -->
+<div id="footer" class="global bck-primaire-400">
+<?php get_template_part('gabarits/vagues'); ?>
 
-<div id="footer" class="global bck-primaire-200">
     <footer>
         <div class="entete-footer">
             <img class="logo-footer" src="http://localhost:8085/4w4-2024-gr1/wp-content/uploads/2024/04/voyage4.png" alt="">

@@ -14,7 +14,6 @@
     <!-- Fin de la vague -->
     </div>
     <!-- FIN HEADER -->
-
     <div id="acceuil" class="global bck-primaire-200">
         <section>
             <div class="destination">
@@ -28,6 +27,8 @@
                         <!-- Ajout des champs crées avec ACF -->
                         <p>Température minimale: <?php the_field('temperature_minimale'); ?>°C</p>
                         <p>Température maximale: <?php the_field('temperature_maximale'); ?>°C</p>
+                        <p>Précipitations: <?php the_field('precipitation') ?> </p>
+                        <p>Catégories: <?php the_field('categories') ?> </p>
                         <p>Ville avoisinante: <?php the_field('ville_avoisinante'); ?></p>
                     </div>
                 <?php endif; ?>

@@ -68,6 +68,13 @@
     border-radius: 15px;
 }
 
+/*
+* Les images de la galerie de photos pour le carrousel
+---------------------------------------------------------------*/
+.wp-block-gallery > .wp-block-image img {
+    cursor: pointer;
+}
+
 /* Sigle du cours
 --------------------------------------------------------------*/
 .carte>p{

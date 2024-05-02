@@ -15,9 +15,12 @@
         </div>
             <?php wp_nav_menu(array("theme_location" => "bas")); ?>
             <a href="#" class="bouton-retour bck-primaire-300 clr-primaire-100">&#8593</a>
+        <div class="recherche">
+            <?php get_search_form(); ?> 
+        </div>
 
-        <p>par Xavier Arbour</p>
         <a class="adresse_Github" href="https://github.com/IshtarFolo/4w4-carrousel/tree/tp2">Github</a>
+        <p>par Xavier Arbour</p>
     </footer>
 </div>
 <!-- FIN FOOTER -->

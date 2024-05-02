@@ -566,6 +566,24 @@ section > .bouton__header {
   height: 6rem;
 }
 
+.recherche {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+* Gestion de la barre de recherche
+---------------------------------------------------------------------*/
+#footer > footer > div.recherche > form {
+  margin-top: 0;
+}
+
+#footer > footer > div.recherche > form > label > input {
+  width: 100%;
+}
+
 .sociaux {
   display: flex;
   flex-direction: row;
@@ -798,6 +816,13 @@ h6 {
   border-radius: 15px;
 }
 
+/*
+* Les images de la galerie de photos pour le carrousel
+---------------------------------------------------------------*/
+.wp-block-gallery > .wp-block-image img {
+  cursor: pointer;
+}
+
 /* Sigle du cours
 --------------------------------------------------------------*/
 .carte > p {
@@ -907,7 +932,7 @@ h6 {
 --------------------------------------------------------------*/
 div .menu-bas-container {
   width: 100%;
-  height: 30%;
+  height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;

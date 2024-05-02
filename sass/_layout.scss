@@ -258,6 +258,24 @@ section > .bouton__header{
     height: 6rem;
 }
 
+.recherche {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+* Gestion de la barre de recherche
+---------------------------------------------------------------------*/
+#footer > footer > div.recherche > form {
+    margin-top: 0;
+}
+
+#footer > footer > div.recherche > form > label > input {
+    width: 100%;
+}
+
 .sociaux { // Div des logos de médias sociaux
     display: flex;
     flex-direction: row;

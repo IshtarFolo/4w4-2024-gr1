@@ -19,8 +19,9 @@
         <div class="recherche">
             <?php get_search_form(); ?> 
         </div>
-
-        <a class="adresse_Github" href="https://github.com/IshtarFolo/4w4-carrousel/tree/tp2">Github</a>
+        <div class="adresse_Github">
+            <a href="https://github.com/IshtarFolo/4w4-carrousel/tree/tp2">Github</a>
+        </div>
         <p>par Xavier Arbour</p>
     </footer>
 </div>

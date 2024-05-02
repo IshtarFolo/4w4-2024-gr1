@@ -136,16 +136,20 @@ footer .menu-bas-container ul li {
 
 .adresse_Github {
     display: flex;
-    text-decoration: none;
     justify-content: center;
     align-items: center;
     flex: 1 1 auto;
     align-content: stretch;
     height: 5rem;
-    color: white;
+    margin-top: 1rem;
 }
 
-.adresse_Github:hover {
+.adresse_Github a {
+    color: white;
+    text-decoration: none;
+}
+
+.adresse_Github a:hover {
     color: hsl(24, 95%, 58%);
     transition: 1s color ease-in-out, 0.5s transform ease-in-out;
 }

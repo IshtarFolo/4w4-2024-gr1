@@ -45,7 +45,7 @@
 <div id="evenements" class="global diagonale clr-agencement-primaire">
     <section>
         <h2 class="clr-primaire-100">Évènements</h2>
-        <blockquote class="bck-primaire-200 clr-primaire-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut repellat possimus molestias, est harum ducimus velit fugit a tenetur architecto inventore sapiente cupiditate soluta totam nam deleniti minus suscipit?</blockquote>
+        <?php echo do_shortcode('[em_destination]'); ?> 
     </section>
 </div>
 

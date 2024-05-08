@@ -574,13 +574,6 @@ section > .bouton__header {
   justify-content: center;
 }
 
-#footer > div > svg > path {
-  position: absolute;
-  bottom: 100%;
-  width: 100%;
-  fill: hsl(204, 100%, 15%);
-}
-
 /*
 * Gestion de la barre de recherche
 ---------------------------------------------------------------------*/
@@ -721,6 +714,10 @@ h6 {
   height: 150px;
 }
 
+#entete > div.vague {
+  fill: hsl(204, 47%, 41%);
+}
+
 #footer .vague {
   position: absolute;
   bottom: 100%;
@@ -746,7 +743,7 @@ h6 {
   position: relative;
 }
 
-.diagonale::after {
+.diagonale::before {
   position: absolute;
   content: "";
   left: 0;
@@ -760,9 +757,8 @@ h6 {
 
 /** Pour adapter aux écrans plus larges **/
 @media (min-width: 1080px) {
-  .diagonale::after {
+  .diagonale::before {
     transform: skewY(-2deg);
-    height: 16vw;
   }
 }
 .destination {
@@ -871,11 +867,11 @@ h6 {
   align-items: center;
   flex-wrap: wrap;
   margin-top: -1rem;
+  z-index: 3;
 }
 @media (min-width: 700px) {
   .menu__header {
     position: fixed;
-    z-index: 2;
   }
 }
 
@@ -1026,7 +1022,7 @@ footer .menu-bas-container ul li {
   position: absolute;
   top: 25px;
   right: 10px;
-  z-index: 2;
+  z-index: 5;
 }
 @media (min-width: 700px) {
   #burger {

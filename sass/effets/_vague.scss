@@ -15,6 +15,10 @@
     height: 150px;
 }
 
+#entete > div.vague {
+    fill: hsl(204, 47%, 41%);
+}
+
 // La vague du footer
 #footer .vague {
     position: absolute;

@@ -24,6 +24,13 @@
         )
       );
     }
+  
+  // Retire la marge au dessu de la barre admin de wordpress
+  function remove_admin_login_header() {
+      remove_action('wp_head', '_admin_bar_bump_cb');
+  }
+  add_action('get_header', 'remove_admin_login_header');
+
 
     add_action( 'init', 'register_my_menus' );
 

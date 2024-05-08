@@ -2,7 +2,7 @@
     position: relative;
 }
 
-.diagonale::after{
+.diagonale::before{
     position: absolute;
     content: '';
     left: 0;
@@ -16,8 +16,7 @@
 
 /** Pour adapter aux écrans plus larges **/
 @media (min-width: 1080px){
-    .diagonale::after{
+    .diagonale::before{
         transform: skewY(-2deg);
-        height: 16vw;
     }
 }

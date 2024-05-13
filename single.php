@@ -30,6 +30,7 @@
                         <p>Précipitations: <?php the_field('precipitation') ?> </p>
                         <p>Catégories: <?php the_field('categories'); ?> </p>
                         <p>Ville avoisinante: <?php the_field('ville_avoisinante'); ?></p>
+                        <p>Continent: <?php the_field('continent'); ?> </p>
                     </div>
                 <?php endif; ?>
             </div>

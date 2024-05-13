@@ -36,3 +36,23 @@
 
     remove_filter( 'the_content', 'wpautop' );
 
+    
+    // Ajoute un filtre pour ajouter des meta query a l'API REST
+    function add_meta_query_to_rest_api($args, $request) {
+      $meta_key = $request->get_param('meta_key');
+      $meta_value = $request->get_param('meta_value');
+  
+      if ($meta_key) {
+          $meta_query = array('key' => $meta_key);
+  
+          if ($meta_value) {
+              $meta_query['value'] = $meta_value;
+          }
+  
+          $args['meta_query'] = array($meta_query);
+      }
+  
+      return $args;
+  }
+  add_filter('rest_post_query', 'add_meta_query_to_rest_api', 10, 2);
+

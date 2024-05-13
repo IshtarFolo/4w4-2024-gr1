@@ -7,10 +7,10 @@
     background-repeat: no-repeat;
     position: relative;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 80vh;
 
     @media screen and (min-width: 700px) {
-        background-size: 200%;
+        background-size: 100%;
     }
 }
 

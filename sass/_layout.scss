@@ -44,7 +44,7 @@ body {
     // Fullscreen
     @media screen and (min-width: 700px){
         margin-bottom: 4rem;
-        margin-top: 5rem;
+        margin-top: 10rem;
     }
 } 
 
@@ -70,6 +70,7 @@ body {
 }
 
 #footer p{
+    color: white;
     margin-top: 0rem;
     margin-bottom: 0rem;
     text-align: center;
@@ -225,7 +226,8 @@ section > .bouton__header{
 /* Balise a qui permet de remonter en haut de la page
 ----------------------------------------------------------------*/
 .bouton-retour {
-    width: 1rem;
+    width: 2rem;
+    height: 2rem;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -236,6 +238,10 @@ section > .bouton__header{
     border-radius: 50%;
     z-index: 1100;
     transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
 }
 
 .bouton-retour:hover {

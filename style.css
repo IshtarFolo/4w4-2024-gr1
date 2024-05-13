@@ -353,7 +353,7 @@ body {
 @media screen and (min-width: 700px) {
   .global > .entete__header {
     margin-bottom: 4rem;
-    margin-top: 5rem;
+    margin-top: 10rem;
   }
 }
 
@@ -380,6 +380,7 @@ body {
 }
 
 #footer p {
+  color: white;
   margin-top: 0rem;
   margin-bottom: 0rem;
   text-align: center;
@@ -533,7 +534,8 @@ section > .bouton__header {
 /* Balise a qui permet de remonter en haut de la page
 ----------------------------------------------------------------*/
 .bouton-retour {
-  width: 1rem;
+  width: 2rem;
+  height: 2rem;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -544,6 +546,10 @@ section > .bouton__header {
   border-radius: 50%;
   z-index: 1100;
   transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
 }
 
 .bouton-retour:hover {
@@ -1067,11 +1073,11 @@ form div {
   background-repeat: no-repeat;
   position: relative;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 @media screen and (min-width: 700px) {
   #entete {
-    background-size: 200%;
+    background-size: 100%;
   }
 }
 
@@ -1104,14 +1110,32 @@ form div {
   transform: scale(1.3);
 }
 
+.recherche {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 form.recherche .recherche__input {
   background-color: white;
-  width: 50%;
+  width: 100%;
 }
 @media screen and (min-width: 700px) {
   form.recherche .recherche__input {
-    width: 20%;
+    width: 100%;
   }
+}
+
+.recherche__bouton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recherche__icone > svg {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 ::placeholder {
@@ -1121,13 +1145,33 @@ form.recherche .recherche__input {
 
 form.recherche .recherche__bouton {
   width: 15%;
-  background-color: var(--couleur-arriere-acceuil);
+  background-color: hsl(204, 47%, 41%);
   border-radius: 50px;
 }
 @media screen and (min-width: 700px) {
   form.recherche .recherche__bouton {
-    width: 4%;
+    width: 3%;
   }
+}
+
+#entete > section > form > button > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer > footer > div.recherche > form > button > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#entete > section > form > button > span > svg {
+  filter: invert(1);
+}
+
+#footer > footer > div.recherche > form > button > span > svg {
+  filter: invert(1);
 }
 
 #erreur_404 {

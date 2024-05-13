@@ -44,7 +44,7 @@
 </div>
 <div id="evenements" class="global diagonale clr-agencement-primaire">
     <section>
-        <h2 class="clr-primaire-100">Évènements</h2>
+        <h2 class="clr-primaire-100">Recherche par continents</h2>
         <?php echo do_shortcode('[em_destination]'); ?> 
     </section>
 </div>

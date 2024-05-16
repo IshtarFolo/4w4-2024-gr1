@@ -17,29 +17,33 @@
 
 <div id="acceuil" class="global bck-primaire-200">
     <section>
-        <h2>Acceuil</h2>
-        <h3>Les destinations par catégories</h3>
+        <h2>Les destinations</h2>
+        <h3>populaires</h3>
         <div class="destination">
-
             <!-- Boucle php pour afficher articles dans la table posts à partir de la base de données -->
             <!-- front -->
-            <?php 
-            if (have_posts()) :
-                while (have_posts()) : the_post(); 
+            <?php
+                if (have_posts()) :
+                    // On affiche en premier les posts qui ne sont pas dans la catégorie "galerie"
+                    while (have_posts()) : the_post();
+                        if (!in_category("galerie")) {
+                            $maCarte = "carte";
+                            get_template_part("gabarits/categorie" , $maCarte);
+                        }
+                    endwhile;
+
+                    // Ensuite on affiche les posts qui sont dans la catégorie "galerie"
+                    rewind_posts(); // Avec rewind_posts() on revient au début de la liste des posts
+                    while (have_posts()) : the_post();
+                        if (in_category("galerie")) {
+                            $maCarte = "galerie";
+                            get_template_part("gabarits/categorie" , $maCarte);
+                        }
+                    endwhile;
+                endif;
             ?>
-                    <div class="carte bck-primaire-100">
-                        <h3><?php the_title(); ?></h3>
-                        <p><?php echo wp_trim_words(get_the_content(), 10); ?></p>
-                        <?php the_category(); ?>
-                        <?php the_post_thumbnail("full"); ?> 
-                        <!-- Ajoute un lien vers l'article selctionné -->
-                        <a href="<?php the_permalink(); ?>">Suite</a>
-                    </div>
-                <?php endwhile; ?>
-            <?php endif; ?>
         </div>
         <!-- Fin de la boucle php -->
-
     </section>
 </div>
 <div id="evenements" class="global diagonale clr-agencement-primaire">

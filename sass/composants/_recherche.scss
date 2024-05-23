@@ -7,7 +7,11 @@
 
 // Le input field 
 form.recherche .recherche__input {
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
     width: 100%;
 
     @media screen and (min-width: 700px){
@@ -15,12 +19,25 @@ form.recherche .recherche__input {
     }
 }
 
+// Le bouton dde recherche
 .recherche__bouton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 15%;
+    height: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.3rem;
+    color: white;
+    transition: background-color 0.3s ease;
+
+    @media screen and (min-width: 700px){
+        width: 3%;
+    }
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
 }
 
+// icone de loupe
 .recherche__icone > svg {
     width: 1.5rem;
     height: 1.5rem;
@@ -28,20 +45,53 @@ form.recherche .recherche__input {
 
 // Le texte de placeholder
 ::placeholder {
-    color: hsl(204, 47%, 41%);
+    color: white;
     font-size: 1rem;
 }
 
-// Le bouton de recherche
-form.recherche .recherche__bouton {
-    width: 15%;
-    background-color: hsl(204, 47%, 41%);
-    border-radius: 50px;
-
-    @media screen and (min-width: 700px){
-        width: 3%;
-    }
+// Pour cacher le X par defaut de la barre de recherche
+.recherche__input::-ms-clear {
+    display: none; 
 }
+
+// Changement au X en question 
+.recherche__input::-ms-clear::after {
+    content: 'X'; 
+    color: white; 
+}
+
+.recherche__input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 10px;
+    width: 10px;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+}
+
+// Le style du X pour vider la barre de recherche
+.recherche__input::-webkit-search-cancel-button::before {
+    content: "";
+    position: absolute;
+    height: 1.2px;
+    width: 6px;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.recherche__input::-webkit-search-cancel-button::after {
+    content: "";
+    position: absolute;
+    height: 1.2px;
+    width: 6px;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 
 #entete > section > form > button > span {
     display: flex;

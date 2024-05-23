@@ -99,7 +99,8 @@ body {
 .post-categories li > a{
     border: none;
     padding: 2px 2px 2px 2px;
-    color: hsl(220, 100%, 15%);
+    color: var(--couleur-texte-menu);
+    background-color: hsl(204, 74%, 67%);
 }
 
 .post-categories li > a:hover{
@@ -123,6 +124,7 @@ select#continent {
     transition: 0.3s;
     font-size: 12px;
     text-align: center;
+    text-align-last: center;
     justify-content: center;
     text-decoration: none;
     font-size: clamp(0.8rem, 0.553rem + 0.898vi, 1.2rem);
@@ -135,7 +137,7 @@ select#continent {
     }
 
     @media screen and (min-width: 700px) {
-        width: 7rem;
+        width: 15rem;
         height: 3rem;
     }
 }
@@ -151,26 +153,24 @@ select#continent option {
 /* Bouton dans le header
 ----------------------------------------------------------------*/
 .bouton__header{
-    width: 5rem;
-    height: 2rem;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5); 
     border: none;
-    box-shadow: 0.2rem 0.2rem;
-    border-radius: 50px;
-    transform: scale(1);
-    display: flex;
-    align-items: center;
-    transition: 0.3s;
-    font-size: 12px;
-    text-align: center;
-    justify-content: center;
-    text-decoration: none;
-    font-size: clamp(0.8rem, 0.553rem + 0.898vi, 1.2rem);
+    color: white; 
+    padding: 0.5rem 1rem; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 1rem; 
+    margin: 4px 2px;
+    transition: background-color 0.3s ease; 
+
+    &:hover {
+        background-color: #343a40; 
+        color: #f8f9fa; 
+    }
 
     @media screen and (min-width: 700px) {
         width: 7rem;
-        height: 3rem;
     }
 }
 

@@ -408,7 +408,8 @@ body {
 .post-categories li > a {
   border: none;
   padding: 2px 2px 2px 2px;
-  color: hsl(220, 100%, 15%);
+  color: var(--couleur-texte-menu);
+  background-color: hsl(204, 74%, 67%);
 }
 
 .post-categories li > a:hover {
@@ -431,6 +432,7 @@ select#continent {
   transition: 0.3s;
   font-size: 12px;
   text-align: center;
+  text-align-last: center;
   justify-content: center;
   text-decoration: none;
   font-size: clamp(0.8rem, 0.553rem + 0.898vi, 1.2rem);
@@ -443,7 +445,7 @@ select#continent:hover {
 }
 @media screen and (min-width: 700px) {
   select#continent {
-    width: 7rem;
+    width: 15rem;
     height: 3rem;
   }
 }
@@ -459,27 +461,24 @@ select#continent option {
 /* Bouton dans le header
 ----------------------------------------------------------------*/
 .bouton__header {
-  width: 5rem;
-  height: 2rem;
-  padding: 0.5rem;
-  margin-top: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
   border: none;
-  box-shadow: 0.2rem 0.2rem;
-  border-radius: 50px;
-  transform: scale(1);
-  display: flex;
-  align-items: center;
-  transition: 0.3s;
-  font-size: 12px;
+  color: white;
+  padding: 0.5rem 1rem;
   text-align: center;
-  justify-content: center;
   text-decoration: none;
-  font-size: clamp(0.8rem, 0.553rem + 0.898vi, 1.2rem);
+  display: inline-block;
+  font-size: 1rem;
+  margin: 4px 2px;
+  transition: background-color 0.3s ease;
+}
+.bouton__header:hover {
+  background-color: #343a40;
+  color: #f8f9fa;
 }
 @media screen and (min-width: 700px) {
   .bouton__header {
     width: 7rem;
-    height: 3rem;
   }
 }
 
@@ -795,18 +794,23 @@ h6 {
 }
 
 .destination a {
-  margin-top: 1rem;
+  background-color: var(--couleur-texte-menu);
+  border: 2px solid var(--couleur-menu);
+  color: #f8f9fa;
+  padding: 0.5rem 1rem;
   text-align: center;
   text-decoration: none;
-  border: 2px solid var(--couleur-menu);
-  border-radius: 50px;
-  color: var(--couleur-evenements);
-  width: 20%;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 4px 2px;
+  transition: background-color 0.3s ease;
+}
+.destination a:hover {
+  background-color: #343a40;
+  color: #f8f9fa;
 }
 
 .destination a:hover {
-  border: 2px solid var(--couleur-menu);
-  background-color: var(--couleur-texte-menu);
   color: var(--_couleur-arriere);
   transition: 0.5s background-color ease-in-out;
 }
@@ -1138,7 +1142,11 @@ form div {
 }
 
 form.recherche .recherche__input {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
   width: 100%;
 }
 @media screen and (min-width: 700px) {
@@ -1148,9 +1156,20 @@ form.recherche .recherche__input {
 }
 
 .recherche__bouton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 15%;
+  height: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.3rem;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+@media screen and (min-width: 700px) {
+  .recherche__bouton {
+    width: 3%;
+  }
+}
+.recherche__bouton:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .recherche__icone > svg {
@@ -1159,19 +1178,48 @@ form.recherche .recherche__input {
 }
 
 ::placeholder {
-  color: hsl(204, 47%, 41%);
+  color: white;
   font-size: 1rem;
 }
 
-form.recherche .recherche__bouton {
-  width: 15%;
-  background-color: hsl(204, 47%, 41%);
-  border-radius: 50px;
+.recherche__input::-ms-clear {
+  display: none;
 }
-@media screen and (min-width: 700px) {
-  form.recherche .recherche__bouton {
-    width: 3%;
-  }
+
+.recherche__input::-ms-clear::after {
+  content: "X";
+  color: white;
+}
+
+.recherche__input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 10px;
+  width: 10px;
+  background: white;
+  border-radius: 50%;
+  position: relative;
+}
+
+.recherche__input::-webkit-search-cancel-button::before {
+  content: "";
+  position: absolute;
+  height: 1.2px;
+  width: 6px;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.recherche__input::-webkit-search-cancel-button::after {
+  content: "";
+  position: absolute;
+  height: 1.2px;
+  width: 6px;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 #entete > section > form > button > span {

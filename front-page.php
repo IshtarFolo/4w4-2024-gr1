@@ -60,10 +60,12 @@
         
         <!-- Les catégories -->
         <div class="categories">
-            <!-- Boucoe php pour créer les catégories -->
+            <!-- Boucle php pour créer les catégories -->
             <?php
             $categories = get_categories();
             foreach ($categories as $category) {
+                //On saute la catégorie "galerie"
+                if (strtolower($category->name) == 'galerie') continue;
             ?>
                 <div class="carte bck-primaire-200">
                     <h3><?php echo $category->name; ?></h3>

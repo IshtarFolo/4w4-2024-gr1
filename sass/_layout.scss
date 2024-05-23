@@ -129,27 +129,26 @@ blockquote::first-letter{
 
 /* Bouton dans le header
 ----------------------------------------------------------------*/
-section > .bouton__header{
-    width: 4rem;
-    height: 2.2rem;
-    margin-bottom: 2rem;
-    margin-top: 5rem;
-    padding: 0.5rem, 0.5rem, 0.5rem, 0.5rem;
+.bouton__header{
+    width: 5rem;
+    height: 2rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
     border: none;
     box-shadow: 0.2rem 0.2rem;
     border-radius: 50px;
     transform: scale(1);
+    display: flex;
+    align-items: center;
     transition: 0.3s;
     font-size: 12px;
     text-align: center;
+    justify-content: center;
+    text-decoration: none;
     font-size: clamp(0.8rem, 0.553rem + 0.898vi, 1.2rem);
-    background-image: url("image/shopping-cart.png");
-    background-position: center;
-    background-size: 45%;
-    background-repeat: no-repeat;
 
     @media screen and (min-width: 700px) {
-        width: 5rem;
+        width: 7rem;
         height: 3rem;
     }
 }

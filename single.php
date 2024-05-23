@@ -7,7 +7,7 @@
         <h1 class="clr-secondaire-100"><?php echo get_bloginfo("name"); ?></h1>
         <h2 class="clr-secondaire-100"><?php echo get_bloginfo("description"); ?></h2>
         <?php get_search_form(); ?> 
-        <button class="bouton__header bck-secondaire-300 clr-secondaire-100"></button>
+        <a class='bouton__header bck-secondaire-300 clr-secondaire-100' href="http://localhost:8085/4w4-2024-gr1/inscription/">Inscriptions</a>
     </section>
     <!-- Vague ici! -->
     <?php get_template_part('gabarits/vagues'); ?>

@@ -11,10 +11,6 @@
     }
 }
 
-#entete > form {
-    margin-left: 2rem;
-}
-
 #erreur_404 > section {
     margin: 2rem 0 2rem 0;
     padding: 2rem;
@@ -22,6 +18,13 @@
     border-radius: 10px;
     color: white;
     box-shadow: 0 0 10px hsl(204, 74%, 67%);
+
+    @media screen and (min-width: 700px) {
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 // Bouton retour 4w4
@@ -46,16 +49,17 @@
     align-items: center;
 }
 
-#erreur_404 > section > form {
-    margin-left: 2rem;
-    @media screen and (min-width: 700px){
-        margin-top: 2rem;
-        width: 80rem;
-    }
+#erreur_404 > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    float: right;
 }
 
 // Menu section
 #menu_404 {
+    height: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -66,12 +70,37 @@
 
 #menu_404 > ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
-    justify-content: space-around;
+    gap: 1rem;
     list-style-type: none;
     flex-wrap: wrap;
     flex: 1 0 200px;
     padding: 0;
+}
+
+#menu_404 > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 700px) {
+        flex: 0 0 150px;
+    }
+}
+
+#menu_404 > ul > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+#menu_404 > ul > li > a:hover {
+    transform: scale(1.1);
+    transition: 1s transform ease-in-out;
 }
 
 .logo_404 {
@@ -83,5 +112,24 @@
         height: 400px;
         margin: 2rem;
     }
+}
+
+// Barre de recherche
+#erreur_404 > section > form {
+    justify-self: center;
+    align-self: center;
+}
+
+// Bouton recherche 
+#erreur_404 > section > form > button {
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Logo recherche
+#erreur_404 > section > form > button > span > svg {
+    filter: invert(1);
 }
 

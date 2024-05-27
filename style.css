@@ -1162,6 +1162,7 @@ form.recherche .recherche__input {
   border-radius: 0.3rem;
   color: white;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 @media screen and (min-width: 700px) {
   .recherche__bouton {
@@ -1371,4 +1372,57 @@ form.recherche .recherche__input {
 
 #erreur_404 > section > form > button > span > svg {
   filter: invert(1);
+}
+
+#acceuil > section > .inscription {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+.inscription__Submit {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.5s ease-in-out transform;
+}
+.inscription__Submit:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+}
+
+.inscription__Titre {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.9967144061rem + 0.2527379949vw, 1.3rem);
+}
+
+.inscription__Texte {
+  margin-bottom: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.9967144061rem + 0.2527379949vw, 1.3rem);
+  border: 3px solid #ccc;
+  border-radius: 4px;
+  padding: 2rem;
+}
+
+.inscription__Logo {
+  width: 70%;
+  height: 70%;
+  margin-top: 20px;
+}
+@media screen and (min-width: 700px) {
+  .inscription__Logo {
+    width: 70%;
+    height: 70%;
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

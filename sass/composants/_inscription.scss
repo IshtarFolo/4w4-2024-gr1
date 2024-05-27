@@ -1,0 +1,57 @@
+// Style des formulaires d'inscription
+#acceuil > section > .inscription {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+}
+
+.inscription__Submit {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.5s ease-in-out transform;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        transform: scale(1.1);
+    }
+}
+
+// Le titre du input de la section inscription
+.inscription__Titre {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.9967144060657119rem + 0.2527379949452401vw, 1.3rem);
+}
+
+// Texte descriptif de la page inscription
+.inscription__Texte {
+    margin-bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.9967144060657119rem + 0.2527379949452401vw, 1.3rem);
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    padding: 2rem;
+}
+
+// Le logo de la page inscription
+.inscription__Logo {
+    width: 70%;
+    height: 70%;
+    margin-top: 20px;
+
+    @media screen and (min-width: 700px){
+        width: 70%;
+        height: 70%;
+        margin-top: 20px;
+    }
+}
+

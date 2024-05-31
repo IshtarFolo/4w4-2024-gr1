@@ -336,3 +336,16 @@ select#continent option {
         background-position-x: 90%;
     }
 }
+
+/* Champs ACF dans Single.php
+---------------------------------------------------------------------------------------*/
+.champs__ACF {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.9936708860759493rem + 0.42194092827004215vw, 1.5rem);
+    padding: 1rem;
+    border-radius: 10px;
+}

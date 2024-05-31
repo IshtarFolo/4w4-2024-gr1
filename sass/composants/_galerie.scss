@@ -1,0 +1,24 @@
+// Style du titre de la galerie
+.carte__galerie {
+    font-size: 2rem;
+    color: var(--couleur-arriere-galerie);
+}
+
+// Pour ajouter une marge après le titre de la galerie pour séparer les éléments
+#acceuil > section > div > div.carte__galerie > figure {
+    margin-top: 1rem;
+}
+
+// Style du texte du bouton de la galerie et ajout d'une marge en bas
+#acceuil > section > div > div.carte__galerie > button {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+// Style de la légende des images de la galerie
+#acceuil > section > div > div.carte__galerie > figure > figure > .wp-element-caption {
+    background-color: hsla(var(--u1), 100%, 25%, 70%); 
+    color: white; 
+    padding: 10px; 
+    font-size: 0.8rem; 
+}

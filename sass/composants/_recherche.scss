@@ -113,3 +113,25 @@ form.recherche .recherche__input {
 #footer > footer > div.recherche > form > button > span > svg {
     filter: invert(1);
 }
+
+// Style des boutons a de la page search.php
+.resultats > a {
+    width: 6%;
+    background-color: var(--couleur-arriere-galerie);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    margin-right: 0.5rem;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.resultats {
+    border-radius: 10px;
+}
+
+

@@ -21,7 +21,7 @@
                 while(have_posts()): the_post();
         
                 ?>
-                <div class="carte">
+                <div class="carte bck-primaire-100 resultats">
 
                     <h3><?php the_title() ?></h3>  
                     <p><?php echo wp_trim_words(get_the_content(),50); ?> </p>

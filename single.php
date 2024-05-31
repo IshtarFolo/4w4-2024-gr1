@@ -24,13 +24,15 @@
                         <?php the_post_thumbnail("full"); ?> 
                         <h2><?php the_title(); ?></h2>
                         <p><?php the_content(); ?></p>
-                        <!-- Ajout des champs crées avec ACF -->
-                        <p>Température minimale: <?php the_field('temperature_minimale'); ?>°C</p>
-                        <p>Température maximale: <?php the_field('temperature_maximale'); ?>°C</p>
-                        <p>Précipitations: <?php the_field('precipitation') ?> </p>
-                        <p>Catégories: <?php the_field('categories'); ?> </p>
-                        <p>Ville avoisinante: <?php the_field('ville_avoisinante'); ?></p>
-                        <p>Continent: <?php the_field('continent'); ?> </p>
+                        <div class="champs__ACF bck-primaire-200">
+                            <!-- Ajout des champs crées avec ACF -->
+                            <p>Température minimale: <?php the_field('temperature_minimale'); ?>°C</p>
+                            <p>Température maximale: <?php the_field('temperature_maximale'); ?>°C</p>
+                            <p>Précipitations: <?php the_field('precipitation') ?> mm</p>
+                            <p>Ville avoisinante: <?php the_field('ville_avoisinante'); ?></p>
+                            <p>Continent: <?php the_field('continent'); ?> </p>
+                            <p>Catégories: <?php the_field('categories'); ?> </p>
+                        </div>
                     </div>
                 <?php endif; ?>
             </div>

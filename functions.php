@@ -56,3 +56,32 @@
   }
   add_filter('rest_post_query', 'add_meta_query_to_rest_api', 10, 2);
 
+// Pour enlever la page Inscription des resultats de recherche
+  function exclude_page_from_search($query) {
+    if ($query->is_search) {
+        $query->set('post_type', 'post');
+    }
+    return $query;
+}
+add_filter('pre_get_posts','exclude_page_from_search');
+
+// Pour enlever le post galerie de la recherche
+function exclude_specific_post_from_search($query) {
+  if ($query->is_search) {
+      $exclude_post = get_page_by_path('galerie', OBJECT, 'post');
+      if(!empty($exclude_post)) {
+          $query->set('post__not_in', array($exclude_post->ID));
+      }
+  }
+  return $query;
+}
+add_filter('pre_get_posts','exclude_specific_post_from_search');
+
+// Ajout du script js pour la front-page
+function enqueue_my_script() {
+  if (is_front_page()) {
+      wp_enqueue_script('my-script', get_template_directory_uri() . '/js/front.js', array('jquery'), '1.0', true);
+  }
+}
+add_action('wp_enqueue_scripts', 'enqueue_my_script');
+

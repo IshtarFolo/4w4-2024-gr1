@@ -643,6 +643,19 @@ select#continent option {
     background-position-x: 90%;
   }
 }
+/* Champs ACF dans Single.php
+---------------------------------------------------------------------------------------*/
+.champs__ACF {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.9936708861rem + 0.4219409283vw, 1.5rem);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
 /*=============================================================================
  *   Liens intéressants:                                                      *
  *   https://chrisburnell.com/clamp-calculator/                               *
@@ -845,6 +858,8 @@ h6 {
   padding: 1rem;
   margin: 1rem 0 1rem 0;
   z-index: 1;
+  border-radius: 10px;
+  margin-bottom: 2rem;
 }
 @media screen and (min-width: 700px) {
   .carte {
@@ -886,6 +901,12 @@ h6 {
 ------------------------------------------------------------*/
 .carte > p:last-child {
   font-size: clamp(0.5rem, -2.969rem + 12.5vw, 1rem);
+}
+
+.carte__galerie {
+  background-color: hsl(204, 74%, 67%);
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 /*
@@ -1243,6 +1264,24 @@ form.recherche .recherche__input {
   filter: invert(1);
 }
 
+.resultats > a {
+  width: 6%;
+  background-color: var(--couleur-arriere-galerie);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  margin-right: 0.5rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+.resultats > a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.resultats {
+  border-radius: 10px;
+}
+
 #erreur_404 {
   height: 100vh;
   top: 23rem;
@@ -1425,4 +1464,25 @@ form.recherche .recherche__input {
     height: 70%;
     margin-top: 20px;
   }
+}
+
+.carte__galerie {
+  font-size: 2rem;
+  color: var(--couleur-arriere-galerie);
+}
+
+#acceuil > section > div > div.carte__galerie > figure {
+  margin-top: 1rem;
+}
+
+#acceuil > section > div > div.carte__galerie > button {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#acceuil > section > div > div.carte__galerie > figure > figure > .wp-element-caption {
+  background-color: hsla(var(--u1), 100%, 25%, 70%);
+  color: white;
+  padding: 10px;
+  font-size: 0.8rem;
 }/*# sourceMappingURL=style.css.map */

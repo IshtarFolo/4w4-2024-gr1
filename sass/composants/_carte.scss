@@ -58,6 +58,8 @@
     padding: 1rem;
     margin: 1rem 0 1rem 0;
     z-index: 1;
+    border-radius: 10px;
+    margin-bottom: 2rem;
     
     @media screen and (min-width: 700px){
         flex: 1 0 calc(900px/4);
@@ -100,4 +102,11 @@
 ------------------------------------------------------------*/
 .carte>p:last-child{
     font-size: clamp(0.5rem, -2.969rem + 12.5vw, 1rem);
+}
+
+// Style de la carte de la galerie
+.carte__galerie {
+    background-color: hsl(204, 74%, 67%);
+    padding: 1rem;
+    border-radius: 10px;
 }

@@ -25,7 +25,3 @@ Ce site web est un projet scolaire pour le cours de 4w4. Le site web est un site
 -	Pour la création des cartes
 -	Modèle de page
 
-
-##### Liens vers l'hébergeur WHC
-- https://gftnth00.mywhc.ca/tim07/
-
